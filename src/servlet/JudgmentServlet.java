@@ -23,3 +23,7 @@ public class JudgmentServlet extends HttpServlet {
 		return;
 	}
 }
+
+
+
+
