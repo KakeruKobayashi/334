@@ -10,19 +10,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class PersonalServlet
+ * Servlet implementation class CourseComplete
  */
-@WebServlet("/questionAnswer")
-public class QuestionAnswerServlet extends HttpServlet {
+@WebServlet("/courseComplete")
+public class CourseCompleteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/JSP/questionAnswer.jsp");
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		//courseComplete.jspにフォワードする。
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/JSP/courseComplete.jsp");
 		dispatcher.forward(request, response);
 		return;
+
 	}
 
 }

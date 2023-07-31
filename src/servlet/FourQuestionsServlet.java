@@ -10,17 +10,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class PersonalServlet
+ * Servlet implementation class FourQuestionsServlet
  */
-@WebServlet("/questionAnswer")
-public class QuestionAnswerServlet extends HttpServlet {
+@WebServlet("/fourQuestions")
+public class FourQuestionsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/JSP/questionAnswer.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/JSP/fourQuestions.jsp");
 		dispatcher.forward(request, response);
 		return;
 	}
