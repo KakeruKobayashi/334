@@ -1,4 +1,6 @@
-function toggleOptions(btnNumber) {
+/**
+ *
+ */function toggleOptions(btnNumber) {
 	var optionsDiv = document.getElementById("options" + btnNumber);
 	var showOptionsRadio = document.getElementById("showOptions" + btnNumber);
 
