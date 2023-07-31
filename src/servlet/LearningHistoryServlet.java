@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class suspensionConfirmation
+ * Servlet implementation class learningHistory
  */
-@WebServlet("/suspensionConfirmation")
-public class SuspensionConfirmationServlet extends HttpServlet {
+@WebServlet("/learningHistory")
+public class LearningHistoryServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -22,8 +22,8 @@ public class SuspensionConfirmationServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		//suspensionConfirmation.jspにフォワードする。
-		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/JSP/suspensionConfirmation.jsp");
+		//learningHistory.jspにフォワードする。
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/JSP/learningHistory.jsp");
 		dispatcher.forward(request, response);
 		return;
 
