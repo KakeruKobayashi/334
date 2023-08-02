@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Registration
+ * Servlet implementation class PersonalQuestion
  */
-@WebServlet("/registration")
+@WebServlet("/personalQuestion")
 public class PersonalQuestionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -22,8 +22,8 @@ public class PersonalQuestionServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		//registration.jspにフォワードする。
-		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/JSP/registration.jsp");
+		//personalQuestion.jspにフォワードする。
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/JSP/personalQuestion.jsp");
 		dispatcher.forward(request, response);
 		return;
 
