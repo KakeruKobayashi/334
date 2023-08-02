@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
             
-<<<<<<< HEAD
-    
-    <wb-module deploy-name="Tudurisu">
-                        
-        
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-                        
-        
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/JS"/>
-                        
-        
-        <property name="context-root" value="Tudurisu"/>
-                        
-        
-        <property name="java-output-path" value="/Tudurisu/build/classes"/>
-                    
-    
-=======
     
     <wb-module deploy-name="Tudurisu">
                         
@@ -36,7 +17,6 @@
         <property name="java-output-path" value="/Tudurisu/build/classes"/>
                     
     
->>>>>>> 85c607534bc1f083cc8d65371cc9cbb535c58492
     </wb-module>
         
 
