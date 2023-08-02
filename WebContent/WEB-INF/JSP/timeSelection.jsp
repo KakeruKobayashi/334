@@ -8,7 +8,7 @@
 <title>勉強時間選択</title>
 </head>
 <body>
-	<div>今日の学習時間を<br>入力してください</div>
+	<div>今日の勉強時間を選択してください</div>
 
 	<form action="result.jsp" method="post">
 		<div id="customTime">
@@ -17,8 +17,18 @@
 		</div>
 		<br>
 
-		<button type="button" class="return">戻る</button>
-		<button type="button" class="decision">決定</button>
+        <div style="display:inline-flex">
+            <div>
+                <form action = "home" method = "get">
+                    <input type = "submit" name = "back" value = "戻る">
+                </form>
+            </div>
+            <div>
+                <form action = "contentSelection" method = "post">
+                    <input type = "submit" name = "dicision" value = "決定">
+                </form>
+            </div>
+        </div>
 	</form>
 </body>
 </html>
