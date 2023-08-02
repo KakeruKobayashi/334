@@ -29,6 +29,7 @@ public class PersonalQuestionController extends HttpServlet {
 		user.setPersonalQuestionResult(4);
 		request.setAttribute("User", user);
 
+
 		if (requestFlag) {
 			response.sendRedirect("question");
 		} else {
