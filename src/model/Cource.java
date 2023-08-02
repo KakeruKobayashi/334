@@ -18,6 +18,8 @@ public class Cource {
 	public void setExamdate(Date examdate) {
 		this.examdate = examdate;
 	}
+
+//ジャンルのこと要相談
 	public int getCategory() {
 		return category;
 	}
