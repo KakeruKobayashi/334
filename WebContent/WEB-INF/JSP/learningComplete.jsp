@@ -7,35 +7,27 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div>
-		<div>
-			<h2>
-				おつかれさまです！
-			</h2>
-		</div>
-		<div>
-			<div>
-				連続記録
-				<div>
-					<h1>17</h1>
-				</div>
-				日目達成
-			</div>
-			<div>
-				総学習時間
-				<div>
-					<h1>
-						15
-					</h1>
-				</div>
-				時間到達
-			</div>
-		</div>
-		<div>
-			<form action="home" method = "get">
-				<input type = "submit" name = "backhome" value = "ホーム">
-			</form>
-		</div>
-	</div>
+    <div>
+        <div>
+            <h2>
+                おつかれさまです！
+            </h2>
+        </div>
+        <div>
+            <div>
+                累計
+                <div>
+                    <h1>17</h1>
+                </div>
+                日目達成
+            </div>
+                <div>
+                    <img src="path/to/your/image.png" alt="総学習時間">
+                </div>
+        </div>
+        <div>
+            <input type="button" name="home" onclick="window.location.href='home'">
+        </div>
+    </div>
 </body>
 </html>

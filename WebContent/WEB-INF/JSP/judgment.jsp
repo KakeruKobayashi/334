@@ -7,41 +7,23 @@
 <title>正誤画面</title>
 </head>
 <body>
-	<%!public boolean isCorrectAnswer() {
-		return isCorrectAnswer();
-	}%>
-	<%
-	boolean isCorrect = isCorrectAnswer();
-	%>
+	<div>TOEIC読解基礎</div>
+	<div>
+		<img src="../img/judge.png" alt="〇">
+	</div>
+	<br>
+	<div class="box">
+		<p>正解:work</p>
+	</div>
+	<div class="box">
+		<p>解説</p>
+	</div>
 
-	<%
-	if (isCorrect) {
-	%>
-	<div>正解</div>
-	<img src="img/correct.png" alt="correct">
-	<%
-	} else {
-	%>
-	<div>不正解</div>
-	<img src="img/uncoorect.png" alt="uncorrect">
-	<%
-	}
-	%>
-
-	<div>正解:●●</div>
-	<div>解説</div>
-
-	<%
-	if (問題がまだある) {
-	%>
-	<button type="button" class="next">次の問題へ</button>
-	<%
-	} else {
-	%>
-	<button type="button" class="end">結果へ</button>
-	<%
-	}
-	%>
+	<div>
+		<form action="learningResult" method="post">
+			<input type="submit" name="next" value="次へ">
+		</form>
+	</div>
 
 </body>
 </html>
