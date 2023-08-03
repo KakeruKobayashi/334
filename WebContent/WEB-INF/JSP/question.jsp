@@ -9,11 +9,7 @@
 </head>
 <body>
 	<div>興味のあるカテゴリー・コンテンツを選択してください</div>
-	<div>
-		<form action="personal" method="get">
-			<input type="submit" name="back" value="戻る">
-		</form>
-	</div>
+
 	<div>
 		<form action="questionController" method="post">
 			<label for="showOptions1">語学</label> <input type="radio"
@@ -87,6 +83,8 @@
 			</div>
 
 			<input type="submit" name="dicision" value="決定">
+			<div>
+			<input type="submit" name="back" value="戻る" onclick="window.location.href='home'">
 		</form>
 	</div>
 </body>

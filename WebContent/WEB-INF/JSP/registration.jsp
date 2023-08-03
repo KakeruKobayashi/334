@@ -12,11 +12,6 @@
 	<h2>ともやさんが取得したい資格について教えてください</h2>
 	<div style="display: inline-flex">
 		<div>
-			<form action="personal" method="get">
-				<input type="submit" name="back" value="戻る">
-			</form>
-		</div>
-		<div>
 			<form action="registrationController" method="post">
 				<div>
 					*ジャンル: <select name="genre" required>
@@ -31,11 +26,14 @@
 					</select> <br> 資格名:<input type="text" name="license"><br>
 
 				</div>
-				<input type="submit" name="dicision" value="決定">
+				<input type="submit" name="back" value="戻る"
+					onclick="window.location.href='home'"> <input type="submit"
+					name="dicision" value="決定">
+
 			</form>
+
 		</div>
 	</div>
-
 </body>
 
 </html>
