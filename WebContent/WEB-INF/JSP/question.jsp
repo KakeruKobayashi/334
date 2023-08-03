@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
- <script src="question.js"></script>
+ <script src="./JS/question.js"></script>
 <title>アンケート画面</title>
 </head>
 <body>

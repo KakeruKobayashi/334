@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.Course;
-import model.User;
 
 /**
  * Servlet implementation class CourseSelectionController
@@ -29,7 +28,6 @@ public class CourseSelectionController extends HttpServlet {
 		course.setCategory(Integer.parseInt(request.getParameter("")));
 
 //フローイメージの画像もかな？JSPで書けばいいのかな？
-		User user = new User();
 		session.setAttribute("course", course);
 //確認画面へリダイレクト
 		response.sendRedirect("courseConfirm");
