@@ -10,31 +10,31 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import model.Cource;
+import model.Course;
 import model.User;
 
 /**
- * Servlet implementation class CourceSelectionController
+ * Servlet implementation class CourseSelectionController
  */
-@WebServlet("/courceSelectionController")
-public class CourceSelectionController extends HttpServlet {
+@WebServlet("/courseSelectionController")
+public class CourseSelectionController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 // 選択したコースの情報を取得します。
-		Cource cource = new Cource();
-		cource.setCourcename((String)request.getParameter(""));
-		cource.setExamdate(Date.valueOf((String)request.getParameter("")));
-		cource.setCategory(Integer.parseInt(request.getParameter("")));
+		Course course = new Course();
+		course.setCoursename((String)request.getParameter(""));
+		course.setExamdate(Date.valueOf((String)request.getParameter("")));
+		course.setCategory(Integer.parseInt(request.getParameter("")));
 
 //フローイメージの画像もかな？JSPで書けばいいのかな？
 		User user = new User();
 		session.getAttribute("nickname");
-		request.setAttribute("cource", cource);
+		request.setAttribute("course", course);
 		session.setAttribute("nickname", user.getNickname());
 //確認画面へリダイレクト
-		response.sendRedirect("courceConfirm");
+		response.sendRedirect("courseConfirm");
 
 	}
 

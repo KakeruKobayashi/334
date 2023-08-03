@@ -26,6 +26,7 @@ public class PersonalQuestionController extends HttpServlet {
 		boolean requestFlag = (boolean) session.getAttribute("request");
 		//DAOの処理？
 		User user = new User();
+		//ベタ打ち
 		user.setPersonalQuestionResult(4);
 		request.setAttribute("User", user);
 
