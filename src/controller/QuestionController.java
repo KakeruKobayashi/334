@@ -11,10 +11,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import model.Course;
+
 /**
  * Servlet implementation class QuestionController
  */
-@WebServlet("/questioncontroller")
+@WebServlet("/questionController")
 public class QuestionController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
