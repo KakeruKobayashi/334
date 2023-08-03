@@ -31,8 +31,6 @@
 					</select> <br> 資格名:<input type="text" name="license"><br>
 
 				</div>
-
-
 				<input type="submit" name="dicision" value="決定">
 			</form>
 		</div>

@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 
 import model.Content;
 
-@WebServlet("/TimeSelectionController")
+@WebServlet("/timeSelectionController")
 public class TimeSelectionController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -23,7 +23,9 @@ public class TimeSelectionController extends HttpServlet {
 
 		//ここはJSP側とパラメータを合わせる
 		//時間を分に換算してそれ以内のコースを表示
-		int contenttime = Integer.parseInt(request.getParameter(""));
+		int contenthours = Integer.parseInt(request.getParameter("hours"));
+		int contentminutes = Integer.parseInt(request.getParameter("minutes"));
+		int contenttime = contenthours * 60 + contentminutes;
 
 		//ニックネームか何かからユーザーのコースの情報を受け取る。
 		session.getAttribute("nickname");
