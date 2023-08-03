@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,8 +25,16 @@ public class ContentSelectionController extends HttpServlet {
 		Content content = new Content();
 		content.setContentname((String)request.getParameter(""));
 		content.setContenttime(Integer.parseInt(request.getParameter("")));
-		content.setCourcename((String)request.getParameter(""));
+		content.setCoursename((String)request.getParameter(""));
 
+		List<Content> contentResult = new ArrayList<Content>();
+
+		/*
+		 * ここでサービスからデータベースに接続して、上の条件に合ったデータを取得する
+		 * courseResult = ;
+		 */
+
+		session.setAttribute("courseContent", contentResult);
 
 //		取得したコンテンツ内容によって問題を表示する何かが必要ですか？
 //ユーザーによってリダイレクト先が変わる。一旦4択画面へ。
