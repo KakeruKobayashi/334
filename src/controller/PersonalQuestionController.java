@@ -22,7 +22,6 @@ public class PersonalQuestionController extends HttpServlet {
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 		//前画面から情報受け取る
-		String nickname = (String) session.getAttribute("nickname");
 		boolean requestFlag = (boolean) session.getAttribute("request");
 		//DAOの処理？
 		User user = new User();
@@ -30,6 +29,9 @@ public class PersonalQuestionController extends HttpServlet {
 		user.setPersonalQuestionResult(4);
 		session.setAttribute("personalQuestionResult", user.getPersonalQuestionResult());
 
+		/*
+		 * ここでサービスに接続しデータベースに保存する
+		 * */
 
 		if (requestFlag) {
 			response.sendRedirect("question");
