@@ -25,16 +25,18 @@ public class PersonalController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(true);
 		User user = new User();
-		//JSPとパラメータ名を合わせる
-		user.setNickname((String)request.getParameter(""));
-		user.setFullname((String)request.getParameter(""));
-		user.setBirthday(Date.valueOf((String)request.getParameter("")));
-		user.setOccpation((String)request.getParameter(""));
-		user.setField((String)request.getParameter(""));
+
+		user.setNickname((String)request.getParameter("name"));
+		user.setFullname((String)request.getParameter("fullname"));
+		String birthday = (String)request.getParameter("year") + "-" + (String)request.getParameter("month") + "-" + (String)request.getParameter("day");
+		user.setBirthday(Date.valueOf(birthday));
+		user.setOccpation((String)request.getParameter("occupation"));
+		user.setField((String)request.getParameter("field"));
 
 		boolean requestFlag = false;
-		//ラジオボタンの選択部分。ここもパラメータ名をJSPと合わせる
-		if((String)request.getParameter("").equals("")) {
+		String hope = (String)request.getParameter("userhope");
+
+		if(hope.equals("Y")) {
 			requestFlag = true;
 		}else {
 			requestFlag = false;
