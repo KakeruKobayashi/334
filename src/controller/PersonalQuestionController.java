@@ -28,7 +28,7 @@ public class PersonalQuestionController extends HttpServlet {
 		User user = new User();
 		//ベタ打ち
 		user.setPersonalQuestionResult(4);
-		request.setAttribute("User", user);
+		session.setAttribute("personalQuestionResult", user.getPersonalQuestionResult());
 
 
 		if (requestFlag) {
