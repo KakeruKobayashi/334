@@ -30,9 +30,7 @@ public class CourseSelectionController extends HttpServlet {
 
 //フローイメージの画像もかな？JSPで書けばいいのかな？
 		User user = new User();
-		session.getAttribute("nickname");
-		request.setAttribute("course", course);
-		session.setAttribute("nickname", user.getNickname());
+		session.setAttribute("course", course);
 //確認画面へリダイレクト
 		response.sendRedirect("courseConfirm");
 

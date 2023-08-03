@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,20 +20,20 @@ public class ContentSelectionController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
+
 //選んだコースの情報を取得。この情報からもとにしてdaoかなんかで問題を引っ張るのかな？
 		Content content = new Content();
 		content.setContentname((String)request.getParameter(""));
 		content.setContenttime(Integer.parseInt(request.getParameter("")));
 		content.setCoursename((String)request.getParameter(""));
 
-		List<Content> contentResult = new ArrayList<Content>();
 
 		/*
-		 * ここでサービスからデータベースに接続して、上の条件に合ったデータを取得する
-		 * courseResult = ;
+		 * ここでサービスからデータベースに接続して、上の条件に合った問題データを取得する
+		 *
 		 */
 
-		session.setAttribute("courseContent", contentResult);
+		session.setAttribute("content", content);
 
 //		取得したコンテンツ内容によって問題を表示する何かが必要ですか？
 //ユーザーによってリダイレクト先が変わる。一旦4択画面へ。
