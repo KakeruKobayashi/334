@@ -34,7 +34,7 @@ public class PersonalQuestionController extends HttpServlet {
 		 * */
 
 		if (requestFlag) {
-			response.sendRedirect("question");
+			response.sendRedirect("question2");
 		} else {
 			response.sendRedirect("registration");
 		}
