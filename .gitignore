@@ -1,2 +1,5 @@
 #classファイルを無視
 *.class
+
+#buildファイルを無視
+/build/
