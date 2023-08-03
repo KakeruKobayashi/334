@@ -11,6 +11,7 @@
 <body>
 	<div>ともやさんのことを教えてください</div>
 	<br>
+	<form action="personalQuestionController" method="post">
 	<div>Q1.コツコツ学習するのが得意</div>
 	<input type="radio" name="example" value="q1">はい
 	<input type="radio" name="example" value="q2">いいえ
@@ -51,15 +52,14 @@
 	<input type="radio" name="example" value="q2">いいえ
 	<br>
 
+
+	<input type="submit" name="dicision" value="決定">
+	</form>
+
 	<div style="display: inline-flex">
 		<div>
 			<form action="personal" method="get">
 				<input type="submit" name="back" value="戻る">
-			</form>
-		</div>
-		<div>
-			<form action="registration" method="post">
-				<input type="submit" name="dicision" value="決定">
 			</form>
 		</div>
 	</div>
