@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>個人情報入力</title>
 </head>
 <body>
 	<div>
-		<form action="question" method="post">
+		<form action="personalController" method="post">
 			<div>
 				*ニックネーム：<input type="text" name="name" required><br>
 				氏名：<input type="text" name="fullname" ><br>
