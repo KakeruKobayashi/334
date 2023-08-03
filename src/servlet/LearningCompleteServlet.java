@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LearningCompleteServlet
  */
-@WebServlet("/learningcomplete")
+@WebServlet("/learningComplete")
 public class LearningCompleteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

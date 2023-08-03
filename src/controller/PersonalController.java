@@ -15,7 +15,7 @@ import model.User;
 /**
  * Servlet implementation class PersonalController
  */
-@WebServlet("/personalcontroller")
+@WebServlet("/personalController")
 public class PersonalController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -47,8 +47,7 @@ public class PersonalController extends HttpServlet {
 		 * ここでサービスに接続しデータベースに保存する
 		 * */
 
-		//ここはパーソナルアンケート画面のアノテーションに変更する
-		response.sendRedirect("");
+		response.sendRedirect("personalQuestion");
 	}
 
 }
