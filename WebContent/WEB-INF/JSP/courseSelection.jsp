@@ -13,9 +13,9 @@
 </head>
 <body>
 <header></header>
-	<div id="info">
-		ともや<br>さんが取得したい資格を<br>選んでください
-	</div>
+	<h1>
+		<c:out value="${user.nickname}"/><br>さんが取得したい資格を<br>選んでください
+	</h1>
 	<form action="courseSelectionController" method="post">
 		<div>
 			<c:forEach var="item" items="${courseResult}">
@@ -27,7 +27,6 @@
 			</c:forEach>
 			<br>
 		</div>
-
 		<div style="display: inline-flex">
 		<button>
 			<input type="submit" value=""> <img src="./IMG/decision.png"

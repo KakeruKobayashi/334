@@ -31,11 +31,11 @@
                     </div>
                     <div>
                         <button>
-                            <input type="submit" name="back" value="" onclick="window.location.href='personalQuestion'">
+                            <input type="button" name="back" value="" onclick="window.location.href='personalQuestion'">
                             <img src="./IMG/return.png" alt="戻る">
                         </button>
                         <button>
-                            <input type="submit" name="dicision" value=""> <img src="./IMG/decision.png" alt="決定">
+                            <input type="button" name="dicision" value=""> <img src="./IMG/decision.png" alt="決定">
                         </button>
                     </div>
                 </div>

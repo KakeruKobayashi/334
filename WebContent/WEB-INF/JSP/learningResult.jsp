@@ -7,11 +7,33 @@
 <title>学習結果</title>
 </head>
 <body>
- <p>英語一問一答</p>
- <br>
- <h2>確認テスト結果<br>5問中4問正解</h2>
- <br>
- <p>次は満点目指そう</p>
-<button class="button button1">完了</button>
+	<div>
+		<div>
+			<p>
+				英語一問一答
+			</p>
+			<br>
+		</div>
+		<div>
+			<div>
+				<h2>
+					確認テスト結果
+					<br>
+					5問中4問正解
+				</h2>
+			</div>
+			<br>
+			<div>
+				<p>
+					次は満点目指そう
+				</p>
+			</div>
+			<div>
+				<form action = "home" method = "get">
+					<input type = "submit" name = "home" value = "完了">
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
