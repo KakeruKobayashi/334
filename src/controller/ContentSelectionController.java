@@ -1,6 +1,8 @@
 package controller;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,28 +24,27 @@ public class ContentSelectionController extends HttpServlet {
 		HttpSession session = request.getSession(false);
 
 //選んだコースの情報を取得。この情報からもとにしてdaoかなんかで問題を引っ張るのかな？
-		Content content = new Content();
-		content.setContentname((String)request.getParameter(""));
-		content.setContenttime(Integer.parseInt(request.getParameter("")));
-		content.setCoursename((String)request.getParameter(""));
 
+		String contentName = (String)request.getParameter("content");
+		List<Content> contentList = (List<Content>) session.getAttribute("courseContent");
+		System.out.println(contentName);
+
+		contentList = contentList.stream().filter(item -> item.getContentName().equals(contentName)).collect(Collectors.toList());;
+		Content content = contentList.get(0);
 
 		/*
 		 * ここでサービスからデータベースに接続して、上の条件に合った問題データを取得する
 		 *
 		 */
 
-		session.setAttribute("content", content);
-
 //		取得したコンテンツ内容によって問題を表示する何かが必要ですか？
 //ユーザーによってリダイレクト先が変わる。一旦4択画面へ。
-//		if () {
+		if (session.getAttribute("sourcePage").equals("Home")) {
 			response.sendRedirect("questionAnswer");
-//		} else {
-//			response.sendRedirect("fourQuestion");
-//		}
+			return;
+		} else if(session.getAttribute("sourcePage").equals("Time")){
+			response.sendRedirect("fourQuestions");
+			return;
+		}
 	}
-
 }
-
-

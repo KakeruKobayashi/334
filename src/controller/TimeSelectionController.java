@@ -47,6 +47,7 @@ public class TimeSelectionController extends HttpServlet {
 		contentResult.add(content);
 
 		session.setAttribute("courseContent", contentResult);
+		session.setAttribute("sourcePage", "Time");
 		response.sendRedirect("contentSelection");
 		return;
 	}

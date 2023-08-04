@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>コンテンツ検索結果</title>
 </head>
 <body>
     <div>
@@ -20,22 +20,25 @@
     		<div>
     			<form action = "contentSelectionController" method = "post">
     				<div>
-    					<c:forEach var="" items="">
-    						<input type = radio name = "content" value = "一問一答">
+    					<c:forEach var="contents" items="${courseContent }">
+    						<input type = radio name = "content" value = "${contents.contentName}" required>
+    						<c:out value = "${contents.contentName}"/>
+    						<br>
     					</c:forEach>
     				</div>
-    				<div>
-    					<input type = "submit" class = "return" value = "戻る">
+    				<div style = "display:inline-block">
+    					<div>
+    						<input type = "submit" name = "decide" value = "決定">
+    					</div>
+    					<div>
+    						<c:if test = "${sourcePage == 'Home'}">
+    							<input type="button" name="back" value="戻る" onclick="window.location.href='home'">
+    						</c:if>
+    						<c:if test = "${sourcePage == 'Time'}">
+    							<input type="button" name="back" value="戻る" onclick="window.location.href='timeSelection'">
+    						</c:if>
+    					</div>
     				</div>
-    				<div>
-    					<!--飛んできた元の画面先に応じて遷移先を変える-->
-    					<c:if>
-    						<input type="submit" name="back" value="戻る" onclick="window.location.href='home'">
-    					</c:if>
-    					<c:if>
-    						<input type="submit" name="back" value="戻る" onclick="window.location.href='timeSelection'">
-    					</c:if>
-    				</div>>
     			</form>
     		</div>
     		<div>
