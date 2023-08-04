@@ -1,27 +1,26 @@
 package model;
 
 public class Content {
-	private String contentname;
-	private int contenttime;
-	private String coursename;
+	private String contentName;
+	private int contentTime;
+	private String courseName;
 
-	public String getContentname() {
-		return contentname;
+	public String getContentName() {
+		return contentName;
 	}
-	public void setContentname(String contentname) {
-		this.contentname = contentname;
+	public void setContentName(String contentName) {
+		this.contentName = contentName;
 	}
-	public int getContenttime() {
-		return contenttime;
+	public int getContentTime() {
+		return contentTime;
 	}
-	public void setContenttime(int contenttime) {
-		this.contenttime = contenttime;
+	public void setContentTime(int contentTime) {
+		this.contentTime = contentTime;
 	}
-	public String getCoursename() {
-		return coursename;
+	public String getCourseName() {
+		return courseName;
 	}
-	public void setCoursename(String coursename) {
-		this.coursename = coursename;
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
 	}
-
 }

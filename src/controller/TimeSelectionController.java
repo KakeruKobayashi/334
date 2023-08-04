@@ -23,9 +23,9 @@ public class TimeSelectionController extends HttpServlet {
 
 		//ここはJSP側とパラメータを合わせる
 		//時間を分に換算してそれ以内のコースを表示
-		int contenthours = Integer.parseInt(request.getParameter("hours"));
-		int contentminutes = Integer.parseInt(request.getParameter("minutes"));
-		int contenttime = contenthours * 60 + contentminutes;
+		int contentHours = Integer.parseInt(request.getParameter("hours"));
+		int contentMinutes = Integer.parseInt(request.getParameter("minutes"));
+		int contentTime = contentHours * 60 + contentMinutes;
 
 		//ニックネームか何かからユーザーのコースの情報を受け取る。
 		session.getAttribute("nickname");
@@ -39,9 +39,15 @@ public class TimeSelectionController extends HttpServlet {
 		 * courseResult = ;
 		 */
 
+		//ベタ打ち
+		Content content = new Content();
+		content.setContentName("TOEIC L&Rテスト対策");
+		content.setContentTime(100);
+		content.setCourseName("TOEIC");
+		contentResult.add(content);
+
 		session.setAttribute("courseContent", contentResult);
-
 		response.sendRedirect("contentSelection");
+		return;
 	}
-
 }
