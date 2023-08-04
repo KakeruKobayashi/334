@@ -25,7 +25,7 @@
 			</c:forEach>
 			<br>
 		</div>
-		<input type="button" value="確定">
+		<input type="submit" value="確定">
 
 		<div>
 			<input type="button" name="back" value="戻る"
