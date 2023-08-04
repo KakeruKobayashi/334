@@ -14,7 +14,7 @@
 		<div id="info">ユーザー情報を登録してください</div>
 		<form action="personalController" method="post">
 			<div>
-				*ニックネーム：<input type="text" name="name" required><br>
+				*ニックネーム：<input type="text" name="nickname" required><br>
 				氏名：<input type="text" name="fullname"><br> *生年月日
 				<!-- 年の入力 -->
 				<label for="year">年:</label> <input type="text" name="year"
@@ -75,16 +75,15 @@
 					id="No" value="N" required> <label for="No">いいえ</label><br>
 			</div>
 			<div>
-				<button>
-					<input type="submit" name="decide" value=""> <img
-						src="./IMG/decision.png" alt="決定">
+			<p>おはよう</p>
+			<button>
+					<input type="submit" name="decide" value=""> <img src="./IMG/decision.png" alt="決定">
 				</button>
 			</div>
 			<div>
 				<button>
 					<input type="submit" name="back" value=""
-						onclick="window.location.href='home'"> <img
-						src="./IMG/return.png" alt="戻る">
+						onclick="window.location.href='home'"> <img src="./IMG/return.png" alt="戻る">
 				</button>
 			</div>
 
