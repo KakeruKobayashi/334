@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +28,8 @@ public class RegistrationController extends HttpServlet {
 		HttpSession session = request.getSession(false);
 
 		//ここはJSP側とパラメータ名を合わせる
-		String jenre = (String)request.getParameter("");
-		String qualification = (String)request.getParameter("");
+		String genre = (String)request.getParameter("genre");
+		String license = (String)request.getParameter("license");
 
 		List<Course> courseResult = new ArrayList<Course>();
 
@@ -37,7 +38,16 @@ public class RegistrationController extends HttpServlet {
 		 * courseResult = ;
 		 */
 
+		//ベタ打ち
+		Course course = new Course();
+		course.setCategory(2);
+		course.setCoursename("TOEIC");
+		course.setExamdate(Date.valueOf("2023-09-09"));
+
+		courseResult.add(course);
+
 		session.setAttribute("courseResult", courseResult);
 		response.sendRedirect("courseSelection");
+		return;
 	}
 }
