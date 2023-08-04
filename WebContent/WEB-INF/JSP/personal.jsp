@@ -1,28 +1,34 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
 <title>個人情報入力</title>
 </head>
 <body>
+	<header></header>
 	<div>
+		<div id="info">ユーザー情報を登録してください</div>
 		<form action="personalController" method="post">
 			<div>
 				*ニックネーム：<input type="text" name="name" required><br>
-				氏名：<input type="text" name="fullname" ><br>
-				*生年月日<!-- 年の入力 -->
-				<label for="year">年:</label>
-				<input type="text" name="year" id="year" pattern="[0-9]{4}" required maxlength="4" placeholder="yyyy">
+				氏名：<input type="text" name="fullname"><br> *生年月日
+				<!-- 年の入力 -->
+				<label for="year">年:</label> <input type="text" name="year"
+					id="year" pattern="[0-9]{4}" required maxlength="4"
+					placeholder="yyyy">
 
 				<!-- 月の入力 -->
-				<label for="month">月:</label>
-				<input type="text" name="month" id="month" pattern="[0-9]{2}" required maxlength="2" placeholder="mm">
+				<label for="month">月:</label> <input type="text" name="month"
+					id="month" pattern="[0-9]{2}" required maxlength="2"
+					placeholder="mm">
 
 				<!-- 日の入力 -->
-				<label for="day">日:</label>
-				<input type="text" name="day" id="day" pattern="[0-9]{2}" required maxlength="2" placeholder="dd"><br>
+				<label for="day">日:</label> <input type="text" name="day" id="day"
+					pattern="[0-9]{2}" required maxlength="2" placeholder="dd"><br>
 			</div>
 			<div>
 				*職種：<select name="occupation" required>
@@ -45,8 +51,7 @@
 					<option value="家事手伝い">家事手伝い</option>
 					<option value="無職">無職</option>
 					<option value="その他">その他</option>
-				</select>
-				<br>
+				</select> <br>
 			</div>
 			<div>
 				*分野：<select name="field" required>
@@ -66,19 +71,26 @@
 			<div>*取得したい資格がありますか？</div>
 			<div>
 				<input type="radio" name="userhope" id="Yes" value="Y" required>
-				<label for="Yes">はい</label>
-				<input type="radio" name="userhope" id="No" value="N" required>
-				<label for="No">いいえ</label><br>
+				<label for="Yes">はい</label> <input type="radio" name="userhope"
+					id="No" value="N" required> <label for="No">いいえ</label><br>
 			</div>
 			<div>
-				<input type="submit" name="decide" value="決定">
+				<button>
+					<input type="submit" name="decide" value=""> <img
+						src="./IMG/decision.png" alt="決定">
+				</button>
 			</div>
 			<div>
-  				<input type="submit" name="back" value="戻る" onclick="window.location.href='home'">
+				<button>
+					<input type="submit" name="back" value=""
+						onclick="window.location.href='home'"> <img
+						src="./IMG/return.png" alt="戻る">
+				</button>
 			</div>
 
 		</form>
 	</div>
+	<footer></footer>
 </body>
 
 </html>
