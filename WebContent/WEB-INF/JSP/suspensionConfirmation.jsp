@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,16 +8,29 @@
 <title>中断確認</title>
 </head>
 <body>
-	<!--ヘッダー-->
-    <header></header>
-
-    <h2>中断しますか？</h2>
-
-
-    <button type="button" class="return">戻る</button>
-    <button type="button" class="decision">決定</button>
-
-    <!--フッター-->
-    <footer></footer>
+	<div>
+		<div>
+			<h1>中断しますか</h1>
+			<div>
+				<form action="learningResult" method="post">
+					<div style="display: inline-block">
+						<div>
+							<input type="submit" name="decide" value="中断する">
+						</div>
+						<div>
+							<c:if test="${sourcePage == 'Home'}">
+								<input type="button" name="back" value="戻る"
+									onclick="window.location.href='questionAnswer'">
+							</c:if>
+							<c:if test="${sourcePage == 'Time'}">
+								<input type="button" name="back" value="戻る"
+									onclick="window.location.href='fourQuestions'">
+							</c:if>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

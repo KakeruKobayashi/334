@@ -12,9 +12,10 @@
 <title>コース選択</title>
 </head>
 <body>
-<header></header>
+	<header></header>
 	<h1>
-		<c:out value="${user.nickname}"/><br>さんが取得したい資格を<br>選んでください
+		<c:out value="${nickname}" />
+		<br>さんが取得したい資格を<br>選んでください
 	</h1>
 	<form action="courseSelectionController" method="post">
 		<div>
@@ -27,16 +28,13 @@
 			</c:forEach>
 			<br>
 		</div>
-		<div style="display: inline-flex">
-		<button>
-			<input type="submit" value=""> <img src="./IMG/decision.png"
-				alt="決定">
-		</button>
-		<button>
-			<input type="submit" name="back" value=""
+		<input type="submit" value="確定">
+
+		<div>
+			<input type="button" name="back" value="戻る"
 				onclick="window.location.href='registration'"> <img
-				src="./IMG/return.png" alt="戻る">
-		</button>
+				src="./IMG/decision.png" alt="決定">
+
 		</div>
 	</form>
 	<footer></footer>
