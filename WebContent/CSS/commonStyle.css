@@ -1,104 +1,147 @@
 @charset "UTF-8";
 
 /* ヘッダーのスタイル */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-/* フッターのスタイル */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+header, footer {
+    /* 高さを130pxに設定 */
+    height: 130px;
+    /* 背景色を6EEC8Aに設定 */
+    background-color: #6EEC8A;
+    /* テキストを中央に配置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 共通のボタンのスタイル */
 button, input[type="submit"] {
-  padding: 10px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 /* ラジオボタンのスタイル */
 input[type="radio"] {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 /* 入力フォームのスタイル */
 form {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  padding: 5px;
-  margin-bottom: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 /* 特定の要素のスタイル */
 p {
-  margin: 10px 0;
-  color: yellow;
+    margin: 10px 0;
+    color: yellow;
 }
 
 h1 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 h2 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
-/* ボタンのコンテナのスタイル */
+/* ボタンコンテナのスタイル */
 .button-container {
-  top: 1300px;
+    /* ボタンの位置を数値で設定 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1300px;
+    /* ボタンのスタイルを設定 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 個別のボタンのスタイル */
 .button {
-  width: 800px;
-  height: 180px;
-  margin-bottom: 60px;
+    width: 800px;
+    height: 180px;
+    border: none;
+    border-radius: 30px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    cursor: pointer;
 }
 
 .button1 {
-  background-color: #9DFFC4; /* 薄い緑色 */
+    /* ボタン1のスタイルを設定 */
+    background-color: #9DFFC4; /* 薄い緑色 */
+    color: black; /* 黒色のテキスト */
 }
 
 .button2 {
-  background-color: #FFFF7F; /* 薄い黄色 */
+    /* ボタン2のスタイルを設定 */
+    background-color: #FFFF7F; /* 薄い黄色 */
+    color: black; /* 黒色のテキスト */
 }
 
 /* 四角い図形のスタイル */
 .square {
-  background-color: #FF5733; /* オレンジ色 */
+    /* 四角い図形のスタイルを設定 */
+    width: 100px;
+    height: 100px;
+    background-color: #FF5733; /* オレンジ色 */
+    position: absolute;
+    left: 300px;
+    top: 500px;
 }
 
 /* ページ全体のスタイル */
 body {
-  width: 1242px;
-  height: 2208px;
-  margin: 0 auto;
+    /* 幅を指定 */
+    width: 1242px;
+    /* 高さを指定 */
+    height: 2208px;
+    /* ページ全体を中央に配置 */
+    margin: 0 auto;
+    /* フレックスボックスでコンテンツを配置 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 /* main要素のスタイル */
 main {
-  width: 100%;
-  height: 100%;
+    /* フレックス成長を許可し、コンテンツの領域を埋める */
+    flex-grow: 1;
+    /* コンテンツのスタイルを指定 */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* コンテンツのサイズを指定 */
+    width: 100%;
 }
 
+/* フッターのスタイル */
+footer {
+    /* 高さを130pxに設定 */
+    height: 130px;
+    /* 背景色を6EEC8Aに設定 */
+    background-color: #6EEC8A;
+    /* テキストを中央に配置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
