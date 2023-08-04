@@ -17,8 +17,9 @@
 	<form action="courseSelectionController" method="post">
 		<div>
 			<c:forEach var="item" items="${courseResult}">
-				<label> <input type="radio" name="learningContent">
-					<c:out value="${item}" />
+				<label> <input type="radio" name="learningCourse" value="${item}">
+					<c:out value="${item.coursename}" />
+					<c:out value="${item.category}" />
 
 				</label>
 				<br>
