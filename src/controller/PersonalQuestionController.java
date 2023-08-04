@@ -21,11 +21,22 @@ public class PersonalQuestionController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
-		//前画面から情報受け取る
 		boolean requestFlag = (boolean) session.getAttribute("request");
+
+		//パーソナルアンケート結果の取得
+		String question1 = (String)request.getParameter("question1");
+		String question2 = (String)request.getParameter("question2");
+		String question3 = (String)request.getParameter("question3");
+		String question4 = (String)request.getParameter("question4");
+		String question5 = (String)request.getParameter("question5");
+		String question6 = (String)request.getParameter("question6");
+		String question7 = (String)request.getParameter("question7");
+		String question8 = (String)request.getParameter("question8");
+
 		//DAOの処理？
-		User user = new User();
+
 		//ベタ打ち
+		User user = new User();
 		user.setPersonalQuestionResult(4);
 		session.setAttribute("personalQuestionResult", user.getPersonalQuestionResult());
 
@@ -35,8 +46,12 @@ public class PersonalQuestionController extends HttpServlet {
 
 		if (requestFlag) {
 			response.sendRedirect("question");
+			session.removeAttribute("userhope");
+			return;
 		} else {
 			response.sendRedirect("registration");
+			session.removeAttribute("userhope");
+			return;
 		}
 	}
 }

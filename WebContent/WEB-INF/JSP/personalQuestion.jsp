@@ -73,17 +73,17 @@
 				Q8.論理だてて説明するほうだ
 			</div>
 			<div>
-				<input type="radio" name="question7" value="Y">はい
-				<input type="radio" name="question7" value="N">いいえ
+				<input type="radio" name="question8" value="Y">はい
+				<input type="radio" name="question8" value="N">いいえ
 			</div>
 			<br>
 			<div>
 				<input type="submit" name="dicision" value="決定">
 			</div>
-			<div>
-				<button type = "button"></button>
-			</div>
 		</form>
+		<div>
+			<button onclick="window.location.href='personal'">戻る</button>
+		</div>
 	</div>
 </body>
 </html>

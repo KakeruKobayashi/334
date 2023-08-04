@@ -43,7 +43,7 @@ public class PersonalController extends HttpServlet {
 		}
 
 		session.setAttribute("nickname", user.getNickname());
-		session.setAttribute("request", requestFlag);
+		session.setAttribute("userhope", requestFlag);
 
 		/*
 		 * ここでサービスに接続しデータベースに保存する
