@@ -17,10 +17,9 @@
 	<form action="courseSelectionController" method="post">
 		<div>
 			<c:forEach var="item" items="${courseResult}">
-				<label> <input type="radio" name="learningCourse" value="${item}">
+				<label> <input type="radio" name="learningCourse" value="${item.coursename}">
 					<c:out value="${item.coursename}" />
 					<c:out value="${item.category}" />
-
 				</label>
 				<br>
 			</c:forEach>
@@ -30,7 +29,7 @@
 
 		<div>
 			<input type="submit" name="back" value="戻る"
-				onclick="window.location.href='registrarion'">
+				onclick="window.location.href='registration'">
 		</div>
 	</form>
 </body>

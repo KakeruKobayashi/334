@@ -16,7 +16,8 @@
 	</div>
 	<div>
         <img src="../img/course.png" alt="選択したコース"><br>
-        <c:out value="${course}" />
+        <c:out value="${course.coursename}" />
+        <c:out value="${course.category}" />
 	</div>
     <div>
         <p>あなたの資格取得フロー</p>
