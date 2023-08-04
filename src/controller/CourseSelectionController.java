@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.sql.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,7 +23,7 @@ public class CourseSelectionController extends HttpServlet {
 // 選択したコースの情報を取得します。
 		Course course = new Course();
 		course.setCoursename((String)request.getParameter(""));
-		course.setExamdate(Date.valueOf((String)request.getParameter("")));
+		//course.setExamdate(Date.valueOf((String)request.getParameter("")));
 		course.setCategory(Integer.parseInt(request.getParameter("")));
 
 //フローイメージの画像もかな？JSPで書けばいいのかな？
