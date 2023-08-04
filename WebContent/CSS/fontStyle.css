@@ -1,40 +1,10 @@
 @charset "UTF-8";
 
-/* 共通のボタンのスタイル */
-button, input[type="submit"] {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
 
-/* ラジオボタンのスタイル */
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-/* 入力フォームのスタイル */
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    padding: 5px;
-    margin-bottom: 10px;
-}
 
 /* 特定の要素のスタイル */
 p {
     margin: 10px 0;
-    color: yellow;
 }
 
 h1 {
