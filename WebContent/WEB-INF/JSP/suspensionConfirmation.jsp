@@ -15,7 +15,7 @@
 				<form action="learningResult" method="post">
 					<div style="display: inline-block">
 						<div>
-							<input type="button" name="decide" value="中断する">
+							<input type="submit" name="decide" value="中断する">
 						</div>
 						<div>
 							<c:if test="${sourcePage == 'Home'}">
