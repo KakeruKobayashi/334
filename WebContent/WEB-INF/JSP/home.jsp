@@ -8,32 +8,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
-    <title>Document</title>
+    <title>ホーム</title>
     <style>
 
     </style>
 </head>
 <body>
-    <header>
-        <!-- ヘッダーに表示する内容 -->
-        ヘッダー
-    </header>
+<header></header>
 
     <main>
+    <img src="./IMG/tudurisu.png" alt="つづりす">
         <div class="button-container">
         	<div>
         		<c:if test = "${nickname == null}">
-        			<button onclick="window.location.href='personal'">学習を始める</button>
+        			<button onclick="window.location.href='personal'"><img src="./IMG/learningStart.png" alt="学習を始める"></button>
         		</c:if>
         	</div>
         	<div>
         		<c:if test = "${nickname != null}">
         			<div>
         				<c:if test = "${personalQuestionResult == 1}">
-        					<button onclick="window.location.href='courseSelection'">学習を始める</button>
+        					<button onclick="window.location.href='courseSelection'"><img src="./IMG/learningStart.png" alt="学習を始める"></button>
         				</c:if>
         				<c:if test = "${personalQuestionResult == 4}">
-        					<button onclick="window.location.href='timeSelection'">学習を始める</button>
+        					<button onclick="window.location.href='timeSelection'"><img src="./IMG/learningStart.png" alt="学習を始める"></button>
         				</c:if>
         			</div>
 
@@ -41,16 +39,13 @@
         	</div>
         	<div>
         		<form action = "" method = "get">
-        			<input type = "submit" name = "learningHistory" value = "学習履歴">
+        			<button><input type = "submit" name = "learningHistory" value = ""><img src="./IMG/learningHistory.png" alt="学習履歴">
+        		</button>
         		</form>
         	</div>
         </div>
-        <img src="img/tudurisu.png" alt="つづりす">
     </main>
 
-    <footer>
-        <!-- フッターに表示する内容 -->
-        フッター
-    </footer>
+<footer></footer>
 </body>
 </html>

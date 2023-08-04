@@ -8,7 +8,8 @@
 <title>勉強時間選択</title>
 </head>
 <body>
-	<div>
+<header></header>
+	<div id="info">
 		今日の勉強時間を選択してください
 	</div>
 	<form action="timeSelectionController" method="post">
@@ -19,12 +20,20 @@
 			分
 		</div>
 		<br>
+
 		<div>
-			<input type="submit" name="dicision" value="決定">
+		<button>
+		<input type="submit" name="dicision" value="">
+		<img src="./IMG/decision.png" alt="決定">
+		</button>
 		</div>
 	</form>
-	<form action="home" method = "get">
-		<input type="submit" name="back" value="戻る" >
+	<button>
+		<form action="home" method = "get">
+		<input type="submit" name="back" value="" >
+		<img src="./IMG/return.png" alt="戻る">
+		</button>
 	</form>
+	<footer></footer>
 </body>
 </html>
