@@ -26,7 +26,7 @@ public class PersonalController extends HttpServlet {
 		HttpSession session = request.getSession(true);
 		User user = new User();
 
-		user.setNickname((String)request.getParameter("name"));
+		user.setNickname((String)request.getParameter("nickname"));
 		user.setFullname((String)request.getParameter("fullname"));
 		String birthday = (String)request.getParameter("year") + "-" + (String)request.getParameter("month") + "-" + (String)request.getParameter("day");
 		user.setBirthday(Date.valueOf(birthday));

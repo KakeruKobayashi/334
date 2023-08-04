@@ -12,7 +12,7 @@
 </head>
 <body>
 	<h1>
-		ともや<br>さんが取得したい資格を<br>選んでください
+		<c:out value="${user.nickname}"/><br>さんが取得したい資格を<br>選んでください
 	</h1>
 	<form action="courseSelectionController" method="post">
 		<div>
@@ -25,10 +25,10 @@
 			</c:forEach>
 			<br>
 		</div>
-		<input type="submit" value="確定">
+		<input type="button" value="確定">
 
 		<div>
-			<input type="submit" name="back" value="戻る"
+			<input type="button" name="back" value="戻る"
 				onclick="window.location.href='registration'">
 		</div>
 	</form>
