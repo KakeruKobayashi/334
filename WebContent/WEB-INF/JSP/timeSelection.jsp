@@ -8,6 +8,7 @@
 <title>勉強時間選択</title>
 </head>
 <body>
+<header></header>
 	<div>
 		今日の勉強時間を選択してください
 	</div>
@@ -26,5 +27,6 @@
 	<form action="home" method = "get">
 		<input type="submit" name="back" value="戻る" >
 	</form>
+	<footer></footer>
 </body>
 </html>

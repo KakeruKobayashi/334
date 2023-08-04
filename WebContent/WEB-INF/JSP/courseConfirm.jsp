@@ -10,12 +10,13 @@
 <title>コース確認画面</title>
 </head>
 <body>
+<header></header>
 	<div>
 	<div>
-		<h2>以下の資格を学習しますか？</h2>
+		<div id="info">以下の資格を学習しますか？</div>
 	</div>
 	<div>
-        <img src="../img/course.png" alt="選択したコース"><br>
+        <!-- <img src="../img/course.png" alt="選択したコース"><br>-->
         <c:out value="${course.coursename}" />
         <c:out value="${course.category}" />
 	</div>
@@ -27,15 +28,22 @@
 	<div style="display:inline-flex">
 		<div>
 			<form action = "courseSelection" method = "get">
-				<input type = "submit" name = "back" value = "戻る">
+			<button>
+				<input type = "submit" name = "back" value = "">
+				<img src="./IMG/return.png" alt="戻る">
+				</button>
 			</form>
 		</div>
 		<div>
 			<form action = "home" method = "get">
-				<input type = "submit" name = "start" value = "学習を始める">
+			<button>
+				<input type = "submit" name = "start" value = "">
+				<img src="./IMG/learningStart2.png" alt="学習を始める2">
+				</button>
 			</form>
 		</div>
 	</div>
 	</div>
+	<footer></footer>
 </body>
 </html>

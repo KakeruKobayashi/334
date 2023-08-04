@@ -8,29 +8,38 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <title>コース選択</title>
 </head>
 <body>
-	<h1>
+<header></header>
+	<div id="info">
 		ともや<br>さんが取得したい資格を<br>選んでください
-	</h1>
+	</div>
 	<form action="courseSelectionController" method="post">
 		<div>
 			<c:forEach var="item" items="${courseResult}">
-				<label> <input type="radio" name="learningCourse" value="${item.coursename}">
-					<c:out value="${item.coursename}" />
-					<c:out value="${item.category}" />
+				<label> <input type="radio" name="learningCourse"
+					value="${item.coursename}"> <c:out
+						value="${item.coursename}" /> <c:out value="${item.category}" />
 				</label>
 				<br>
 			</c:forEach>
 			<br>
 		</div>
-		<input type="submit" value="確定">
 
-		<div>
-			<input type="submit" name="back" value="戻る"
-				onclick="window.location.href='registration'">
+		<div style="display: inline-flex">
+		<button>
+			<input type="submit" value=""> <img src="./IMG/decision.png"
+				alt="決定">
+		</button>
+		<button>
+			<input type="submit" name="back" value=""
+				onclick="window.location.href='registration'"> <img
+				src="./IMG/return.png" alt="戻る">
+		</button>
 		</div>
 	</form>
+	<footer></footer>
 </body>
 </html>
