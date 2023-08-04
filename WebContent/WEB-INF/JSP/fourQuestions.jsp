@@ -22,18 +22,18 @@
 					Choose the correct word to complete the sentence: "I love to _______ in the park on sunny days."
 				</div>
 				<div>
-					<div style="display:inline-flex">
-						<button>walk</button>
-						<button>swim</button>
-					</div>
-					<br>
-					<div style="display:inline-flex">
-						<button>cook</button>
-						<button>sleep</button>
-					</div>
-				</div>
-				<div>
 					<form action="judgment" method = "post">
+						<div>
+							<div style="display:inline-flex">
+								<input type = "radio" name = "answer" value = "walk">walk
+								<input type = "radio" name = "answer" value = "swim">swim
+							</div>
+							<br>
+							<div style="display:inline-flex">
+								<input type = "radio" name = "answer" value = "cook">cook
+								<input type = "radio" name = "answer" value = "sleep">sleep
+							</div>
+						</div>
 						<input type = "submit" name = "decide" value = "決定">
 					</form>
 				</div>
