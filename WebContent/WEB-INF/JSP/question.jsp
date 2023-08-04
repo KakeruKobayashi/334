@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <script src="./JS/question.js"></script>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<!-- <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/commonStyle.css"> -->
 <title>アンケート画面</title>
 </head>
 
