@@ -1,1 +1,104 @@
 @charset "UTF-8";
+
+/* ヘッダーのスタイル */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* フッターのスタイル */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* 共通のボタンのスタイル */
+button, input[type="submit"] {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* ラジオボタンのスタイル */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* 入力フォームのスタイル */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* 特定の要素のスタイル */
+p {
+  margin: 10px 0;
+  color: yellow;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* ボタンのコンテナのスタイル */
+.button-container {
+  top: 1300px;
+}
+
+/* 個別のボタンのスタイル */
+.button {
+  width: 800px;
+  height: 180px;
+  margin-bottom: 60px;
+}
+
+.button1 {
+  background-color: #9DFFC4; /* 薄い緑色 */
+}
+
+.button2 {
+  background-color: #FFFF7F; /* 薄い黄色 */
+}
+
+/* 四角い図形のスタイル */
+.square {
+  background-color: #FF5733; /* オレンジ色 */
+}
+
+/* ページ全体のスタイル */
+body {
+  width: 1242px;
+  height: 2208px;
+  margin: 0 auto;
+}
+
+/* main要素のスタイル */
+main {
+  width: 100%;
+  height: 100%;
+}
+
