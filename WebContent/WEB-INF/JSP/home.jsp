@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <title>ホーム</title>
@@ -20,8 +21,29 @@
 
     <main>
         <div class="button-container">
-            <button class="button button1">ボタン1</button>
-            <button class="button button2">ボタン2</button>
+        	<div>
+        		<c:if test = "${nickname == null}">
+        			<button onclick="window.location.href='home'">学習を始める</button>
+        		</c:if>
+        	</div>
+        	<div>
+        		<c:if test = "${nickname != null}">
+        			<div>
+        				<c:if test = "${personalQuestionResult == 1}">
+        					<button onclick="window.location.href='courseSelection'">学習を始める</button>
+        				</c:if>
+        				<c:if test = "${personalQuestionResult == 4}">
+        					<button onclick="window.location.href='timeSelection'">学習を始める</button>
+        				</c:if>
+        			</div>
+
+        		</c:if>
+        	</div>
+        	<div>
+        		<form action = "" method = "get">
+        			<input type = "submit" name = "history" value = "学習履歴">
+        		</form>
+        	</div>
         </div>
         <img src="img/tudurisu.png" alt="つづりす">
     </main>

@@ -18,6 +18,7 @@ public class HomeServlet extends HttpServlet {
     	HttpSession session = request.getSession(true);
 
     	session.setAttribute("sourcePage", "Home");
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/JSP/home.jsp");
         dispatcher.forward(request, response);
         return;
