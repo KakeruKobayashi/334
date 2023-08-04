@@ -41,7 +41,7 @@
         	</div>
         	<div>
         		<form action = "" method = "get">
-        			<input type = "submit" name = "history" value = "学習履歴">
+        			<input type = "submit" name = "learningHistory" value = "学習履歴">
         		</form>
         	</div>
         </div>
