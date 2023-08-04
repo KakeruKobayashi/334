@@ -13,7 +13,7 @@
 	</div>
 	<br>
 	<div class="box">
-		<p>正解:work</p>
+		<p>正解:walk</p>
 	</div>
 	<div class="box">
 		<p>解説</p>
