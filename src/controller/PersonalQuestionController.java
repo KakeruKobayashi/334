@@ -21,7 +21,7 @@ public class PersonalQuestionController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
-		boolean requestFlag = (boolean) session.getAttribute("request");
+		boolean requestFlag = (boolean) session.getAttribute("userhope");
 
 		//パーソナルアンケート結果の取得
 		String question1 = (String)request.getParameter("question1");

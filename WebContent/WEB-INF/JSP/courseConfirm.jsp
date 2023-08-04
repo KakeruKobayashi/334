@@ -31,7 +31,7 @@
 			</form>
 		</div>
 		<div>
-			<form action = "home" method = "post">
+			<form action = "home" method = "get">
 				<input type = "submit" name = "start" value = "学習を始める">
 			</form>
 		</div>
