@@ -1,15 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
 <script src="./JS/question.js"></script>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/commonStyle.css">
 <title>アンケート画面</title>
 </head>
+
 <body>
-	<div>興味のあるカテゴリー・コンテンツを選択してください</div>
+	<header></header>
+	<div id="info">興味のあるカテゴリー・コンテンツを選択してください</div>
 
 	<div>
 		<form action="questionController" method="post">
@@ -82,12 +86,22 @@
 				<input type="radio" name="option7" value="option1"> マネジメント入門<br>
 				<input type="radio" name="option7" value="option2"> 応用マネジメント<br>
 			</div>
+			<br>
 
-			<input type="submit" name="dicision" value="決定">
 			<div>
-			<input type="submit" name="back" value="戻る" onclick="window.location.href='home'">
+				<button>
+					<input type="submit" name="dicision" value=""> <img
+						src="./IMG/decision.png" alt="決定">
+				</button>
+				<button>
+					<input type="submit" name="back" value=""
+						onclick="window.location.href='home'"> <img
+						src="./IMG/return.png" alt="戻る">
+				</button>
 			</div>
 		</form>
 	</div>
+	<footer></footer>
 </body>
+
 </html>
