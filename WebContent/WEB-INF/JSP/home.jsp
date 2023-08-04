@@ -23,7 +23,7 @@
         <div class="button-container">
         	<div>
         		<c:if test = "${nickname == null}">
-        			<button onclick="window.location.href='home'">学習を始める</button>
+        			<button onclick="window.location.href='personal'">学習を始める</button>
         		</c:if>
         	</div>
         	<div>
