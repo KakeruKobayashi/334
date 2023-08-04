@@ -1,15 +1,64 @@
 @charset "UTF-8";
 
 /* ヘッダーのスタイル */
-header, footer {
+header{
     /* 高さを130pxに設定 */
     height: 130px;
+     width: 750pxpx;
     /* 背景色を6EEC8Aに設定 */
     background-color: #6EEC8A;
     /* テキストを中央に配置 */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* フッターのスタイル */
+/* フッターのスタイル */
+footer {
+    /* 高さを130pxに設定 */
+    height: 130px;
+     width: 750px;
+    /* 背景色を6EEC8Aに設定 */
+    background-color: #6EEC8A;
+    /* テキストを中央に配置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 画面の下部に固定 */
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+}
+
+
+/* ページ全体のスタイル */
+body {
+    /* フレックスボックスでコンテンツを配置 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; /* ページの高さをビューポートの高さに合わせる */
+    margin: 0 auto;
+    /* 幅を指定 */
+    width: 750px; /* スマホサイズの幅 */
+    height: 1334px; /* スマホサイズの高さ */
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    aspect-ratio: 9 / 16; /* アスペクト比を設定 */
+}
+
+/* main要素のスタイル */
+main {
+    /* フレックス成長を許可し、コンテンツの領域を埋める */
+    flex-grow: 1;
+    /* コンテンツのスタイルを指定 */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* コンテンツのサイズを指定 */
+    width: 100%;
 }
 
 /* 共通のボタンのスタイル */
@@ -19,6 +68,44 @@ button, input[type="submit"] {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+/* 個別のボタンのスタイル */
+.button-container {
+    /* ボタンの位置を数値で設定 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1300px;
+    /* ボタンのスタイルを設定 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 800px;
+    height: 180px;
+    border: none;
+    border-radius: 30px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+
+.button1 {
+    /* ボタン1のスタイルを設定 */
+    background-color: #9DFFC4; /* 薄い緑色 */
+    color: black; /* 黒色のテキスト */
+}
+
+.button2 {
+    /* ボタン2のスタイルを設定 */
+    background-color: #FFFF7F; /* 薄い黄色 */
+    color: black; /* 黒色のテキスト */
 }
 
 /* ラジオボタンのスタイル */
@@ -43,105 +130,5 @@ input[type="password"] {
     margin-bottom: 10px;
 }
 
-/* 特定の要素のスタイル */
-p {
-    margin: 10px 0;
-    color: yellow;
-}
 
-h1 {
-    font-size: 24px;
-}
 
-h2 {
-    font-size: 20px;
-}
-
-/* ボタンコンテナのスタイル */
-.button-container {
-    /* ボタンの位置を数値で設定 */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 1300px;
-    /* ボタンのスタイルを設定 */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 個別のボタンのスタイル */
-.button {
-    width: 800px;
-    height: 180px;
-    border: none;
-    border-radius: 30px;
-    font-size: 60px;
-    font-weight: bold;
-    margin-bottom: 60px;
-    cursor: pointer;
-}
-
-.button1 {
-    /* ボタン1のスタイルを設定 */
-    background-color: #9DFFC4; /* 薄い緑色 */
-    color: black; /* 黒色のテキスト */
-}
-
-.button2 {
-    /* ボタン2のスタイルを設定 */
-    background-color: #FFFF7F; /* 薄い黄色 */
-    color: black; /* 黒色のテキスト */
-}
-
-/* 四角い図形のスタイル */
-.square {
-    /* 四角い図形のスタイルを設定 */
-    width: 100px;
-    height: 100px;
-    background-color: #FF5733; /* オレンジ色 */
-    position: absolute;
-    left: 300px;
-    top: 500px;
-}
-
-/* ページ全体のスタイル */
-body {
-    /* 幅を指定 */
-    width: 1242px;
-    /* 高さを指定 */
-    height: 2208px;
-    /* ページ全体を中央に配置 */
-    margin: 0 auto;
-    /* フレックスボックスでコンテンツを配置 */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-}
-
-/* main要素のスタイル */
-main {
-    /* フレックス成長を許可し、コンテンツの領域を埋める */
-    flex-grow: 1;
-    /* コンテンツのスタイルを指定 */
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* コンテンツのサイズを指定 */
-    width: 100%;
-}
-
-/* フッターのスタイル */
-footer {
-    /* 高さを130pxに設定 */
-    height: 130px;
-    /* 背景色を6EEC8Aに設定 */
-    background-color: #6EEC8A;
-    /* テキストを中央に配置 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
