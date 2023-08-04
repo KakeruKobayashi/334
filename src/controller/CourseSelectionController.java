@@ -21,10 +21,15 @@ public class CourseSelectionController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 // 選択したコースの情報を取得します。
+		String selectedCourseName = request.getParameter("item.courcename");
+		System.out.println("kokomade");
+		//int selectedCategory = Integer.parseInt(request.getParameter("item.category"));
+
 		Course course = new Course();
-		course.setCoursename((String)request.getParameter(""));
+		course.setCoursename(selectedCourseName);
+		//course.setCategory(selectedCategory);
+
 		//course.setExamdate(Date.valueOf((String)request.getParameter("")));
-		course.setCategory(Integer.parseInt(request.getParameter("")));
 
 //フローイメージの画像もかな？JSPで書けばいいのかな？
 		session.setAttribute("course", course);
