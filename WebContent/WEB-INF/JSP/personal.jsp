@@ -68,28 +68,16 @@
 					<option value="その他">その他</option>
 				</select><br>
 			</div>
-			<div>*取得したい資格がありますか？</div>
+
 			<div>
-				<input type="radio" name="userhope" id="Yes" value="Y" required>
-				<label for="Yes">はい</label> <input type="radio" name="userhope"
-					id="No" value="N" required> <label for="No">いいえ</label><br>
+					<input type="image" name="registration" value="登録" src="./IMG/dregistrarion.png" alt="registraion">
 			</div>
 			<div>
-			<p>おはよう</p>
-			<button>
-					<input type="submit" name="decide" value=""> <img src="./IMG/decision.png" alt="決定">
-				</button>
-			</div>
-			<div>
-				<button>
-					<input type="submit" name="back" value=""
-						onclick="window.location.href='home'"> <img src="./IMG/return.png" alt="戻る">
-				</button>
+					<input type="image" name="return" value="戻る"	onclick="window.location.href='home'" src="./IMG/return.png" alt="return">
 			</div>
 
 		</form>
 	</div>
-	<footer></footer>
 </body>
 
 </html>

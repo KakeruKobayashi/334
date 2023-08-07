@@ -22,21 +22,21 @@
 		</div>
 		<div style="display: inline-block">
 			<div>
+				<input type="submit" name="decide"> <img
+					src="./IMG/decision.png" alt="決定">
+			</div>
+			<div>
 				<c:if test="${sourcePage == 'Home'}">
-					<input type="image" name="return" value="戻る"
-						onclick="window.location.href='home'" src="./IMG/return.png"
-						alt="return">
+					<input type="button" name="back"
+						onclick="window.location.href='home'">
+					<img src="./IMG/return.png" alt="戻る">
 				</c:if>
 				<c:if test="${sourcePage == 'Time'}">
-					<input type="image" name="return" value="戻る"
-						onclick="window.location.href='timeSelection'"
-						src="./IMG/return.png" alt="return">
+					<input type="button" name="back"
+						onclick="window.location.href='timeSelection'">
+					<img src="./IMG/return.png" alt="戻る">
 				</c:if>
 			</div>
-		</div>
-		<div>
-			<input type="imgage" name="decide" value="決定"
-				src="./IMG/decision.png" alt="決定">
 		</div>
 	</form>
 </body>
