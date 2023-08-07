@@ -38,7 +38,6 @@
 			<input type="imgage" name="decide" value="決定"
 				src="./IMG/decision.png" alt="決定">
 		</div>
-
 	</form>
 </body>
 </html>
