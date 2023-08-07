@@ -18,7 +18,7 @@
 		</div>
 		<br>
 		<div>
-			<input type="submit" name="dicision" value="決定"
+			<input type="image" name="dicision" value="決定"
 				src="./IMG/decision.png" alt="decision">
 		</div>
 		<div>

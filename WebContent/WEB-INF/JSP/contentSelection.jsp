@@ -22,7 +22,7 @@
 		</div>
 		<div style="display: inline-block">
 			<div>
-				<input type="submit" name="decide"> <img
+				<input type="image" name="decide"> <img
 					src="./IMG/decision.png" alt="決定">
 			</div>
 			<div>

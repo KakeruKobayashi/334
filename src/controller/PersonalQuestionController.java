@@ -21,19 +21,16 @@ public class PersonalQuestionController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
-		String requestFlag = (String) session.getAttribute("question9");
-
 		//パーソナルアンケート結果の取得
-		String question1 = (String)request.getParameter("question1");
-		String question2 = (String)request.getParameter("question2");
-		String question3 = (String)request.getParameter("question3");
-		String question4 = (String)request.getParameter("question4");
-		String question5 = (String)request.getParameter("question5");
-		String question6 = (String)request.getParameter("question6");
-		String question7 = (String)request.getParameter("question7");
-		String question8 = (String)request.getParameter("question8");
-		String question9 = (String)request.getParameter("question9");
-
+		String question1 = (String) request.getParameter("question1");
+		String question2 = (String) request.getParameter("question2");
+		String question3 = (String) request.getParameter("question3");
+		String question4 = (String) request.getParameter("question4");
+		String question5 = (String) request.getParameter("question5");
+		String question6 = (String) request.getParameter("question6");
+		String question7 = (String) request.getParameter("question7");
+		String question8 = (String) request.getParameter("question8");
+		String question9 = (String) request.getParameter("question9");
 
 		//DAOの処理？
 
@@ -41,16 +38,16 @@ public class PersonalQuestionController extends HttpServlet {
 		User user = new User();
 		user.setPersonalQuestionResult(4);
 		session.setAttribute("personalQuestionResult", user.getPersonalQuestionResult());
-
+		System.out.println(question9);
 		/*
 		 * ここでサービスに接続しデータベースに保存する
 		 * */
-		if (question9 =="Y") {
-			response.sendRedirect("question");
+		if (question9.equals("Y")) {
+			response.sendRedirect("registration");
 			session.removeAttribute("userhope");
 			return;
 		} else {
-			response.sendRedirect("registration");
+			response.sendRedirect("question");
 			session.removeAttribute("userhope");
 			return;
 		}

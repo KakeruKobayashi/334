@@ -3,7 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="UTF-8">
 <script src="./JS/question.js"></script>
@@ -86,10 +85,10 @@
 			</div>
 			<br>
 			<div>
-				<input type="submit" name="dicision" value="決定" src="./IMG/decision.png" alt="decision">
+				<input type="image" name="dicision" value="決定" src="./IMG/decision.png" alt="decision">
 			</div>
 			<div>
-				<input type="submit" name="back" value="戻る" onclick="window.location.href='home'" src="./IMG/return.png" alt="return">
+				<input type="image" name="back" value="戻る" onclick="window.location.href='personalQuestion'" src="./IMG/return.png" alt="return">
 			</div>
 		</form>
 	</div>
