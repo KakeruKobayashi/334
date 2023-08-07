@@ -19,11 +19,11 @@
 						</div>
 						<div>
 							<c:if test="${sourcePage == 'Home'}">
-								<input type="button" name="back" value="戻る"
+								<input type="image" name="back" value="戻る"
 									onclick="window.location.href='questionAnswer'">
 							</c:if>
 							<c:if test="${sourcePage == 'Time'}">
-								<input type="button" name="back" value="戻る"
+								<input type="image" name="back" value="戻る"
 									onclick="window.location.href='fourQuestions'">
 							</c:if>
 						</div>
