@@ -28,18 +28,12 @@
 	<div style="display:inline-flex">
 		<div>
 			<form action = "courseSelection" method = "get">
-			<button>
-				<input type = "submit" name = "back" value = "">
-				<img src="./IMG/return.png" alt="戻る">
-				</button>
+				<input type = "image" name = "back" value = "戻る" src="./IMG/return.png" alt="戻る">
 			</form>
 		</div>
 		<div>
 			<form action = "home" method = "get">
-			<button>
-				<input type = "submit" name = "start" value = "">
-				<img src="./IMG/learningStart2.png" alt="学習を始める2">
-				</button>
+				<input type = "image" name = "start" value = "学習を始める" src="./IMG/learningStart2.png" alt="学習を始める2">
 			</form>
 		</div>
 	</div>

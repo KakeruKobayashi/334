@@ -10,9 +10,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/commonStyle.css"> -->
 <title>アンケート画面</title>
 </head>
-
 <body>
-	<header></header>
 	<div id="info">興味のあるカテゴリー・コンテンツを選択してください</div>
 
 	<div>
@@ -87,21 +85,14 @@
 				<input type="radio" name="option7" value="option2"> 応用マネジメント<br>
 			</div>
 			<br>
-
 			<div>
-				<button>
-					<input type="submit" name="dicision" value=""> <img
-						src="./IMG/decision.png" alt="決定">
-				</button>
-				<button>
-					<input type="submit" name="back" value=""
-						onclick="window.location.href='home'"> <img
-						src="./IMG/return.png" alt="戻る">
-				</button>
+				<input type="submit" name="dicision" value="決定" src="./IMG/decision.png" alt="decision">
+			</div>
+			<div>
+				<input type="submit" name="back" value="戻る" onclick="window.location.href='home'" src="./IMG/return.png" alt="return">
 			</div>
 		</form>
 	</div>
-	<footer></footer>
 </body>
 
 </html>

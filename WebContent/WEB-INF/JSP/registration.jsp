@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 
@@ -11,7 +14,7 @@
 
 <body>
     <header></header>
-    <div id="info">ともやさんが取得したい資格について教えてください</div>
+    <div id="info"><c:out value="${nickname}" />さんが取得したい資格について教えてください</div>
     <div style="display: inline-flex">
         <div>
             <form action="registrationController" method="post">
@@ -30,13 +33,11 @@
                         資格名: <input type="text" name="license"> <br>
                     </div>
                     <div>
-                        <button>
-                            <input type="button" name="back" value="" onclick="window.location.href='personalQuestion'">
-                            <img src="./IMG/return.png" alt="戻る">
-                        </button>
-                        <button>
-                            <input type="button" name="dicision" value=""> <img src="./IMG/decision.png" alt="決定">
-                        </button>
+                            <input type="image" name="back" value="戻る" onclick="window.location.href='personalQuestion'" src="./IMG/return.png" alt="back">
+                            </div>
+                            <div>
+                            <input type="image" name="dicision" value="確定" src="./IMG/decision.png" alt="decision">
+
                     </div>
                 </div>
             </form>
