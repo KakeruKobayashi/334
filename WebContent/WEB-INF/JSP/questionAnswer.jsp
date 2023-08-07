@@ -13,10 +13,12 @@
             <button class="button button1">〇</button>
             <button class="button button2">×</button>
         </div>
-        <form action="suspensionConfirmation" method="post" style="display: inline;">
-                <input type="submit" value="中断">
+        <div style="display: inline;">
+        <form action="suspensionConfirmation" method="post" >
+                <input type="image" name="interruption" value="中断" src="" alt="interruption">
         </form>
         <img src="img/question.png" alt="問題">
+        </div>
     </main>
 </body>
 </html>

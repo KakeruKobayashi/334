@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +15,7 @@
 
 <body>
 	<header></header>
-	<div id="info">ともやさんのことを教えてください</div>
+	<div id="info"><c:out value="${nickname}" />さんのことを教えてください</div>
 	<br>
 	<div>
 		<form action="personalQuestionController" method="post">
@@ -67,19 +70,13 @@
 
 			<div style="display: inline-flex">
 				<div>
-					<button>
-						<input type="submit" name="dicision" value=""><img
-							src="./IMG/decision.png" alt="決定">
-					</button>
+						<input type="image" name="dicision" value="決定" src="./IMG/decision.png" alt="decision">
 				</div>
-		</form>
 		<div>
-			<button onclick="window.location.href='personal'">
-				<img src="./IMG/return.png" alt="戻る">
-			</button>
+			<input type="image" name="return" value="戻る" onclick="window.location.href='personal'" src="./IMG/return.png" alt="return">
 		</div>
+		</div>
+		</form>
 	</div>
-	</div>
-	<footer></footer>
 </body>
 </html>
