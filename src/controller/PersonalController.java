@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.User;
+import service.UserService;
 
 /**
  * Servlet implementation class PersonalController
@@ -48,6 +49,8 @@ public class PersonalController extends HttpServlet {
 		/*
 		 * ここでサービスに接続しデータベースに保存する
 		 * */
+		UserService userService = new UserService();
+		userService.insertUser(user);
 
 		response.sendRedirect("personalQuestion");
 	}

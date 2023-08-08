@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.Course;
+import service.CourseService;
 
 /**
  * Servlet implementation class QuestionController
@@ -26,22 +27,13 @@ public class QuestionController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 
-		/*
-		 * 	アンケート情報を受け取る。どういう形で保存するかはJSPなどと要相談(以下は一例)
-		 * List<String> questionResult = new ArrayList<String>();
-		 * questionResult.add((String)request.getParameter(""));
-		 * */
 
+		String courseName = (String)request.getParameter("course");
+		CourseService courseService = new CourseService();
+		courseService.selectCourse(courseName);
 		List<Course> courseResult = new ArrayList<Course>();
 
 
-		//ダミーデータ
-		 for (int i = 1; i <= 10; i++) {
-	            Course course = new Course();
-	            course.setGenre("i");
-	            course.setCoursename("ダミーコース" + i);
-	            courseResult.add(course);
-	        }
 
 		/*
 		 * ここでサービスに接続してテーブルからアンケート結果に合うデータを取得する

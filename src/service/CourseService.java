@@ -8,7 +8,7 @@ import db.ConnectionManager;
 import model.Course;
 
 public class CourseService {
-	public List<Course> selectContent(String courseName) {
+	public List<Course> selectCourse(String courseName) {
 		ConnectionManager connectionManager = new ConnectionManager();
 		try {
 			Connection connection = connectionManager.getConnection();
