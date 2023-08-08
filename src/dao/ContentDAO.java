@@ -20,7 +20,7 @@ public class ContentDAO {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "";
+			String sql = "SELECT * FROM t_content WHERE ";
 			statement = connection.prepareStatement(sql);
 
 			ResultSet result = statement.executeQuery();

@@ -17,12 +17,13 @@ public class CourseDAO {
 		this.connection = connection;
 	}
 
-	public List<Course> selectCourse(String courseName){
+	public List<Course> selectCourse(String genre){
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "";
+			String sql = "SELECT * FROM t_course WHERE genre = ?";
 			statement = connection.prepareStatement(sql);
+			statement.setString(1, genre);
 
 			ResultSet result = statement.executeQuery();
 
