@@ -15,15 +15,12 @@
 	<div>
 		<div id="info">以下の資格を学習しますか？</div>
 	</div>
+
 	<div>
-        <!-- <img src="../img/course.png" alt="選択したコース"><br>-->
-        <c:out value="${course.coursename}" />
-        <c:out value="${course.category}" />
-	</div>
-	<!-- <div>
+		<!-- <img src="../img/course.png" alt="選択したコース"><br>-->
         <c:out value="${item.coursename}" />
         <c:out value="${item.genre}"/>
-	</div> -->
+	</div>
     <div>
         <p>あなたの資格取得フロー</p>
         <img src="../img/flow.png" alt="資格取得フロー"><br>
