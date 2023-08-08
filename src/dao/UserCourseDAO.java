@@ -11,12 +11,14 @@ public class UserCourseDAO {
 		this.connection = connection;
 	}
 
-	public int insertUserCourse() {
+	public int insertUserCourse(String nickname, String courseName) {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "";
+			String sql = "INSERT INTO t_userCourse VALUES ((SELECT userID FROM t_user WHERE nickname = ?), (SELECT courseID FROM course WHERE courseName = ?))";
 			statement = connection.prepareStatement(sql);
+			statement.setString(1, nickname);
+			statement.setString(2, courseName);
 
 			int result = statement.executeUpdate();
 

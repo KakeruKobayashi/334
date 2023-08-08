@@ -49,13 +49,14 @@ public class UserDAO {
 		}
 	}
 
-	public int updateUser(int personalQuestionResult) {
+	public int updateUser(int personalQuestionResult, String nickname) {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "UPDATE t_user SET personalQuestionResult = ?";
+			String sql = "UPDATE t_user SET personalQuestionResult = ? WHERE nickname = ?";
 			statement = connection.prepareStatement(sql);
 			statement.setInt(1, personalQuestionResult);
+			statement.setString(2, nickname);
 
 			int result = statement.executeUpdate();
 			return result;
