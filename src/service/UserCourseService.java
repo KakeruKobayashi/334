@@ -9,6 +9,7 @@ public class UserCourseService {
 
 	public int insertUserCourse(String nickname, String courseName) {
 		ConnectionManager connectionManager = new ConnectionManager();
+
 		try {
 			Connection connection = connectionManager.getConnection();
 			UserCourseDAO userCourseDAO = new UserCourseDAO(connection);
