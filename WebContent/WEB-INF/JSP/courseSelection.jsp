@@ -8,7 +8,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
 <title>コース選択</title>
 </head>
 <body>
@@ -27,8 +28,9 @@
 			<br>
 		</div>
 		<div>
+		<!-- 分岐処理が必要 -->
 			<input type="image" name="return" value="戻る"
-				onclick="window.location.href='registration'" src="./IMG/return.png" alt="return">
+				onclick="window.location.href='question'" src="./IMG/return.png" alt="return">
 
 		</div>
 		<input type="image" value="決定" name ="decision" src="./IMG/decision.png" alt="decision">
