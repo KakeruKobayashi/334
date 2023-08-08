@@ -43,7 +43,7 @@ body {
 			<input type="image" name="haguruma" onclick="window.location.href=''"
 				src="./IMG/haguruma.png" alt="歯車"> <input type="image"
 				name="friend" onclick="window.location.href=''"
-				src="./IMG/friend.png" alt="フレンド">
+				src="./IMG/friend2.png" alt="フレンド">
 		</div>
 
 		<div>
