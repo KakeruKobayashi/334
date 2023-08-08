@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -27,18 +26,10 @@ public class QuestionController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 
-
-		String courseName = (String)request.getParameter("course");
+		String genre = (String)request.getParameter("genre");
 		CourseService courseService = new CourseService();
-		courseService.selectCourse(courseName);
-		List<Course> courseResult = new ArrayList<Course>();
 
-
-
-		/*
-		 * ここでサービスに接続してテーブルからアンケート結果に合うデータを取得する
-		 * 	courseResult = ;
-		 */
+		List<Course> courseResult = courseService.selectCourse(genre);
 
 		//courseSelection.javaでこのセッションを受け取ってリクエストに入れるよう変更する
 		session.setAttribute("courseResult", courseResult);

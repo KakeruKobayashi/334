@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.Content;
+import service.CourseService;
 
 /**
  * Servlet implementation class ContentSelectionController
@@ -20,16 +21,22 @@ import model.Content;
 public class ContentSelectionController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 
-//選んだコースの情報を取得。この情報からもとにしてdaoかなんかで問題を引っ張るのかな？
+		//選んだコースの情報を取得。この情報からもとにしてdaoかなんかで問題を引っ張るのかな？
+		String courseName = (String) session.getAttribute("courseName");
+		CourseService courseService = new CourseService();
+		courseService.selectCourse(courseName);
 
-		String contentName = (String)request.getParameter("content");
-		List<Content> contentList = (List<Content>) session.getAttribute("courseContent");
-		System.out.println(contentName);
 
-		contentList = contentList.stream().filter(item -> item.getContentName().equals(contentName)).collect(Collectors.toList());;
+		String contentName = (String) request.getParameter("content");
+		List<Content> contentList = (List<Content>) session.getAttribute("courseResult");
+
+		contentList = contentList.stream().filter(item -> item.getContentName().equals(contentName))
+				.collect(Collectors.toList());
+		;
 		Content content = contentList.get(0);
 
 		/*
@@ -37,12 +44,12 @@ public class ContentSelectionController extends HttpServlet {
 		 *
 		 */
 
-//		取得したコンテンツ内容によって問題を表示する何かが必要ですか？
-//ユーザーによってリダイレクト先が変わる。一旦4択画面へ。
+		//		取得したコンテンツ内容によって問題を表示する何かが必要ですか？
+		//ユーザーによってリダイレクト先が変わる。一旦4択画面へ。
 		if (session.getAttribute("sourcePage").equals("Home")) {
 			response.sendRedirect("questionAnswer");
 			return;
-		} else if(session.getAttribute("sourcePage").equals("Time")){
+		} else if (session.getAttribute("sourcePage").equals("Time")) {
 			response.sendRedirect("fourQuestions");
 			return;
 		}

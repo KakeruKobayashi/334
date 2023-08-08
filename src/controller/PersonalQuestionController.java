@@ -22,6 +22,7 @@ public class PersonalQuestionController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
+
 		//パーソナルアンケート結果の取得
 		String question1 = (String) request.getParameter("question1");
 		String question2 = (String) request.getParameter("question2");
@@ -35,11 +36,14 @@ public class PersonalQuestionController extends HttpServlet {
 
 		//ベタ打ち
 		User user = new User();
+		String nickname = (String)session.getAttribute("nickname");
 		session.setAttribute("personalQuestionResult", user.getPersonalQuestionResult());
 		//サービスに接続しデータベースに保存する
 		UserService userService = new UserService();
+
+
 		//アルゴリズムは要相談
-		userService.updateUser(2);
+		userService.updateUser(2,nickname);
 
 
 		if (question9.equals("Y")) {
