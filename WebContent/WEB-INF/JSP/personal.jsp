@@ -68,14 +68,15 @@
 					<option value="その他">その他</option>
 				</select><br>
 			</div>
-
 			<div>
-					<input type="image" name="registration" value="登録" src="./IMG/dregistrarion.png" alt="registraion">
+				<input type="image" name="return" value="戻る"
+					onclick="window.location.href='home'" src="./IMG/return.png"
+					alt="return">
 			</div>
 			<div>
-					<input type="image" name="return" value="戻る"	onclick="window.location.href='home'" src="./IMG/return.png" alt="return">
+				<input type="image" name="registration" value="登録"
+					src="./IMG/dregistrarion.png" alt="registraion">
 			</div>
-
 		</form>
 	</div>
 </body>
