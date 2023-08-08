@@ -20,8 +20,9 @@ public class ContentDAO {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "";
+			String sql = "SELECT co.contentName, co.contentTime FROM content AS con JOIN course AS cou ON con.courseName = ?";
 			statement = connection.prepareStatement(sql);
+			statement.setString(1, courseName);
 
 			ResultSet result = statement.executeQuery();
 

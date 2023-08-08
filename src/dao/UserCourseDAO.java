@@ -1,43 +1,28 @@
 package dao;
 
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
-import model.Course;
-
-public class CourseDAO {
+public class UserCourseDAO {
 	private Connection connection;
 
-	public CourseDAO(Connection connection) {
+	public UserCourseDAO(Connection connection) {
 		this.connection = connection;
 	}
 
-	public List<Course> selectCourse(String genre){
+	public int insertUserCourse(String nickname, String courseName) {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "SELECT * FROM t_course WHERE genre = ?";
+			String sql = "INSERT INTO t_userCourse VALUES ((SELECT userID FROM t_user WHERE nickname = ?), (SELECT courseID FROM course WHERE courseName = ?))";
 			statement = connection.prepareStatement(sql);
-			statement.setString(1, genre);
+			statement.setString(1, nickname);
+			statement.setString(2, courseName);
 
-			ResultSet result = statement.executeQuery();
+			int result = statement.executeUpdate();
 
-			List<Course> resultList = new ArrayList<Course>();
-
-			while(result.next()) {
-				Course course = new Course();
-				course.setCoursename(result.getString(1));
-				course.setExamdate(result.getDate(2));
-				course.setGenre(result.getString(3));
-				resultList.add(course);
-			}
-
-			return resultList;
+			return result;
 
 		}catch (SQLException e) {
 
@@ -53,9 +38,7 @@ public class CourseDAO {
 
 				}
 			} catch (SQLException e) {
-
 				throw new RuntimeException("SQLの実行の後処理に失敗しました", e);
-
 			}
 		}
 	}

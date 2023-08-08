@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.User;
+import service.UserService;
 
 /**
  * Servlet implementation class PersonalQuestionController
@@ -32,16 +33,15 @@ public class PersonalQuestionController extends HttpServlet {
 		String question8 = (String) request.getParameter("question8");
 		String question9 = (String) request.getParameter("question9");
 
-		//DAOの処理？
-
 		//ベタ打ち
 		User user = new User();
-		user.setPersonalQuestionResult(4);
 		session.setAttribute("personalQuestionResult", user.getPersonalQuestionResult());
-		System.out.println(question9);
-		/*
-		 * ここでサービスに接続しデータベースに保存する
-		 * */
+		//サービスに接続しデータベースに保存する
+		UserService userService = new UserService();
+		//アルゴリズムは要相談
+		userService.updateUser(2);
+
+
 		if (question9.equals("Y")) {
 			response.sendRedirect("registration");
 			session.removeAttribute("userhope");
