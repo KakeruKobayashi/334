@@ -38,7 +38,7 @@ public class QuestionController extends HttpServlet {
 		//ダミーデータ
 		 for (int i = 1; i <= 10; i++) {
 	            Course course = new Course();
-	            course.setCategory(i);
+	            course.setGenre("i");
 	            course.setCoursename("ダミーコース" + i);
 	            courseResult.add(course);
 	        }
