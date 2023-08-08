@@ -17,8 +17,13 @@ public class UserDAO {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "INSERT INTO ";
+			String sql = "INSERT INTO t_user VALUES (?, ?, ?, ?, ?)";
 			statement = connection.prepareStatement(sql);
+			statement.setString(1, user.getNickname());
+			statement.setString(2, user.getFullname());
+			statement.setDate(3, user.getBirthday());
+			statement.setString(4, user.getOccpation());
+			statement.setString(0, user.getField());
 
 			int result = statement.executeUpdate();
 			return result;
@@ -48,8 +53,9 @@ public class UserDAO {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "UPDATE  SET ";
+			String sql = "UPDATE t_user SET personalQuestionResult = ?";
 			statement = connection.prepareStatement(sql);
+			statement.setInt(1, personalQuestionResult);
 
 			int result = statement.executeUpdate();
 			return result;
