@@ -9,12 +9,34 @@
 <meta charset="UTF-8">
 <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
 <title>ホーム</title>
-<style>
+<style>]
+/* main要素のスタイル */
+   main {
+            /* フレックス成長を許可し、コンテンツの領域を埋める */
+            flex-grow: 1;
+            /* コンテンツのスタイルを指定 */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* コンテンツのサイズを指定 */
+            width: 100%;
+            height: 100%;
+        }
+
+/* ページ全体のスタイル */
+body {
+            /* 幅を指定 */
+            width: 1242px;
+            /* 高さを指定 */
+            height: 2208px;
+            /* ページ全体を中央に配置 */
+            margin: 0 auto;
+        }
 </style>
 </head>
-<body>
+<body style="background-image: url('./IMG/homeBackground.jpg'); background-repeat: no-repeat; background-size: contain;">
 	<main>
-		<img src="./IMG/tudurisu.png" alt="つづりす">
 		<div class="button-container">
 			<div>
 				<c:if test="${nickname == null}">
