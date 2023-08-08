@@ -2,12 +2,7 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
-import model.Course;
 
 public class UserCourseDAO {
 	private Connection connection;
@@ -41,11 +36,8 @@ public class UserCourseDAO {
 
 				}
 			} catch (SQLException e) {
-
 				throw new RuntimeException("SQLの実行の後処理に失敗しました", e);
-
 			}
 		}
-	}
 	}
 }
