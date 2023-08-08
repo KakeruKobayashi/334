@@ -41,7 +41,7 @@
 			</div>
 			<div>
 				<form action="learningHistory" method="get">
-					<input type="button" name="learningHistory" value="学習履歴"
+					<input type="image" name="learningHistory" onclick="window.location.href='learningHistory'"
 						src="./IMG/learningHistory.png" alt="学習履歴">
 				</form>
 			</div>
