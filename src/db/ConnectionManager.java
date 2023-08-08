@@ -24,17 +24,17 @@ public class ConnectionManager {
 	/**
 	 * 接続URL
 	 */
-	private static final String URL = "jdbc:postgresql://localhost:5432/karioki";
+	private static final String URL = "jdbc:postgresql://localhost:5432/tudurisu";
 
 	/**
 	 * 接続ユーザ
 	 */
-	private static final String USER = "";
+	private static final String USER = "tudurisu";
 
 	/**
 	 * 接続パスワード
 	 */
-	private static final String PASSWORD = "";
+	private static final String PASSWORD = "tudurisu";
 
 	static {
 		try {
