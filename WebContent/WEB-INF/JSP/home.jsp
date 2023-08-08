@@ -43,7 +43,7 @@ body {
 			<input type="image" name="haguruma" onclick="window.location.href=''"
 				src="./IMG/haguruma.png" alt="歯車"> <input type="image"
 				name="friend" onclick="window.location.href=''"
-				src="./IMG/friend.png" alt="フレンド">
+				src="./IMG/friend2.png" alt="フレンド">
 		</div>
 
 		<div>
@@ -61,7 +61,7 @@ body {
 				<c:if test="${nickname == null}">
 					<input type="image" name="learingStart"
 						onclick="window.location.href='personal'"
-						src="./IMG/learningStart2.png" alt="学習を始める">
+						src="./IMG/learningStart3.png" alt="学習を始める">
 				</c:if>
 			</div>
 			<div>
@@ -70,12 +70,12 @@ body {
 						<c:if test="${personalQuestionResult == 1}">
 							<input type="image" name="learingStart"
 								onclick="window.location.href='courseSelection'"
-								src="./IMG/learningStart2.png" alt="学習を始める">
+								src="./IMG/learningStar3.png" alt="学習を始める">
 						</c:if>
 						<c:if test="${personalQuestionResult == 4}">
 							<input type="image" name="learingSrart"
 								onclick="window.location.href='timeSelection'"
-								src="./IMG/learningStart2.png" alt="学習を始める">
+								src="./IMG/learningStart3.png" alt="学習を始める">
 						</c:if>
 					</div>
 				</c:if>
