@@ -21,7 +21,7 @@
 			<c:forEach var="item" items="${courseResult}">
 				<label> <input type="radio" name="learningCourse"
 					value="${item.coursename}"> <c:out
-						value="${item.coursename}" /> <c:out value="${item.category}" />
+						value="${item.coursename}" /> <c:out value="${item.genre}" />
 				</label>
 				<br>
 			</c:forEach>
