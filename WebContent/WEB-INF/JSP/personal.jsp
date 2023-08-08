@@ -75,7 +75,7 @@
 			</div>
 			<div>
 				<input type="image" name="registration" value="登録"
-					src="./IMG/dregistrarion.png" alt="registraion">
+					src="./IMG/registration.png" alt="registration">
 			</div>
 		</form>
 	</div>
