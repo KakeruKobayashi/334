@@ -20,6 +20,10 @@
         <c:out value="${course.coursename}" />
         <c:out value="${course.category}" />
 	</div>
+	<!-- <div>
+        <c:out value="${item.coursename}" />
+        <c:out value="${item.genre}"/>
+	</div> -->
     <div>
         <p>あなたの資格取得フロー</p>
         <img src="../img/flow.png" alt="資格取得フロー"><br>
