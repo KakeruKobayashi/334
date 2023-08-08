@@ -10,7 +10,8 @@
 
 
 </head>
-<body>
+<body
+style="background-image: url('./IMG/BackgroundTest.png'); background-repeat: no-repeat; background-size: contain;">
   <header>
     <h1> </h1>
   </header>
@@ -36,10 +37,14 @@
     <input type="submit" value="送信">
   </form>
 
+
+
 	    <div class="button-container">
             <button class="button button1">ボタン1</button>
             <button class="button button2">ボタン2</button>
         </div>
+
+
 
   <!-- <p>タグ -->
   <p>これは適当な文章です。</p>
