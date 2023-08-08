@@ -40,7 +40,7 @@ public class RegistrationController extends HttpServlet {
 
 		//ベタ打ち
 		Course course = new Course();
-		course.setCategory(2);
+		course.setGenre("英語");
 		course.setCoursename("TOEIC");
 		course.setExamdate(Date.valueOf("2023-09-09"));
 

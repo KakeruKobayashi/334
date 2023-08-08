@@ -27,8 +27,8 @@
 			</c:forEach>
 			<br>
 		</div>
-		<div>
 		<!-- 分岐処理が必要 -->
+		<div>
 			<input type="image" name="return" value="戻る"
 				onclick="window.location.href='question'" src="./IMG/return.png" alt="return">
 

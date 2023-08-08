@@ -3,28 +3,28 @@ package model;
 import java.sql.Date;
 
 public class Course {
-	private String coursename;
-	private Date examdate;
-	private int category;
+	private String courseName;
+	private Date examDate;
+	private String genre;
 	public String getCoursename() {
-		return coursename;
+		return courseName;
 	}
-	public void setCoursename(String coursename) {
-		this.coursename = coursename;
+	public void setCoursename(String courseName) {
+		this.courseName = courseName;
 	}
 	public Date getExamdate() {
-		return examdate;
+		return examDate;
 	}
-	public void setExamdate(Date examdate) {
-		this.examdate = examdate;
+	public void setExamdate(Date examDate) {
+		this.examDate = examDate;
 	}
 
 //ジャンルのこと要相談
-	public int getCategory() {
-		return category;
+	public String getGenre() {
+		return genre;
 	}
-	public void setCategory(int category) {
-		this.category = category;
+	public void setGenre(String genre) {
+		this.genre = genre;
 	}
 
 

@@ -33,17 +33,17 @@ public class PersonalController extends HttpServlet {
 		user.setOccpation((String)request.getParameter("occupation"));
 		user.setField((String)request.getParameter("field"));
 
-		boolean requestFlag = false;
-		String hope = (String)request.getParameter("userhope");
-
-		if(hope.equals("Y")) {
-			requestFlag = true;
-		}else {
-			requestFlag = false;
-		}
+//		boolean requestFlag = false;
+//		String hope = (String)request.getParameter("userhope");
+//
+//		if(hope.equals("Y")) {
+//			requestFlag = true;
+//		}else {
+//			requestFlag = false;
+//		}
 
 		session.setAttribute("nickname", user.getNickname());
-		session.setAttribute("userhope", requestFlag);
+//		session.setAttribute("userhope", requestFlag);
 
 		/*
 		 * ここでサービスに接続しデータベースに保存する
