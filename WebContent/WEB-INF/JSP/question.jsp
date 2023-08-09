@@ -41,38 +41,29 @@
 			情報<input type="radio" name="selectedOption" id="showOptions4"
 				value="4" onclick="toggleOptions(4)">
 			<div id="options4" style="display: none;">
-				<input type="radio" name="genre" value="情報"> ITリテラシー<br>
-				<input type="radio" name="genre" value="情報"> プログラミング<br>
+				<input type="radio" name="genre" value="プログラミング"> プログラミング<br>
 				<input type="radio" name="genre" value="MOS"> MOS<br>
 			</div>
 
 			マーケティング<input type="radio" name="selectedOption" id="showOptions5"
 				value="5" onclick="toggleOptions(5)">
 			<div id="options5" style="display: none;">
-				<input type="radio" name="genre" value="マーケティング"> Webマーケティング検定<br>
-				<input type="radio" name="genre" value="マーケティング"> Webマーケティング基礎<br>
-			</div>
-
-			社会人基礎<input type="radio" name="selectedOption" id="showOptions6"
-				value="6" onclick="toggleOptions(6)">
-			<div id="options6" style="display: none;">
-				<input type="radio" name="genre" value="社会人基礎"> ビジネスマナー入門<br>
-				<input type="radio" name="genre" value="社会人基礎"> ビジネスコミュニケーション入門<br>
+				<input type="radio" name="genre" value="マーケティング入門"> Webマーケティング入門<br>
+				<input type="radio" name="genre" value="マーケティング応用"> Webマーケティング応用<br>
 			</div>
 
 			データ分析<input type="radio" name="selectedOption" id="showOptions7"
 				value="7" onclick="toggleOptions(7)">
 			<div id="options7" style="display: none;">
-				<input type="radio" name="genre" value="データ分析"> データ分析入門<br>
-				<input type="radio" name="genre" value="データ分析<"> <br>
-				<input type="radio" name="genre" value="データ分析<"> データベーススペシャリスト<br>
+				<input type="radio" name="genre" value="データ分析入門"> データ分析入門<br>
+				<input type="radio" name="genre" value="データ分析応用"> データ分析応用<br>
 			</div>
 
 			マネジメント<input type="radio" name="selectedOption" id="showOptions8"
 				value="8" onclick="toggleOptions(8)">
 			<div id="options8" style="display: none;">
-				<input type="radio" name="genre" value="マネジメント"> マネジメント入門<br>
-				<input type="radio" name="genre" value="マネジメント"> 応用マネジメント<br>
+				<input type="radio" name="genre" value="マネジメント入門"> マネジメント入門<br>
+				<input type="radio" name="genre" value="マネジメント応用"> マネジメント応用<br>
 			</div>
 			<br>
 			<div>
