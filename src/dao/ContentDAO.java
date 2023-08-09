@@ -77,7 +77,6 @@ public class ContentDAO {
 				content.setContentTime(result.getInt(2));
 				resultList.add(content);
 			}
-
 			return resultList;
 
 		}catch (SQLException e) {
