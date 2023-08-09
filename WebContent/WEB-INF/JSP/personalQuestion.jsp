@@ -70,7 +70,6 @@
 				はい<input type="radio" name="question8"
 					id="No" value="N">いいえ
 			</div>
-			<br>
 			<div style="display: inline-flex">
 				<div>
 					<input type="image" name="dicision" value="送信"

@@ -24,14 +24,14 @@ public class CourseSelectionController extends HttpServlet {
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 		// 選択したコースの情報を取得します。
-		String selectedCourseName = (String) request.getParameter("learningCourse");
+		String courseName = (String) request.getParameter("learningCourse");
 		//int selectedCategory = Integer.parseInt(request.getParameter("item.category"));
 		//course.setExamdate(Date.valueOf((String)request.getParameter("")));
 
 		List<Course> courseList =(List<Course>) session.getAttribute("courseResult");
 
 		courseList = courseList.stream()
-		        .filter(item -> item.getCoursename().equals(selectedCourseName))
+		        .filter(item -> item.getCoursename().equals(courseName))
 		        .collect(Collectors.toList());
 
 		Course course =courseList.get(0);
