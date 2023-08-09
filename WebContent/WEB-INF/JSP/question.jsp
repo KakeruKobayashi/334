@@ -18,8 +18,9 @@
 			英語<input type="radio" name="selectedOption" id="showOptions1"
 				value="1" onclick="toggleOptions(1)">
 			<div id="options1" style="display: none;">
-				<input type="radio" name="genre" value="英語"> TOEIC<br>
-				<input type="radio" name="genre" value="英語"> TOEFL<br>
+				<input type="radio" name="genre" value="TOEIC"> TOEIC<br>
+				<input type="radio" name="genre" value="TOEFL"> TOEFL<br>
+				<input type="radio" name="genre" value="GTEC"> GTEC<br>
 			</div>
 
 			漢字<input type="radio" name="selectedOption" id="showOptions2"
