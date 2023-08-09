@@ -23,7 +23,7 @@ public class UserDAO {
 			statement.setString(2, user.getFullname());
 			statement.setDate(3, user.getBirthday());
 			statement.setString(4, user.getOccpation());
-			statement.setString(0, user.getField());
+			statement.setString(5, user.getField());
 
 			int result = statement.executeUpdate();
 			return result;
