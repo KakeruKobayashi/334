@@ -45,19 +45,6 @@ main {
 }
 
 
-/* 個別のボタンのスタイル */
-.button-container {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 /* ラジオボタンのスタイル */
 input[type="radio"] {
     margin-right: 5px;
