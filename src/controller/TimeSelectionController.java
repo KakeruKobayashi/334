@@ -30,14 +30,14 @@ public class TimeSelectionController extends HttpServlet {
 		int contentTime = contentHours * 60 + contentMinutes;
 
 		//ニックネームか何かからユーザーのコースの情報を受け取る。
-		String nickname = (String)session.getAttribute("nickname");
+		String nickname = "ともや";//(String)session.getAttribute("nickname");
 		UserCourseService userCourseService = new UserCourseService();
-		String courseName = userCourseService.selectCourseName(nickname);
+		String courseID = userCourseService.selectCourseName(nickname);
 
 		List<Content> contentResult = new ArrayList<Content>();
 
 		ContentService contentService = new ContentService();
-		contentResult = contentService.selectContentByTime(courseName, contentTime);
+		contentResult = contentService.selectContentByTime(courseID, contentTime);
 
 		/*
 		 * Content content = new Content();

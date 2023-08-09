@@ -48,7 +48,7 @@ public class UserCourseDAO {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "SELECT courseName FROM t_userCourse WHERE userID = (SELECT userID FROM t_user WHERE nickname = ?)";
+			String sql = "SELECT DISTINCT courseID FROM t_userCourse WHERE userID = (SELECT userID FROM t_user WHERE nickname = ?)";
 			statement = connection.prepareStatement(sql);
 			statement.setString(1, nickname);
 
