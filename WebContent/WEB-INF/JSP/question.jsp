@@ -14,17 +14,24 @@
 
 	<div>
 		<form action="questionController" method="post">
-			<label for="showOptions1">語学</label> <input type="radio"
-				name="selectedOption" id="showOptions1" value="1"
-				onclick="toggleOptions(1)">
+			<label for="showOptions1">
+				語学
+			</label>
+			<input type="radio" name="selectedOption" id="showOptions1" value="1" onclick="toggleOptions(1)">
 			<div id="options1" style="display: none;">
-				<input type="radio" name="option1" value="option1"
-					onclick="toggleDetailOptions(1)"> 英語<br> <input
-					type="radio" name="option1" value="option2"> 漢字<br>
+				<input type="radio" name="genre" value="英語" onclick="toggleDetailOptions(1)">
+					英語
+				<br>
+				<input type="radio" name="genre" value="漢字">
+				漢字
+				<br>
 				<div id="englishOptions" style="display: none;">
-					<input type="radio" name="englishOption" value="option3">
-					TOEIC<br> <input type="radio" name="englishOption"
-						value="option4"> TOEFL<br>
+				<input type="radio" name="englishOption" value="TOEIC">
+				TOEIC
+				<br>
+				<input type="radio" name="englishOption" value="TOEFL">
+				TOEFL
+				<br>
 				</div>
 			</div>
 
