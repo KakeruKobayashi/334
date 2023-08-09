@@ -20,7 +20,7 @@
 		<c:when test="${personalQuestionResult eq 1}">
 			<p>まとめて時間を取るタイプ</p>
 		</c:when>
-		<c:when test="${sessionScope.nickname eq 2}">
+		<c:when test="${personalQuestionResult eq 2}">
 			<p>毎日コツコツタイプ</p>
 		</c:when>
 	</c:choose>
