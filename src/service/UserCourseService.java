@@ -24,14 +24,14 @@ public class UserCourseService {
 		}
 	}
 
-	public String selectCourseName(String nickname) {
+	public int selectCourseName(String nickname) {
 		ConnectionManager connectionManager = new ConnectionManager();
 
 		try {
 			Connection connection = connectionManager.getConnection();
 			UserCourseDAO userCourseDAO = new UserCourseDAO(connection);
-			String courseName = userCourseDAO.selectUserCourse(nickname);
-			return courseName;
+			int courseID = userCourseDAO.selectUserCourse(nickname);
+			return courseID;
 		}catch (RuntimeException e) {
 			connectionManager.rollback();
 			throw e;

@@ -24,7 +24,7 @@ public class ContentService {
 		}
 	}
 
-	public List<Content> selectContentByTime(String contentID, int contentTime) {
+	public List<Content> selectContentByTime(int contentID, int contentTime) {
 		ConnectionManager connectionManager = new ConnectionManager();
 		try {
 			Connection connection = connectionManager.getConnection();
