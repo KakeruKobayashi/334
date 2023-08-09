@@ -1,1 +1,42 @@
 @charset "UTF-8";
+
+/* 個別のボタンのスタイル */
+.button-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* スタイルを追加 */
+.setting-container {
+    display: flex;
+    position: absolute;
+    top: 20px; /* 例: 縦位置を100pxに設定 */
+    margin-left: 10px; /* 例: 横位置を200pxに設定 */
+    width: 8%; /* 例: 幅を200pxに設定 */
+    height: 8%; /* 例: 高さを100pxに設定 */
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    margin-left: 10px;
+    font-size: 20px;
+	}
+
+	.course-container p {
+    margin-bottom: 5px;
+}
+
+.course-container select {
+    width: 200px; /* プルダウンフォームの幅 */
+    height: 30px; /* プルダウンフォームの高さ */
+	font-size: 20px;
+}
