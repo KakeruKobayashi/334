@@ -23,18 +23,18 @@
 		<div style="display: inline-block">
 			<div>
 				<input type="image" name="decide"> <img
-					src="./IMG/decision.png" alt="決定">
+					src="./IMG/decision_1.png" alt="決定">
 			</div>
 			<div>
 				<c:if test="${sourcePage == 'Home'}">
 					<input type="button" name="back"
 						onclick="window.location.href='home'">
-					<img src="./IMG/return.png" alt="戻る">
+					<img src="./IMG/return_1.png" alt="戻る">
 				</c:if>
 				<c:if test="${sourcePage == 'Time'}">
 					<input type="button" name="back"
 						onclick="window.location.href='timeSelection'">
-					<img src="./IMG/return.png" alt="戻る">
+					<img src="./IMG/return_1.png" alt="戻る">
 				</c:if>
 			</div>
 		</div>

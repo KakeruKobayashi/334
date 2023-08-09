@@ -30,10 +30,10 @@
 		<!-- 分岐処理が必要 -->
 		<div>
 			<input type="image" name="return" value="戻る"
-				onclick="window.location.href='question'" src="./IMG/return.png" alt="return">
+				onclick="window.location.href='question'" src="./IMG/return_1.png" alt="return">
 
 		</div>
-		<input type="image" value="決定" name ="decision" src="./IMG/decision.png" alt="decision">
+		<input type="image" value="決定" name ="decision" src="./IMG/decision_1.png" alt="decision">
 
 
 	</form>

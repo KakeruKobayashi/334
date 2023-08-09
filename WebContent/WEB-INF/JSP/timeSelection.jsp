@@ -19,11 +19,11 @@
 		<br>
 		<div>
 			<input type="image" name="dicision" value="決定"
-				src="./IMG/decision.png" alt="decision">
+				src="./IMG/decision_1.png" alt="decision">
 		</div>
 		<div>
 			<input type="image" name="return" value="戻る"
-			onclick="window.location.href='home'" src="./IMG/return.png"
+				onclick="window.location.href='home'" src="./IMG/return_1.png"
 				alt="return">
 		</div>
 	</form>

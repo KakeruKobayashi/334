@@ -29,12 +29,12 @@
 	<div style="display:inline-flex">
 		<div>
 			<form action = "courseSelection" method = "get">
-				<input type = "image" name = "back" value = "戻る" src="./IMG/return.png" alt="戻る">
+				<input type = "image" name = "back" value = "戻る" src="./IMG/return_1.png" alt="戻る">
 			</form>
 		</div>
 		<div>
 			<form action = "home" method = "get">
-				<input type = "image" name = "start" value = "学習を始める" src="./IMG/learningStart2.png" alt="学習を始める2">
+				<input type = "image" name = "start" value = "学習を始める" src="./IMG/studyStart_1.png" alt="学習を始める">
 			</form>
 		</div>
 	</div>
