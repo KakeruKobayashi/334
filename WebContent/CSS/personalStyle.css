@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 #info {
+	margin-top:150px;
+	margin-bottom:50px;
 	text-align: center;
+	font-size:30px;
 }
 
 .form-group {
@@ -9,20 +12,20 @@
 }
 
 .form-input, .form-label, .form-select {
-	margin-left: 165px;
+	margin-left: 125px;
 	padding: none;
 }
 
 .form-input {
-	width: 400px;
-	height: 25px;
+	width: 500px;
+	height: 40px;
 	border: 2px solid #ccc;
 	border-radius: 5px;
 }
 
 .form-select {
-	width: 413px;
-	height: 40px;
+	width: 513px;
+	height: 57px;
 	border: 2px solid #ccc;
 	border-radius: 5px;
 	margin-bottom: 10px
@@ -33,14 +36,14 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 50px;
-	margin-left: 250px;
-	margin-right: 250px;
+	margin-top: 70px;
+	margin-left: 180px;
+	margin-right: 180px;
 }
 
 /* ボタンが通常の状態 */
 .form-button {
-	width: 100px;
+	width: 150px;
 	cursor: pointer;
 	transition: opacity 0.3s;
 }

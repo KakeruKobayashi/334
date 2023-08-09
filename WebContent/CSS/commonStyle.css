@@ -101,3 +101,33 @@ input[type="password"] {
     }
 }
 
+
+
+/*ボタン位置*/
+.button-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 70px;
+	margin-left: 180px;
+	margin-right: 180px;
+}
+
+/* ボタンが通常の状態 */
+.form-button {
+	width: 150px;
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+
+/* ボタンにマウスを乗せたときのスタイル */
+.form-button:hover {
+	opacity: 0.8; /* 透明度を下げて少し薄くする */
+}
+
+/* ボタンが押されたときのスタイル */
+.form-button:active {
+	border: none;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* クリック中の影を強調 */
+	transform: translateY(5px); /* クリック中の少し下への移動 */
+}
