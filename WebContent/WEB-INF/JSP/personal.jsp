@@ -4,35 +4,43 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/commonStyle.css">
- <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/fontStyle.css">
-  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/personalStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/personalStyle.css">
 <title>個人情報入力</title>
 </head>
 <body>
 	<header></header>
 	<div>
-		<div id="info">ユーザー情報を<br>登録してください</div>
+		<div id="info">
+			ユーザー情報を<br>登録してください
+		</div>
 		<form action="personalController" method="post">
 
-         <div class="form-group">
-                <label class="form-label" for="nickname">*ニックネーム：</label><br>
-                <input class="form-input" type="text" name="nickname" required>
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="fullname">氏名：</label>
-                <input class="form-input" type="text" name="fullname">
-            </div>
-            <div class="form-group">
-                <label class="form-label">*生年月日：</label>
-                <input class="form-input" type="text" name="year" pattern="[0-9]{4}" required maxlength="4" placeholder="yyyy">年
-                <input class="form-input" type="text" name="month" pattern="[0-9]{2}" required maxlength="2" placeholder="mm">月
-                <input class="form-input" type="text" name="day" pattern="[0-9]{2}" required maxlength="2" placeholder="dd">日
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="occupation">*職種：</label>
-                <select class="form-select" name="occupation" required>
-                    <option value="" disabled selected>選択してください</option>
+			<div class="form-group">
+				<label class="form-label" for="nickname">*ニックネーム</label> <input
+					class="form-input" type="text" name="nickname" required>
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="fullname">氏名</label> <input
+					class="form-input" type="text" name="fullname">
+			</div>
+			<div class="form-group">
+				<label class="form-label">*生年月日</label> <input class="form-input"
+					type="text" name="year" pattern="[0-9]{4}" required maxlength="4"
+					placeholder="yyyy">年 <input class="form-input" type="text"
+					name="month" pattern="[0-9]{2}" required maxlength="2"
+					placeholder="mm">月 <input class="form-input" type="text"
+					name="day" pattern="[0-9]{2}" required maxlength="2"
+					placeholder="dd">日
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="occupation">*職種</label> <select
+					class="form-select" name="occupation" required>
+					<option value="" disabled selected>選択してください</option>
 					<option value="経営者・役員">経営者・役員</option>
 					<option value="会社員（正社員）">会社員（正社員）</option>
 					<option value="会社員（契約社員）">会社員（契約社員）</option>
@@ -51,12 +59,12 @@
 					<option value="家事手伝い">家事手伝い</option>
 					<option value="無職">無職</option>
 					<option value="その他">その他</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="field">*分野：</label>
-                <select class="form-select" name="field" required>
-                    <option value="" disabled selected>選択してください</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label class="form-label" for="field">*分野</label> <select
+					class="form-select" name="field" required>
+					<option value="" disabled selected>選択してください</option>
 					<option value="教育">教育・研究</option>
 					<option value="情報">IT・情報技術</option>
 					<option value="ビジネス・経営">ビジネス・経営</option>
@@ -67,19 +75,20 @@
 					<option value="農業・漁業・林業">農業・漁業・林業</option>
 					<option value="自衛隊・警察・消防">自衛隊・警察・消防</option>
 					<option value="その他">その他</option>
-                </select>
-            </div>
-
-
-
-			<div>
-				<input type="image" name="return" value="戻る"
-					onclick="window.location.href='home'" src="./IMG/return_1.png"
-					alt="return">
+				</select>
 			</div>
-			<div>
-				<input type="image" name="registration" value="登録"
-					src="./IMG/register_1.png" alt="register">
+
+
+			<div class="button-container">
+				<div>
+					<input type="image" name="return" value="戻る"
+						onclick="window.location.href='home'" src="./IMG/return_1.png" class="form-button"
+						alt="return">
+				</div>
+				<div>
+					<input type="image" name="registration" value="登録"
+						src="./IMG/register_1.png" class="form-button"  alt="register">
+				</div>
 			</div>
 		</form>
 	</div>
