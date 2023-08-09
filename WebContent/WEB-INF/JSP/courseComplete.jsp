@@ -15,7 +15,8 @@
 	</div>
 
 	<img src="" alt="つづりすメダル">
-	<button type="button" class="homeButton">ホーム</button><br>
+	<input type="button" name="home" onclick="window.location.href='home'">
+	<img src="./IMG/home_1.png" alt="ホーム">
 
 	<!-- フッター -->
 	<footer></footer>
