@@ -10,11 +10,11 @@
 
 
 </head>
-<body
-style="background-image: url('./IMG/BackgroundTest.png'); background-repeat: no-repeat; background-size: contain;">
+<body>
   <header>
     <h1> </h1>
   </header>
+<img class="image-element" src="./IMG/BackgroundTest.png" alt="Image">
 
   <!-- ボタン -->
   <button class="button button">クリックしてください</button>

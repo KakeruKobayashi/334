@@ -47,12 +47,10 @@ main {
 
 /* 個別のボタンのスタイル */
 .button-container {
-    /* ボタンの位置を数値で設定 */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 1300px;
-    /* ボタンのスタイルを設定 */
+    top: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,4 +81,22 @@ input[type="password"] {
 }
 
 
+.image-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%; /* 画像の幅を50%に設定 */
+    height: auto; /* 高さを自動調整 */
+    z-index: -1;
+    animation: slideRight infinite linear 10s;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
 
