@@ -44,22 +44,22 @@ public class UserCourseDAO {
 		}
 	}
 
-	public String selectUserCourse(String nickname) {
+	public int selectUserCourse(String nickname) {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "SELECT DISTINCT courseID FROM t_userCourse WHERE userID = (SELECT userID FROM t_user WHERE nickname = ?)";
+			String sql = "SELECT courseID FROM t_userCourse WHERE userID = (SELECT userID FROM t_user WHERE nickname = ?)";
 			statement = connection.prepareStatement(sql);
 			statement.setString(1, nickname);
 
 			ResultSet result = statement.executeQuery();
-			String courseName = "";
+			int courseID = 0;
 
 			if(result.next()) {
-				courseName = result.getString(1);
+				courseID = result.getInt(1);
 			}
 
-			return courseName;
+			return courseID;
 
 		}catch (SQLException e) {
 
