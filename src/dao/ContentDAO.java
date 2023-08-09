@@ -20,9 +20,52 @@ public class ContentDAO {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "SELECT co.contentName, co.contentTime FROM content AS con JOIN course AS cou ON con.courseName = ?";
+			String sql = "SELECT con.contentName, con.contentTime FROM content AS con JOIN course AS cou ON con.courseName = ?";
 			statement = connection.prepareStatement(sql);
 			statement.setString(1, courseName);
+
+			ResultSet result = statement.executeQuery();
+
+			List<Content> resultList = new ArrayList<Content>();
+
+			while(result.next()) {
+				Content content = new Content();
+				content.setContentName(result.getString(1));
+				content.setContentTime(result.getInt(2));
+				resultList.add(content);
+			}
+
+			return resultList;
+
+		}catch (SQLException e) {
+
+			e.printStackTrace();
+			throw new RuntimeException("SQLの実行に失敗しました", e);
+
+		} finally {
+			try {
+				if (statement != null) {
+
+					statement.close();
+					System.out.println("ステートメントの解放に成功しました");
+
+				}
+			} catch (SQLException e) {
+
+				throw new RuntimeException("SQLの実行の後処理に失敗しました", e);
+
+			}
+		}
+	}
+
+	public List<Content> selectContentByTime(String courseName, int contentTime){
+		PreparedStatement statement = null;
+
+		try {
+			String sql = "SELECT con.contentName, con.contentTime FROM content AS con JOIN course AS cou ON con.courseName = ? WHERE contentTime <= ?";
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, courseName);
+			statement.setInt(2, contentTime);
 
 			ResultSet result = statement.executeQuery();
 
