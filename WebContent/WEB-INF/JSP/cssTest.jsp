@@ -14,6 +14,7 @@
   <header>
     <h1> </h1>
   </header>
+<img class="image-element" src="./IMG/BackgroundTest.png" alt="Image">
 
   <!-- ボタン -->
   <button class="button button">クリックしてください</button>
@@ -36,10 +37,14 @@
     <input type="submit" value="送信">
   </form>
 
+
+
 	    <div class="button-container">
             <button class="button button1">ボタン1</button>
             <button class="button button2">ボタン2</button>
         </div>
+
+
 
   <!-- <p>タグ -->
   <p>これは適当な文章です。</p>

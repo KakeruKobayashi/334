@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.Content;
+import service.ContentService;
+import service.UserCourseService;
 
 @WebServlet("/timeSelectionController")
 public class TimeSelectionController extends HttpServlet {
@@ -28,23 +30,22 @@ public class TimeSelectionController extends HttpServlet {
 		int contentTime = contentHours * 60 + contentMinutes;
 
 		//ニックネームか何かからユーザーのコースの情報を受け取る。
-		session.getAttribute("nickname");
-
-		//ニックネームをもとにコース情報やコンテンツ情報を取得するDAO
+		String nickname = (String)session.getAttribute("nickname");
+		UserCourseService userCourseService = new UserCourseService();
+		String courseName = userCourseService.selectCourseName(nickname);
 
 		List<Content> contentResult = new ArrayList<Content>();
 
-		/*
-		 * ここでサービスからデータベースに接続して、上の条件に合ったデータを取得する
-		 * courseResult = ;
-		 */
+		ContentService contentService = new ContentService();
+		contentResult = contentService.selectContentByTime(courseName, contentTime);
 
-		//ベタ打ち
-		Content content = new Content();
+		/*
+		 * Content content = new Content();
 		content.setContentName("TOEIC L&Rテスト対策");
 		content.setContentTime(100);
 		content.setCourseName("TOEIC");
 		contentResult.add(content);
+		*/
 
 		session.setAttribute("courseContent", contentResult);
 		session.setAttribute("sourcePage", "Time");

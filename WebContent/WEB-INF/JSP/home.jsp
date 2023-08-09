@@ -9,37 +9,15 @@
 <meta charset="UTF-8">
 <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
 <title>ホーム</title>
-<style>
-]
-/* main要素のスタイル */
-main {
-	/* フレックス成長を許可し、コンテンツの領域を埋める */
-	flex-grow: 1;
-	/* コンテンツのスタイルを指定 */
-	padding: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* コンテンツのサイズを指定 */
-	width: 100%;
-	height: 100%;
-}
+ <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+ <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+ <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/homeStyle.css">
 
-/* ページ全体のスタイル */
-body {
-	/* 幅を指定 */
-	width: 1242px;
-	/* 高さを指定 */
-	height: 2208px;
-	/* ページ全体を中央に配置 */
-	margin: 0 auto;
-}
-</style>
 </head>
 <body
 	style="background-image: url('./IMG/homeBackground.jpg'); background-repeat: no-repeat; background-size: contain;">
 	<main>
-		<div style="display: flex;">
+		<div>
 			<input type="image" name="haguruma" onclick="window.location.href=''"
 				src="./IMG/haguruma.png" alt="歯車"> <input type="image"
 				name="friend" onclick="window.location.href=''"
@@ -70,7 +48,7 @@ body {
 						<c:if test="${personalQuestionResult == 1}">
 							<input type="image" name="learingStart"
 								onclick="window.location.href='courseSelection'"
-								src="./IMG/learningStar_1.png" alt="学習を始める">
+								src="./IMG/learningStart_1.png" alt="学習を始める">
 						</c:if>
 						<c:if test="${personalQuestionResult == 4}">
 							<input type="image" name="learingSrart"
