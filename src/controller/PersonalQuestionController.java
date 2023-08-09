@@ -41,14 +41,20 @@ public class PersonalQuestionController extends HttpServlet {
 		UserService userService = new UserService();
 		userService.updateUser(personalQuestionResult, nickname);
 
-		if (question8.equals("Y")) {
-			response.sendRedirect("registration");
-			session.removeAttribute("userhope");
-			return;
-		} else {
-			response.sendRedirect("question");
-			session.removeAttribute("userhope");
-			return;
-		}
+		response.sendRedirect("personalQuestionResult");
+
+
+
+
+		//分岐は1回後回し
+//		if (question8.equals("Y")) {
+//			response.sendRedirect("registration");
+//			session.removeAttribute("userhope");
+//			return;
+//		} else {
+//			response.sendRedirect("question");
+//			session.removeAttribute("userhope");
+//			return;
+//		}
 	}
 }
