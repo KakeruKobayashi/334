@@ -18,8 +18,8 @@
 
 	<div>
 		<!-- <img src="../img/course.png" alt="選択したコース"><br>-->
-        <c:out value="${item.coursename}" />
-        <c:out value="${item.genre}"/>
+        資格名:<c:out value="${course.coursename}" />
+        試験日:<c:out value="${course.examdate}" />
 	</div>
     <div>
         <p>あなたの資格取得フロー</p>
