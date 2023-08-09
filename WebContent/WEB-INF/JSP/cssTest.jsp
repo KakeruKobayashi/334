@@ -14,8 +14,9 @@
   <header>
     <h1> </h1>
   </header>
-<img class="image-element" src="./IMG/BackgroundTest.png" alt="Image">
-
+  <div class="image-container">
+<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+	</div>
   <!-- ボタン -->
   <button class="button button">クリックしてください</button>
 
