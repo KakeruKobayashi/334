@@ -38,8 +38,6 @@ public class PersonalQuestionController extends HttpServlet {
 		int personalQuestionResult = (a > b) ? 1 : 2;
 		session.setAttribute("personalQuestionResult", personalQuestionResult);
 		//サービスに接続しデータベースに保存する
-		System.out.println(a);
-		System.out.println(b);
 		UserService userService = new UserService();
 		userService.updateUser(personalQuestionResult, nickname);
 
