@@ -58,14 +58,14 @@ public class ContentDAO {
 		}
 	}
 
-	public List<Content> selectContentByTime(String courseName, int contentTime){
+	public List<Content> selectContentByTime(String courseID, int contentTime){
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "SELECT con.contentName, con.contentTime FROM content AS con JOIN course AS cou ON con.courseName = ? WHERE contentTime <= ?";
+			String sql = "SELECT contentName, contentTime FROM content WHERE contentTime <= ? AND courseID = ?";
 			statement = connection.prepareStatement(sql);
-			statement.setString(1, courseName);
-			statement.setInt(2, contentTime);
+			statement.setInt(1, contentTime);
+			statement.setString(2, courseID);
 
 			ResultSet result = statement.executeQuery();
 

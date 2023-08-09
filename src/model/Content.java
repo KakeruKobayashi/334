@@ -3,7 +3,7 @@ package model;
 public class Content {
 	private String contentName;
 	private int contentTime;
-	private String courseName;
+	private int courseID;
 
 	public String getContentName() {
 		return contentName;
@@ -17,10 +17,10 @@ public class Content {
 	public void setContentTime(int contentTime) {
 		this.contentTime = contentTime;
 	}
-	public String getCourseName() {
-		return courseName;
+	public int getCourseName() {
+		return courseID;
 	}
-	public void setCourseName(String courseName) {
-		this.courseName = courseName;
+	public void setCourseName(int courseID) {
+		this.courseID = courseID;
 	}
 }

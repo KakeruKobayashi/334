@@ -24,12 +24,12 @@ public class ContentService {
 		}
 	}
 
-	public List<Content> selectContentByTime(String contentName, int contentTime) {
+	public List<Content> selectContentByTime(String contentID, int contentTime) {
 		ConnectionManager connectionManager = new ConnectionManager();
 		try {
 			Connection connection = connectionManager.getConnection();
 			ContentDAO contentDAO = new ContentDAO(connection);
-			List<Content> resultList = contentDAO.selectContentByTime(contentName, contentTime);
+			List<Content> resultList = contentDAO.selectContentByTime(contentID, contentTime);
 			connectionManager.commit();
 			return resultList;
 		} catch (RuntimeException e) {
