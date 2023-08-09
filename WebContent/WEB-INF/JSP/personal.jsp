@@ -70,12 +70,12 @@
 			</div>
 			<div>
 				<input type="image" name="return" value="戻る"
-					onclick="window.location.href='home'" src="./IMG/return.png"
+					onclick="window.location.href='home'" src="./IMG/return_1.png"
 					alt="return">
 			</div>
 			<div>
 				<input type="image" name="registration" value="登録"
-					src="./IMG/registration.png" alt="registration">
+					src="./IMG/register_1.png" alt="register">
 			</div>
 		</form>
 	</div>

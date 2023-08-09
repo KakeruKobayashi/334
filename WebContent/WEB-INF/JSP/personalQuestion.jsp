@@ -78,13 +78,13 @@
             </div>
             <div style="display: inline-flex">
                 <div>
-                    <input type="image" name="dicision" value="決定"
-                        src="./IMG/decision.png" alt="decision">
+                    <input type="image" name="dicision" value="送信"
+                        src="./IMG/submit_1.png" alt="submit">
                 </div>
                 <div>
                     <input type="image" name="return" value="戻る"
                         onclick="window.location.href='personal'"
-                        src="./IMG/return.png" alt="return">
+                        src="./IMG/return_1.png" alt="return">
                 </div>
             </div>
         </form>

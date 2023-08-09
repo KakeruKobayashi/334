@@ -30,7 +30,8 @@
 			</div>
 			<div>
 				<form action = "home" method = "get">
-					<input type = "submit" name = "home" value = "完了">
+				<input type = "image" name = "home" value = "完了" src="./IMG/complete_1.png" alt="完了">
+					<!-- <input type = "submit" name = "home" value = "完了"> -->
 				</form>
 			</div>
 		</div>

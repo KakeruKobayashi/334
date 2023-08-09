@@ -21,7 +21,8 @@
 
 	<div>
 		<form action="learningResult" method="post">
-			<input type="submit" name="next" value="次へ">
+			<!-- <input type="submit" name="next" value="次へ"> -->
+			<input type = "image" name = "next" value = "次へ" src="./IMG/next_1.png" alt="次へ">
 		</form>
 	</div>
 

@@ -26,7 +26,8 @@
                 </div>
         </div>
         <div>
-            <input type="button" name="home" onclick="window.location.href='home'">
+         <input type="button" name="home" onclick="window.location.href='home'">
+         <img src="./IMG/home_1.png" alt="ホーム">
         </div>
     </div>
 </body>

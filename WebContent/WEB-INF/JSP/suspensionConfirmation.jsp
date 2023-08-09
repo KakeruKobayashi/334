@@ -15,16 +15,20 @@
 				<form action="learningResult" method="post">
 					<div style="display: inline-block">
 						<div>
-							<input type="submit" name="decide" value="中断する">
+							<!--<input type="submit" name="decide" value="中断する">  -->
+							<input type="image" name="interruption" value="中断"
+								src="./IMG/suspension_1.png" alt="中断">
 						</div>
 						<div>
 							<c:if test="${sourcePage == 'Home'}">
 								<input type="image" name="back" value="戻る"
 									onclick="window.location.href='questionAnswer'">
+								<img src="./IMG/return_1.png" alt="戻る">
 							</c:if>
 							<c:if test="${sourcePage == 'Time'}">
 								<input type="image" name="back" value="戻る"
 									onclick="window.location.href='fourQuestions'">
+								<img src="./IMG/return_1.png" alt="戻る">
 							</c:if>
 						</div>
 					</div>

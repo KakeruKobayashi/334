@@ -15,7 +15,7 @@
         </div>
         <div style="display: inline;">
         <form action="suspensionConfirmation" method="post" >
-                <input type="image" name="interruption" value="中断" src="" alt="interruption">
+                <input type="image" name="interruption" value="中断" src="./IMG/suspension_1.png" alt="中断">
         </form>
         <img src="img/question.png" alt="問題">
         </div>
