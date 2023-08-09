@@ -46,12 +46,12 @@
 			<div>
 				<c:if test="${nickname != null}">
 					<div>
-						<c:if test="${personalQuestionResult == 1}">
+						<c:if test="${personalQuestionResult eq 2}">
 							<input type="image" name="learingStart"
 								onclick="window.location.href='courseSelection'"
 								src="./IMG/learningStart_1.png" alt="学習を始める">
 						</c:if>
-						<c:if test="${personalQuestionResult == 4}">
+						<c:if test="${personalQuestionResult eq 1}">
 							<input type="image" name="learingSrart"
 								onclick="window.location.href='timeSelection'"
 								src="./IMG/learningStart_1.png" alt="学習を始める">

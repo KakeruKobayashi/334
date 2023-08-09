@@ -13,6 +13,9 @@
 <title>個人情報入力</title>
 </head>
 <body>
+ 	<div class="image-container">
+	<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+	</div>
 	<header></header>
 	<div>
 		<div id="info">
