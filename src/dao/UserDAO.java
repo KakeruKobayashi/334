@@ -17,7 +17,7 @@ public class UserDAO {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "INSERT INTO t_user VALUES (?, ?, ?, ?, ?)";
+			String sql = "INSERT INTO t_user(nickname, fullname, birthday, occupation, field) VALUES (?, ?, ?, ?, ?)";
 			statement = connection.prepareStatement(sql);
 			statement.setString(1, user.getNickname());
 			statement.setString(2, user.getFullname());
