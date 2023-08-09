@@ -25,7 +25,7 @@
             <p>受講中のコース</p>
             <select name="course">
         <option value="TOEIC700コース" selected>
-            <c:out value="${course.coursename}受講中コース名" />
+            <c:out value="${course.coursename}コース" />
         </option>
         <option value="英検4級コース">英検4級コース</option>
         <option value="＋">＋</option>
@@ -35,7 +35,7 @@
 </body>
 
 
-		<div class="button-container" >
+		<div class="homeButton-container" >
 			<div>
 				<c:if test="${nickname == null}">
 					<input type="image" name="learingStart"

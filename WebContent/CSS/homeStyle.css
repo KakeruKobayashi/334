@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 個別のボタンのスタイル */
-.button-container {
+.homeButton-container {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
