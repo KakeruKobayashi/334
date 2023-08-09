@@ -14,7 +14,7 @@
  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/homeStyle.css">
 
 </head>
-<body style="background-image: url('./IMG/homeBackground_1.jpg'); background-repeat: no-repeat; background-size: contain;">
+<body style="background-image: url('./IMG/homeBackground_1.png'); background-repeat: no-repeat; background-size: contain;">
     <main>
         <div class="setting-container">
             <input type="image" name="haguruma" onclick="window.location.href=''" src="./IMG/haguruma.png" alt="歯車">
