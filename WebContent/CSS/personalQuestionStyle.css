@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+	font-family:"Yu Gothic";
+	font-size:25px;
+}
+#info {
+	margin-top:150px;
+	margin-bottom:50px;
+	text-align: center;
+	font-size:40px;
+}
+
+.Q,.A{
+	margin-left: 80px;
+}
+
