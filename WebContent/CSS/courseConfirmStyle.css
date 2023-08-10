@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* 新しいCSSスタイルを追加 */
+.div-container {
+    border: 2px solid #31356e;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+     background-color: #FFF; /* 必要に応じて余白を調整 */
+    /* 他のスタイルも必要ならここに追加 */
+}
+
+.div-flow {
+	margin-top: 20px;
+    margin-left: 120px;
+}
