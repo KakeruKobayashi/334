@@ -1,8 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.stream.Collectors;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,9 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import model.Content;
-import service.CourseService;
 
 /**
  * Servlet implementation class ContentSelectionController
@@ -25,8 +20,14 @@ public class ContentSelectionController extends HttpServlet {
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 
+		String contentName = (String)request.getParameter("content");
+
+		//本来は問題情報が格納されているテーブルがあって、コンテンツ名（コンテンツID）と照合してデータを取り出す処理が入る
+		//今回は問題部分はスコープ外のため画面遷移の処理のみになる
+
+
 		//選んだコースの情報を取得。この情報からもとにしてdaoかなんかで問題を引っ張るのかな？
-		String courseName = (String) session.getAttribute("courseName");
+		/*String courseName = (String) session.getAttribute("courseName");
 		CourseService courseService = new CourseService();
 		courseService.selectCourse(courseName);
 
@@ -37,7 +38,7 @@ public class ContentSelectionController extends HttpServlet {
 		contentList = contentList.stream().filter(item -> item.getContentName().equals(contentName))
 				.collect(Collectors.toList());
 		;
-		Content content = contentList.get(0);
+		Content content = contentList.get(0);*/
 
 		/*
 		 * ここでサービスからデータベースに接続して、上の条件に合った問題データを取得する
