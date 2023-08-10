@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+body{
+	font-family:"Yu Gothic";
+	font-size:25px;
+}
+#info {
+	margin-top:50px;
+	text-align: center;
+	font-size:30px;
+}
+
+.Q{
+	margin-left:180px;
+}
+
+.A {
+	margin-left:250px;
+	display: flex;
+	align-items: center; /* 縦方向に中央揃え */
+}
+
+/* ラジオボタン */
+label {
+	margin-right: 10px; /* ボタン同士の間隔を少し広めに */
+}
+label input {
+	display: none;
+}
+label span {
+	color: #333;
+	font-size: 25px;
+	border: 1px solid #333;
+	border-radius: 20px;
+	padding: 5px 20px;
+	cursor: pointer; /* ポインターを表示してクリック可能であることを示す */
+}
+label input:checked + span {
+	color: #FFF;
+	background: #0460D9;
+	border: 1px solid #0460D9;
+}
+
+/* 新しいスタイル */
+.A label {
+	display: inline-flex;
+	align-items: center; /* ラベル内の要素を縦方向に中央揃え */
+}
+.A span {
+	margin-left: 5px; /* ラジオボタンとテキストの間隔 */
+}
+
+
+
+/*ここからpersonalQuestion適用*/
+.studyType {
+	margin-top: 200px;
+	text-align: center;
+	font-size: 50px;
+}
+
+.typeResult {
+	margin-top: 50px;
+	font-size : 4em;
+	text-align: center;
+	line-height: 0.95em;
+	font-weight: bold;
+	color: #FFAB91;
+	text-shadow: 0.02em 0.02em 0.02em rgba(0, 0, 0, 1);
+	font-size: 4em;
+}

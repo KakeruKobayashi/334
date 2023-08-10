@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/personalQuestionStyle.css">
+	href="${pageContext.request.contextPath}/CSS/personalQuestionStyle2.css">
 <title>パーソナルアンケート</title>
 </head>
 
