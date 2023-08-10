@@ -43,10 +43,6 @@ public class ContentSearchController extends HttpServlet {
 
 		ContentService contentService = new ContentService();
 		contentResult = contentService.selectContent(courseID);
-
-		  int parameterCount = contentResult.size();
-		  System.out.println(parameterCount);
-
 		session.setAttribute("courseContent", contentResult);
 		session.setAttribute("sourcePage", "Home");
 		response.sendRedirect("contentSelection");
