@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-
+body {
+	font-family: "Yu Gothic";
+}
 
 /* 特定の要素のスタイル */
 p {
