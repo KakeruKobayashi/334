@@ -74,4 +74,14 @@ label input:checked+span {
 	font-size: 4em;
 }
 
-
+/*courseComplete*/
+.courseComplete{
+	margin-top: 50px;
+	font-size : 3em;
+	text-align: center;
+	line-height: 0.95em;
+	font-weight: bold;
+	color: #FFAB91;
+	text-shadow: 0.02em 0.02em 0.02em rgba(0, 0, 0, 1);
+	font-size: 4em;
+}
