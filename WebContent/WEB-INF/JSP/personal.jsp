@@ -8,6 +8,8 @@
 	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+	<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/personalStyle.css">
 <title>個人情報入力</title>
@@ -83,12 +85,15 @@
 
 
 			<div class="button-container">
-				<div>
-					<input type="image" name="return" value="戻る"
-						onclick="window.location.href='home'" src="./IMG/return_1.png" class="form-button"
-						alt="return">
+				<div class="button_line007">
+				<a href="#">戻る</a>
+
+				<input type="image" name="return" value="戻る"onclick="window.location.href='home'"
+				src="./IMG/return_1.png" class="form-button"alt="return">
 				</div>
-				<div>
+
+				<div class="button_line007">
+				<a href="#">登録</a>
 					<input type="image" name="registration" value="登録"
 						src="./IMG/register_1.png" class="form-button"  alt="register">
 				</div>
