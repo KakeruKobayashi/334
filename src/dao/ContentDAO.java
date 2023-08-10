@@ -62,7 +62,7 @@ public class ContentDAO {
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "SELECT contentName, contentTime FROM content WHERE contentTime <= ? AND courseID = ?";
+			String sql = "SELECT contentName, contentTime FROM content WHERE contentTime >= 20 AND contentTime <= ? AND courseID = ?";
 			statement = connection.prepareStatement(sql);
 			statement.setInt(1, contentTime);
 			statement.setInt(2, courseID);
