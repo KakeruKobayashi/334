@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <title>中断確認</title>
 </head>
 <body>
@@ -20,21 +20,21 @@
 			<div>
 				<form action="learningResult" method="post">
 					<div style="display: inline-block">
-						<div>
-							<!--<input type="submit" name="decide" value="中断する">  -->
-							<input type="image" name="interruption" value="中断"
-								src="./IMG/suspension_1.png" alt="中断">
+						<div class="button_line007">
+							<button type="submit">中断</button>
 						</div>
 						<div>
 							<c:if test="${sourcePage == 'Home'}">
-								<input type="image" name="back" value="戻る"
-									onclick="window.location.href='questionAnswer'">
-								<img src="./IMG/return_1.png" alt="戻る">
+								<div class="button_line007">
+									<button type="button"
+										onclick="window.location.href='questionAnswer'">戻る</button>
+								</div>
 							</c:if>
 							<c:if test="${sourcePage == 'Time'}">
-								<input type="image" name="back" value="戻る"
-									onclick="window.location.href='fourQuestions'">
-								<img src="./IMG/return_1.png" alt="戻る">
+								<div class="button_line007">
+									<button type="button"
+										onclick="window.location.href='fourQuestions'">戻る</button>
+								</div>
 							</c:if>
 						</div>
 					</div>

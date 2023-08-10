@@ -16,8 +16,9 @@
 	<div>
 		<div>
 			<form action="suspensionConfirmation" method="get">
-				<input type="image" name="interruption" value="中断"
-					src="./IMG/suspension_1.png" alt="中断">
+				<div class="button_line007">
+					<button type="submit">中断</button>
+				</div>
 			</form>
 		</div>
 		<div>

@@ -9,15 +9,16 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <title>TOEIC本番想定テスト</title>
 </head>
 <body>
 	<div>
 		<div>
 			<form action="suspensionConfirmation" method="get">
-				<input type="image" name="interruption" value="中断"
-					src="./IMG/suspension_1.png" alt="中断">
+				<div class="button_line007">
+					<button type="submit">中断</button>
+				</div>
 			</form>
 		</div>
 		<div>
@@ -25,8 +26,7 @@
 				<h2>TOEIC本番想定テスト</h2>
 			</div>
 			<div>
-				<div>Choose the correct word to complete the sentence: "I love
-					to _______ in the park on sunny days."</div>
+				<div>Choose the correct word to complete the sentence: "I love to _______ in the park on sunny days."</div>
 				<div>
 					<form action="judgment" method="post">
 						<div>
@@ -40,9 +40,9 @@
 								<input type="radio" name="answer" value="sleep">sleep
 							</div>
 						</div>
-						<input type="image" name="decide" value="決定"
-							src="./IMG/decision_1.png" alt="決定">
-						<!-- <input type = "submit" name = "decide" value = "決定"> -->
+						<div class="button_line007">
+							<button type="submit">送信</button>
+						</div>
 					</form>
 				</div>
 			</div>
