@@ -30,8 +30,10 @@
 			<c:forEach var="item" items="${courseResult}">
 				<label class="radio-inline__label">
 					<input type="radio" name="learningCourse" value="${item.coursename}">
+					<span>
 					資格名:<c:out value="${item.coursename}" /><br>
 					試験日:<c:out value="${item.examdate}" />
+					</span>
 				</label>
 				<br>
 			</c:forEach>
