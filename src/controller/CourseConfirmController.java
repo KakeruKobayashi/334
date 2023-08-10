@@ -25,7 +25,6 @@ public class CourseConfirmController extends HttpServlet {
 		Course course = (Course) session.getAttribute("course");
 		String nickname = (String) session.getAttribute("nickname");
 		 String courseName = course.getCoursename();
-		System.out.println(courseName);
 		userCourseService.insertUserCourse(nickname, courseName);
 		response.sendRedirect("home");
 	}

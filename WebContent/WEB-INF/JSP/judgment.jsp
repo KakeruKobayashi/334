@@ -64,8 +64,7 @@
 
 	<div>
 		<form action="learningResult" method="post">
-			<input type="image" name="next" value="次へ" src="./IMG/next_1.png"
-				alt="次へ">
+			<button type="submit">次の問題</button>
 		</form>
 	</div>
 
