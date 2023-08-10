@@ -19,8 +19,8 @@
 		<div>
 			<form action = "judgment" method = "post">
 				<div>
-					<button type = "submit" name = "correct" value = "〇">〇</button>
-					<button type = "submit" name = "incorrect" value = "×">×</button>
+					<button type = "submit" name = "answer" value = "circle">〇</button>
+					<button type = "submit" name = "answer" value = "cross">×</button>
 				</div>
 			</form>
 		</div>

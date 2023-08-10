@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class JudgmentServlet
@@ -18,6 +19,10 @@ public class JudgmentServlet extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession(false);
+
+    	String answer = request.getParameter("answer");
+    	request.setAttribute("answer",answer);
 		RequestDispatcher disptacher = request.getRequestDispatcher("/WEB-INF/JSP/judgment.jsp");
 		disptacher.forward(request, response);
 		return;
