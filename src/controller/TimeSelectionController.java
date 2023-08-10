@@ -42,14 +42,6 @@ public class TimeSelectionController extends HttpServlet {
 		ContentService contentService = new ContentService();
 		contentResult = contentService.selectContentByTime(courseID, contentTime);
 
-		/*
-		 * Content content = new Content();
-		content.setContentName("TOEIC L&Rテスト対策");
-		content.setContentTime(100);
-		content.setCourseName("TOEIC");
-		contentResult.add(content);
-		*/
-
 		session.setAttribute("courseContent", contentResult);
 		session.setAttribute("sourcePage", "Time");
 		response.sendRedirect("contentSelection");
