@@ -5,13 +5,76 @@ body{
 	font-size:25px;
 }
 #info {
-	margin-top:150px;
-	margin-bottom:50px;
+	margin-top:50px;
 	text-align: center;
-	font-size:40px;
+	font-size:30px;
 }
 
-.Q,.A{
-	margin-left: 80px;
+.Q{
+	margin-left:180px;
 }
 
+.A {
+	margin-left:250px;
+	display: flex;
+	align-items: center; /* 縦方向に中央揃え */
+}
+
+/* ラジオボタン */
+label {
+	margin-right: 10px; /* ボタン同士の間隔を少し広めに */
+}
+label input {
+	display: none;
+}
+label span {
+	color: #333;
+	font-size: 25px;
+	border: 1px solid #333;
+	border-radius: 20px;
+	padding: 5px 20px;
+	cursor: pointer; /* ポインターを表示してクリック可能であることを示す */
+}
+label input:checked + span {
+	color: #FFF;
+	background: #0460D9;
+	border: 1px solid #0460D9;
+}
+
+/* 新しいスタイル */
+.A label {
+	display: inline-flex;
+	align-items: center; /* ラベル内の要素を縦方向に中央揃え */
+}
+.A span {
+	margin-left: 5px; /* ラジオボタンとテキストの間隔 */
+}
+
+/*ボタン位置*/
+.button-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 70px;
+	margin-left: 180px;
+	margin-right: 180px;
+}
+
+/* ボタンが通常の状態 */
+.form-button {
+	width: 150px;
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+
+/* ボタンにマウスを乗せたときのスタイル */
+.form-button:hover {
+	opacity: 0.8; /* 透明度を下げて少し薄くする */
+}
+
+/* ボタンが押されたときのスタイル */
+.form-button:active {
+	border: none;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* クリック中の影を強調 */
+	transform: translateY(5px); /* クリック中の少し下への移動 */
+}
