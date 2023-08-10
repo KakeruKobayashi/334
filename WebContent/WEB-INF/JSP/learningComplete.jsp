@@ -4,7 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
+<title>コース終了</title>
 </head>
 <body>
     <div>

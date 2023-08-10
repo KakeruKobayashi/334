@@ -6,6 +6,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
 <title>学習結果</title>
 </head>
 <body>
@@ -22,7 +28,7 @@
 		<div>
 			<div>
 				<p>
-					英語一問一答
+					単語1問1答
 				</p>
 				<br>
 			</div>
@@ -46,7 +52,7 @@
 	<c:if test="${sourcePage == 'Time'}">
 		<div>
 			<div>
-				<h4>TOEIC読解基礎</h4>
+				<h4>TOEIC本番想定テスト</h4>
 			</div>
 			<div>
 				<h2>

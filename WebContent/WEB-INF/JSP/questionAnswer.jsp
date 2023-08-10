@@ -4,31 +4,37 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>英語一問一答</title>
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<title>単語1問1答</title>
 </head>
 <body>
-	<main>
+	<div>
 		<div>
-			<img src="img/question.png" alt="問題">
+			<form action="suspensionConfirmation" method="get">
+				<input type="image" name="interruption" value="中断"
+					src="./IMG/suspension_1.png" alt="中断">
+			</form>
 		</div>
 		<div>
-			<p>
-				一問一答
-			</p>
+			<h2>単語1問1答</h2>
 		</div>
 		<div>
-			<form action = "judgment" method = "post">
+			以下の問題が正しいか答えなさい。<br>
+			<h2>He often go to the library to study.</h2>
+		</div>
+		<div>
+			<form action="judgment" method="post">
 				<div>
-					<button type = "submit" name = "answer" value = "circle">〇</button>
-					<button type = "submit" name = "answer" value = "cross">×</button>
+					<button type="submit" name="answer" value="circle">〇</button>
+					<button type="submit" name="answer" value="cross">×</button>
 				</div>
 			</form>
 		</div>
-		<div style="display: inline;">
-			<form action="suspensionConfirmation" method="post">
-				<input type="image" name="interruption" value="中断" src="./IMG/suspension_1.png" alt="中断">
-			</form>
-		</div>
-	</main>
+	</div>
 </body>
 </html>
