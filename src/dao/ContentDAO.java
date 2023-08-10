@@ -16,13 +16,13 @@ public class ContentDAO {
 		this.connection = connection;
 	}
 
-	public List<Content> selectContent(String courseName){
+	public List<Content> selectContent(int courseID){
 		PreparedStatement statement = null;
 
 		try {
-			String sql = "SELECT con.contentName, con.contentTime FROM content AS con JOIN course AS cou ON con.courseName = ?";
+			String sql = "SELECT contentName, contentTime FROM content WHERE contentTime <= 10 AND courseID = ? ";
 			statement = connection.prepareStatement(sql);
-			statement.setString(1, courseName);
+			statement.setInt(1, courseID);
 
 			ResultSet result = statement.executeQuery();
 

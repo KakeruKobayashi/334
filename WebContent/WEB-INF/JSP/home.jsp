@@ -48,7 +48,7 @@
 					<div>
 						<c:if test="${personalQuestionResult eq 2}">
 							<input type="image" name="learingStart"
-								onclick="window.location.href='contentSelection'"
+								onclick="window.location.href='contentSearchController'"
 								src="./IMG/learningStart_1.png" alt="学習を始める">
 						</c:if>
 						<c:if test="${personalQuestionResult eq 1}">

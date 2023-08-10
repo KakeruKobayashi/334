@@ -8,12 +8,12 @@ import db.ConnectionManager;
 import model.Content;
 
 public class ContentService {
-	public List<Content> selectContent(String contentName) {
+	public List<Content> selectContent(int courseID) {
 		ConnectionManager connectionManager = new ConnectionManager();
 		try {
 			Connection connection = connectionManager.getConnection();
 			ContentDAO contentDAO = new ContentDAO(connection);
-			List<Content> resultList = contentDAO.selectContent(contentName);
+			List<Content> resultList = contentDAO.selectContent(courseID);
 			connectionManager.commit();
 			return resultList;
 		} catch (RuntimeException e) {
