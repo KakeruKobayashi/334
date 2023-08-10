@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.btn {
+	border: none;
+	background: transparent;
+}
+
 .button_line007  {
     position: relative;
     display: flex;
@@ -8,7 +13,7 @@
     margin: 0 auto;
     max-width: 220px;
     padding: 10px 25px;
-    color: #313131;
+	color: #313131;
     transition: 0.3s ease-in-out;
     font-weight: 600;
     background: #eee;

@@ -59,7 +59,7 @@
 					<option value="専門学校生・短大生">専門学校生・短大生</option>
 					<option value="高校生">高校生</option>
 					<option value="医師">医師</option>
-					<option value="士業（公認会計士・弁護士・税理士・司法書士）">士業（公認会計士・弁護士・税理士・司法書士）</option>
+					<option value="士業（公認会計士・弁護士・税理士・司法書士）">士業（公認会計士・弁護士）</option>
 					<option value="NGO・NPO法人職員">NGO・NPO法人職員</option>
 					<option value="家事手伝い">家事手伝い</option>
 					<option value="無職">無職</option>
@@ -86,16 +86,10 @@
 
 			<div class="button-container">
 				<div class="button_line007">
-				<a href="#">戻る</a>
-
-				<input type="image" name="return" value="戻る"onclick="window.location.href='home'"
-				src="./IMG/return_1.png" class="form-button"alt="return">
+					<button type="button" name="return" value="戻る" onclick="window.location.href='home'" class="btn">戻る</button>
 				</div>
-
 				<div class="button_line007">
-				<a href="#">登録</a>
-					<input type="image" name="registration" value="登録"
-						src="./IMG/register_1.png" class="form-button"  alt="register">
+					<button type="submit" name="return" value="送信" class="btn">送信</button>
 				</div>
 			</div>
 		</form>
