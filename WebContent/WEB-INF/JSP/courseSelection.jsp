@@ -22,16 +22,16 @@
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<div id="info">
-		<c:out value="${nickname}" />さんが取得したい資格を選んでください
+		<c:out value="${nickname}" />さんが<br>取得したい資格を選んでください
 	</div>
+
 	<form action="courseSelectionController" method="post">
-		<div class="B">
+		<div class="course">
 			<c:forEach var="item" items="${courseResult}">
-				<label><input type="radio" name="learningCourse"
-					value="${item.coursename}">
-					<span> 資格名:<c:out value="${item.coursename}" />
-						試験日:<c:out
-						value="${item.examdate}" /></span>
+				<label class="radio-inline__label">
+					<input type="radio" name="learningCourse" value="${item.coursename}">
+					資格名:<c:out value="${item.coursename}" /><br>
+					試験日:<c:out value="${item.examdate}" />
 				</label>
 				<br>
 			</c:forEach>
@@ -41,8 +41,8 @@
 		<div class="button-container">
 			<input type="image" name="return" value="戻る"
 				onclick="window.location.href='question'" src="./IMG/return_1.png" alt="return" class="form-button">
-		<input type="image" value="決定" name ="decision" src="./IMG/decision_1.png" alt="decision" class="form-button">
-</div>
+			<input type="image" value="決定" name ="decision" src="./IMG/decision_1.png" alt="decision" class="form-button">
+		</div>
 
 	</form>
 </body>
