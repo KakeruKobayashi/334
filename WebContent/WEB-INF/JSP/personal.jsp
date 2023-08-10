@@ -85,11 +85,11 @@
 
 
 			<div class="button-container">
-				<div class="button_line007">
-					<button type="button" name="return" value="戻る" onclick="window.location.href='home'" class="btn">戻る</button>
+				<div >
+					<button type="button" name="return" value="戻る" onclick="window.location.href='home'" class="button_line007">戻る</button>
 				</div>
-				<div class="button_line007">
-					<button type="submit" name="return" value="送信" class="btn">送信</button>
+				<div >
+					<button type="submit" name="return" value="送信" class="button_line007">送信</button>
 				</div>
 			</div>
 		</form>
