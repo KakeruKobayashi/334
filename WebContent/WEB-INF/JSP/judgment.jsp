@@ -7,9 +7,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <title>答え</title>
 </head>
 <body>
+
+<!-- correct.pngは画像なし -->
 	<div>
 		<c:out value="${contentName}" />
 	</div>
@@ -18,11 +26,11 @@
 		<c:choose>
 			<c:when test="${answer == 'walk'}">
     正解
-    <img src="../img/judge.png" alt="〇">
+    <img src="../img/correct.png" alt="〇">
 			</c:when>
 			<c:otherwise>
     不正解
-    <img src="../img/judge.png" alt="×">
+    <img src="../img/incorrect.png" alt="×">
 			</c:otherwise>
 		</c:choose>
 
@@ -36,13 +44,13 @@
 
 	<c:if test="${sourcePage == 'Home'}">
 		<c:choose>
-			<c:when test="${answer == 'circle'}">
+			<c:when test="${answer == 'cross'}">
     正解
-    <img src="../img/judge.png" alt="〇">
+    <img src="../img/correct.png" alt="〇">
 			</c:when>
 			<c:otherwise>
     不正解
-    <img src="../img/judge.png" alt="×">
+    <img src="../img/incorrect.png" alt="×">
 			</c:otherwise>
 		</c:choose>
 	</c:if>

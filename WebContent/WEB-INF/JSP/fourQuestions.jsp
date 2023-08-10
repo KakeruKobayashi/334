@@ -4,20 +4,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
+<title>TOEIC本番想定テスト</title>
 </head>
 <body>
 	<div>
 		<div>
 			<form action="suspensionConfirmation" method="get">
-				<!-- <input type = "submit" name = "suspension" value = "中断"> -->
 				<input type="image" name="interruption" value="中断"
 					src="./IMG/suspension_1.png" alt="中断">
 			</form>
 		</div>
 		<div>
 			<div>
-				<h4>TOEIC読解基礎</h4>
+				<h2>TOEIC本番想定テスト</h2>
 			</div>
 			<div>
 				<div>Choose the correct word to complete the sentence: "I love
@@ -26,13 +31,13 @@
 					<form action="judgment" method="post">
 						<div>
 							<div style="display: inline-flex">
-								<input type="radio" name="answer" value="walk">walk <input
-									type="radio" name="answer" value="swim">swim
+								<input type="radio" name="answer" value="walk">walk
+								<input type="radio" name="answer" value="swim">swim
 							</div>
 							<br>
 							<div style="display: inline-flex">
-								<input type="radio" name="answer" value="cook">cook <input
-									type="radio" name="answer" value="sleep">sleep
+								<input type="radio" name="answer" value="cook">cook
+								<input type="radio" name="answer" value="sleep">sleep
 							</div>
 						</div>
 						<input type="image" name="decide" value="決定"

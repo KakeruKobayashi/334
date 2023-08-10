@@ -33,8 +33,6 @@
         </div>
     </main>
 </body>
-
-
 		<div class="homeButton-container" >
 			<div>
 				<c:if test="${nickname == null}">

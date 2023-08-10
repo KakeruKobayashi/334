@@ -5,10 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <script src="timeSelection.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+	<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+
 <title>勉強時間選択</title>
 </head>
 <body>
-	<header></header>
 	<div id="info">今日の勉強時間を選択してください</div>
 	<form action="timeSelectionController" method="post">
 		<div id="customTime">
@@ -17,16 +23,15 @@
 				id="minutes" min="0" max="59" value="0"> 分
 		</div>
 		<br>
-		<div>
-			<input type="image" name="dicision" value="決定"
-				src="./IMG/decision_1.png" alt="decision">
-		</div>
-		<div>
-			<input type="image" name="return" value="戻る"
-				onclick="window.location.href='home'" src="./IMG/return_1.png"
-				alt="return">
+		<div class="button-container">
+			<div class="button_line007">
+				<button type="button" name="return"
+					onclick="window.location.href='home'">戻る</button>
+			</div>
+			<div class="button_line007">
+				<button type="submit">決定</button>
+			</div>
 		</div>
 	</form>
-	<footer></footer>
 </body>
 </html>
