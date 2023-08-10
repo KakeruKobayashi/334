@@ -109,13 +109,13 @@ input[type="password"] {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 70px;
-	margin-left: 180px;
-	margin-right: 180px;
+	margin-left: 60px;
+	margin-right: 60px;
 }
 
 /* ボタンが通常の状態 */
 .form-button {
-	width: 150px;
+	width: 280px;
 	cursor: pointer;
 	transition: opacity 0.3s;
 }
