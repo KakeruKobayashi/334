@@ -33,7 +33,7 @@
 			</form>
 		</div>
 		<div>
-			<form action = "home" method = "get">
+			<form action = "courseConfirmController" method = "post">
 				<input type = "image" name = "start" value = "学習を始める" src="./IMG/studyStart_1.png" alt="学習を始める">
 			</form>
 		</div>
