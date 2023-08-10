@@ -39,3 +39,9 @@ label {
   background-color: #3498db; /* 好みのハイライトカラーに変更 */
   color: white; /* 見やすいテキストカラーに変更 */
 }
+
+/* 選択されたアイテムの背景色とテキストカラーを保持 */
+.course label.radio-inline__label input:checked+span {
+    background-color: #3498db; /* 選択時の背景色 */
+    color: white; /* 選択時のテキストカラー */
+}
