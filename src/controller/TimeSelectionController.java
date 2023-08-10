@@ -34,9 +34,6 @@ public class TimeSelectionController extends HttpServlet {
 		UserCourseService userCourseService = new UserCourseService();
 		int courseID = userCourseService.selectCourseName(nickname);
 
-		System.out.println(contentTime);
-		System.out.println(courseID);
-
 		List<Content> contentResult = new ArrayList<Content>();
 
 		ContentService contentService = new ContentService();
