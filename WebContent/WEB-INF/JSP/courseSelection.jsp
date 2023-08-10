@@ -10,32 +10,39 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
+
 <title>コース選択</title>
 </head>
 <body>
-	<h1>
+<div class="image-container">
+		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+	</div>
+	<div id="info">
 		<c:out value="${nickname}" />さんが取得したい資格を選んでください
-	</h1>
+	</div>
 	<form action="courseSelectionController" method="post">
-		<div>
+		<div class="B">
 			<c:forEach var="item" items="${courseResult}">
-				<label> <input type="radio" name="learningCourse"
-					value="${item.coursename}"> 資格名:<c:out
-						value="${item.coursename}" />
+				<label><input type="radio" name="learningCourse"
+					value="${item.coursename}">
+					<span> 資格名:<c:out value="${item.coursename}" />
 						試験日:<c:out
-						value="${item.examdate}" />
+						value="${item.examdate}" /></span>
 				</label>
 				<br>
 			</c:forEach>
 			<br>
 		</div>
 		<!-- 分岐処理が必要 -->
-		<div>
+		<div class="button-container">
 			<input type="image" name="return" value="戻る"
-				onclick="window.location.href='question'" src="./IMG/return_1.png" alt="return">
-		</div>
-		<input type="image" value="決定" name ="decision" src="./IMG/decision_1.png" alt="decision">
-
+				onclick="window.location.href='question'" src="./IMG/return_1.png" alt="return" class="form-button">
+		<input type="image" value="決定" name ="decision" src="./IMG/decision_1.png" alt="decision" class="form-button">
+</div>
 
 	</form>
 </body>

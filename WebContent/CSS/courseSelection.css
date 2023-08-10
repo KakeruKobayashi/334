@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Yu Gothic";
+	font-size: 25px;
+}
+
+#info {
+	margin-top: 100px;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* ラジオボタン */
+
+
+label input {
+	display: none;
+}
+
+label span {
+	color: #333;
+	font-size: 25px;
+	border: 1px solid #333;
+	border-radius: 20px;
+	padding: 5px 20px;
+	cursor: pointer; /* ポインターを表示してクリック可能であることを示す */
+}
+
+label input:checked+span {
+	color: #FFF;
+	background: #0460D9;
+	border: 1px solid #0460D9;
+}

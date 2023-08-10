@@ -55,6 +55,7 @@ label input:checked+span {
 	margin-left: 5px; /* ラジオボタンとテキストの間隔 */
 }
 
+
 /*ここからpersonalQuestion適用*/
 .studyType {
 	margin-top: 200px;
@@ -72,3 +73,5 @@ label input:checked+span {
 	text-shadow: 0.02em 0.02em 0.02em rgba(0, 0, 0, 1);
 	font-size: 4em;
 }
+
+
