@@ -2,33 +2,40 @@
 
 body {
 	font-family: "Yu Gothic";
-	font-size: 25px;
+	font-size: 35px;
 }
 
 #info {
 	margin-top: 100px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 48px;
 }
 
-/* ラジオボタン */
-
-
-label input {
-	display: none;
+.course{
+	margin-top:50px;
 }
 
-label span {
-	color: #333;
-	font-size: 25px;
-	border: 1px solid #333;
-	border-radius: 20px;
-	padding: 5px 20px;
-	cursor: pointer; /* ポインターを表示してクリック可能であることを示す */
+/* ラベルのスタイル */
+label {
+  display: none;
+  font-size: 50px;
+  text-align: center;
 }
 
-label input:checked+span {
-	color: #FFF;
-	background: #0460D9;
-	border: 1px solid #0460D9;
+/* コースオプションのスタイル */
+.course label.radio-inline__label {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* アイテムが選択された時の背景色変更 */
+.course label.radio-inline__label:hover,
+.course label.radio-inline__label input:checked {
+  background-color: #3498db; /* 好みのハイライトカラーに変更 */
+  color: white; /* 見やすいテキストカラーに変更 */
 }
