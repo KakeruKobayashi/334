@@ -13,6 +13,8 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/personalQuestionStyle2.css">
 <title>パーソナルアンケート</title>
 </head>
@@ -86,13 +88,10 @@
 
 			<div class="button-container">
 				<div>
-					<input type="image" name="return" value="戻る"
-						onclick="window.location.href='personal'" src="./IMG/return_1.png"
-						alt="return" class="form-button">
+				<button type="button" name="return" value="戻る" onclick="window.location.href='personal'" class="button_line007">戻る</button>
 				</div>
 				<div>
-					<input type="image" name="dicision" value="送信"
-						src="./IMG/submit_1.png" alt="submit" class="form-button">
+				<button type="submit" name="dicision" value="送信" class="button_line008">送信</button>
 				</div>
 
 			</div>

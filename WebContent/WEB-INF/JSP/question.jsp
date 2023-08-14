@@ -7,8 +7,8 @@
 
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/commonStyle.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/fontStyle.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/questionStyle.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/questionStyle.css">
 
 <script src="./JS/question.js"></script>
 
@@ -213,7 +213,7 @@
 				<button type = "button" name = "return" value = "戻る" class="button_line007" onclick="window.location.href='personalQuestion'">戻る</button>
 			</div>
 			<div>
-				<button type = "submit" name="dicision" value="決定" class="button_line007">決定</button>
+				<button type = "submit" name="dicision" value="決定" class="button_line008">決定</button>
 			</div>
 		</div>
 	</form>

@@ -12,6 +12,8 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/personalQuestionStyle2.css">
 <title>アンケート結果画面</title>
 </head>
@@ -33,13 +35,11 @@
 	</c:choose>
 	<div class="button-container">
 		<form action="personalQuestion" method="get">
-			<input type="image" name="return" value="やり直す"
-				src="./IMG/return_1.png" alt="return" class="form-button">
+		<button type="submit" name="return" value="やり直す" class="button_line007">戻る</button>
 		</form>
 		<form action="question" method="get">
 			<div>
-				<input type="image" name="dicision" value="決定"
-					src="./IMG/decision_1.png" alt="decision" class="form-button">
+			<button type="submit" name="dicision" value="決定" class="button_line008">決定</button>
 			</div>
 		</form>
 	</div>

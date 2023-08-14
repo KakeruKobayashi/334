@@ -13,6 +13,8 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
 
 <title>コース選択</title>
@@ -40,12 +42,15 @@
 			<br>
 		</div>
 		<!-- 分岐処理が必要 -->
-		<div class="button-container">
-			<input type="image" name="return" value="戻る"
-				onclick="window.location.href='question'" src="./IMG/return_1.png" alt="return" class="form-button">
-			<input type="image" value="決定" name ="decision" src="./IMG/decision_1.png" alt="decision" class="form-button">
-		</div>
 
+		<div class="button-container">
+			<div>
+			<button type="button" name="return" value="戻る" onclick="window.location.href='question'" class="button_line007">戻る</button>
+			</div>
+			<div>
+			<button type="submit" name="dicision" value="決定" class="button_line008">決定</button>
+			</div>
+		</div>
 	</form>
 </body>
 </html>
