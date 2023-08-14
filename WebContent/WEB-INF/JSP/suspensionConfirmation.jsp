@@ -11,35 +11,34 @@
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/questionStyle.css">
 <title>中断確認</title>
 </head>
 <body>
+	<div class="image-container">
+		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+	</div>
 	<div>
-		<div>
-			<h1>中断しますか</h1>
-			<div>
-				<form action="learningResult" method="post">
-					<div style="display: inline-block">
-						<div class="button_line007">
-							<button type="submit">中断</button>
-						</div>
-						<div>
-							<c:if test="${sourcePage == 'Home'}">
-								<div class="button_line007">
-									<button type="button"
-										onclick="window.location.href='questionAnswer'">戻る</button>
-								</div>
-							</c:if>
-							<c:if test="${sourcePage == 'Time'}">
-								<div class="button_line007">
-									<button type="button"
-										onclick="window.location.href='fourQuestions'">戻る</button>
-								</div>
-							</c:if>
-						</div>
-					</div>
-				</form>
-			</div>
+		<div id="info">中断しますか</div>
+		<div class="button-container">
+			<form action="learningResult" method="post">
+				<div>
+					<button type="submit" class="button_line007">中断</button>
+				</div>
+				<div>
+					<c:if test="${sourcePage == 'Home'}">
+						<button type="button" class="button_line008"
+							onclick="window.location.href='questionAnswer'">戻る</button>
+					</c:if>
+				</div>
+				<div>
+					<c:if test="${sourcePage == 'Time'}">
+						<button type="button" class="button_line008"
+							onclick="window.location.href='fourQuestions'">戻る</button>
+					</c:if>
+				</div>
+			</form>
 		</div>
 	</div>
 </body>
