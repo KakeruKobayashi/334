@@ -64,8 +64,30 @@ body{
 	transform: translateY(5px); /* クリック中の少し下への移動 */
 }
 
+.form-select-box {
+    display: flex;
+    justify-content: space-between;
+}
+.form-select {
+    position: relative;
+}
 
+.form-select::before {
+    position: absolute;
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 10px;
+    right: 17px;
+}
 
-
-
+.dropdown-toggle {
+    padding: 8px 23px 8px 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #a5a5a5;
+    border-radius: 4px;
+    font-size: 14px;
+}
 
