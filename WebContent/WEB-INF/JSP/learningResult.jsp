@@ -15,6 +15,9 @@
 <title>学習結果</title>
 </head>
 <body>
+<div class="image-container">
+		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+	</div>
 	<div>
 		<h5>
 			現在選択中コース：
