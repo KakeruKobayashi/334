@@ -30,3 +30,4 @@ public class SuspensionConfirmationServlet extends HttpServlet {
 	}
 
 }
+
