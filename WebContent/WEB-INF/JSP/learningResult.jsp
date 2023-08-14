@@ -12,6 +12,7 @@
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/questionStyle.css">
 <title>学習結果</title>
 </head>
 <body>
@@ -19,59 +20,47 @@
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<div>
-		<h5>
-			現在選択中コース：
+		<div class="course-container">
+			現在選択中コース：<br><c:out value="${course.coursename}コース" />
 			<br>
-		</h5>
+		</div>
 		<div>
 			<c:out value = "${courseName}" />
 		</div>
 	</div>
 	<c:if test="${sourcePage == 'Home'}">
 		<div>
+			<div id="info">単語1問1答</div>
 			<div>
-				<p>
-					単語1問1答
-				</p>
-				<br>
-			</div>
-			<div>
-				<div>
-					<h2>
-						確認テスト結果
-						<br>
-						5問中4問正解
-					</h2>
-				</div>
-				<br>
-				<div>
-					<p>
+				<div id="info">確認テスト結果<br>5問中4問正解</div>
+
+					<div id="info">
 						次は満点目指そう
-					</p>
+					</div>
 				</div>
 			</div>
-		</div>
+
 	</c:if>
 	<c:if test="${sourcePage == 'Time'}">
 		<div>
 			<div>
-				<h4>TOEIC本番想定テスト</h4>
+			<div id="info">TOEIC本番想定テスト</div>
 			</div>
 			<div>
-				<h2>
+				<div id="info">
 					確認テスト結果
 					<br>
 					20問中19問正解
-				</h2>
+				</div>
 			</div>
-			<div>
+			<div id="info">
 				次は満点目指そう！
 			</div>
 		</div>
 	</c:if>
 	<div>
 		<form action = "home" method = "get">
-			<button type="submit">終了</button>
+			<button type="submit" class="button_line008">終了</button>
 		</form>
 	</div>
 </body>

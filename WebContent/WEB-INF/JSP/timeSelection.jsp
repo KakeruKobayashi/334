@@ -9,13 +9,21 @@
 	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
-	<link rel="stylesheet" type="text/css"
+<link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/questionStyle.css">
 
 <title>勉強時間選択</title>
 </head>
 <body>
-	<div id="info">今日の勉強時間を選択してください</div>
+<div class="image-container">
+		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+	</div>
+	<div id="info">
+		今日の勉強時間を<br>選択してください
+	</div>
+	<div id="info">
 	<form action="timeSelectionController" method="post">
 		<div id="customTime">
 			<input type="number" name="hours" id="hours" min="0" max="23"
@@ -23,14 +31,15 @@
 				id="minutes" min="0" max="59" value="0"> 分
 		</div>
 		<br>
+	</div>
 		<div class="button-container">
-			<div class="button_line007">
-				<button type="button" name="return"
-					onclick="window.location.href='home'">戻る</button>
-			</div>
-			<div class="button_line007">
-				<button type="submit">決定</button>
-			</div>
+		<div>
+		<button type="button" name="return" value="戻る" class="button_line007"
+				onclick="window.location.href='home'">戻る</button>
+		</div>
+		<div>
+		<button type="submit" class="button_line008">決定</button>
+		</div>
 		</div>
 	</form>
 </body>

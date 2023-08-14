@@ -20,20 +20,22 @@
 			<div>
 				<form action="learningResult" method="post">
 					<div style="display: inline-block">
-						<div class="button_line007">
-							<button type="submit">中断</button>
+						<div>
+							<button type="submit" class="button_line008">中断</button>
 						</div>
 						<div>
 							<c:if test="${sourcePage == 'Home'}">
-								<div class="button_line007">
+								<div>
 									<button type="button"
-										onclick="window.location.href='questionAnswer'">戻る</button>
+										onclick="window.location.href='questionAnswer'"
+										class="button_line007">戻る</button>
 								</div>
 							</c:if>
 							<c:if test="${sourcePage == 'Time'}">
-								<div class="button_line007">
+								<div>
 									<button type="button"
-										onclick="window.location.href='fourQuestions'">戻る</button>
+										onclick="window.location.href='fourQuestions'"
+										class="button_line007">戻る</button>
 								</div>
 							</c:if>
 						</div>
