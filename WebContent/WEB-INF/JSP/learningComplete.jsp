@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
+	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <title>コース終了</title>
 </head>
 <body>
@@ -32,8 +32,7 @@
                 </div>
         </div>
         <div>
-         <input type="button" name="home" onclick="window.location.href='home'">
-         <img src="./IMG/home_1.png" alt="ホーム">
+         <button type="button"onclick="window.location.href='home'">終了</button>
         </div>
     </div>
 </body>
