@@ -65,11 +65,11 @@
 				<p>解説</p>
 			</div>
 		</div>
-<br>
-		<div>
-			<form action="learningResult" method="post">
-				<button type="submit" name="next" value="次へ" class="button_line008">次へ</button>
-			</form>
-		</div>
+	</div>
+	<div>
+		<form action="learningResult" method="post">
+			<button type="submit" name="next" value="次へ" class="button_line008">次へ</button>
+		</form>
+	</div>
 </body>
 </html>
