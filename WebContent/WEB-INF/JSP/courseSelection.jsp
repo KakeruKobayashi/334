@@ -45,10 +45,10 @@
 
 		<div class="button-container">
 			<div>
-			<button type="button" name="return" value="戻る" onclick="window.location.href='question'" class="button_line007">戻る</button>
+			<button type="button" name="return" value="戻る" onclick="window.location.href='question'" class="button_line007">前に戻る</button>
 			</div>
 			<div>
-			<button type="submit" name="dicision" value="決定" class="button_line008">決定</button>
+			<button type="submit" name="dicision" value="決定" class="button_line008">決定する</button>
 			</div>
 		</div>
 	</form>
