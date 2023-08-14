@@ -17,8 +17,7 @@
 <header></header>
 <div class="image-container">
 	<img class="image-element" src="./IMG/Background_move.png" alt="Image">
-	</div>
-	<div>
+</div>
 	<br>
 	<br>
 	<br>
@@ -39,19 +38,14 @@
 	<div class="button-container">
 		<div>
 			<form action = "courseSelection" method = "get">
-			<div class="button_line007">
-				<button type="submit">戻る</button>
-			</div>
+			<button type="submit" name="back" value="戻る" class="button_line007">戻る</button>
 			</form>
 		</div>
 		<div>
 			<form action = "courseConfirmController" method = "post">
-			<div class="button_line007">
-				<button type="submit">学習を始める</button>
-			</div>
+			<button type="submit" name="start" value="学習を始める" class="button_line008">学習を<br>始める</button>
 			</form>
 		</div>
-	</div>
 	</div>
 	<footer></footer>
 </body>
