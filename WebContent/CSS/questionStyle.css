@@ -60,4 +60,16 @@ label input[type="radio"]:checked + span {
   padding: 10px; /* 内側の余白を設定 */
 }
 
+/*judgement*/
+.answerForm {
+	text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; /* 適切なマージンを設定 */
+}
 
+.box {
+    margin-top: 10px; /* 適切なマージンを設定 */
+}
