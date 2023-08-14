@@ -7,30 +7,32 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/questionStyle.css">
 <title>答え</title>
 </head>
 <body>
-
+<div class="image-container">
+		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+</div>
+<div class="answerForm">
 <!-- correct.pngは画像なし -->
 	<div>
 		<c:out value="${contentName}" />
 	</div>
 
+
 	<c:if test="${sourcePage == 'Time'}">
 		<c:choose>
 			<c:when test="${answer == 'walk'}">
     正解
-    <img src="../img/correct.png" alt="〇">
+    <img src="../IMG/〇.png" alt="〇">
 			</c:when>
 			<c:otherwise>
     不正解
-    <img src="../img/incorrect.png" alt="×">
+   <img src="../IMG/×.png" alt="×">
 			</c:otherwise>
 		</c:choose>
 
@@ -46,26 +48,26 @@
 		<c:choose>
 			<c:when test="${answer == 'cross'}">
     正解
-    <img src="../img/correct.png" alt="〇">
+    <img src="../IMG/〇.png" alt="〇">
 			</c:when>
 			<c:otherwise>
     不正解
-    <img src="../img/incorrect.png" alt="×">
+    <img src="../IMG/×.png" alt="×">
 			</c:otherwise>
 		</c:choose>
 	</c:if>
 
 	<div class="box">
-		<p>正解:○</p>
+		<p>正解:×</p>
 	</div>
 	<div class="box">
 		<p>解説</p>
 	</div>
+</div>
 
 	<div>
 		<form action="learningResult" method="post">
-			<input type="image" name="next" value="次へ" src="./IMG/next_1.png"
-				alt="次へ">
+		<button type="submit" name="next" value="次へ" class="button_line008">次へ</button>
 		</form>
 	</div>
 
