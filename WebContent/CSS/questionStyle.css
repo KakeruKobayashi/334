@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
-body{
-	font-family:"Yu Gothic";
-	font-size:20px;
+body {
+	font-family: "Yu Gothic";
+	font-size: 20px;
 }
+
 #info {
 	margin-top: 100px;
 	text-align: center;
@@ -12,64 +13,68 @@ body{
 
 /* ラジオボタン */
 label {
-    display: inline-flex; /* フレックスボックスを使ってラジオボタンを並べる */
-    align-items: center; /* ボタンを垂直中央に配置 */
-    margin-left: 65px; /* ボタン間の余白 */
+	display: inline-flex; /* フレックスボックスを使ってラジオボタンを並べる */
+	align-items: center; /* ボタンを垂直中央に配置 */
+	margin-left: 65px; /* ボタン間の余白 */
 }
 
 label input[type="radio"] {
-    display: none; /* ラジオボタンを非表示に */
+	display: none; /* ラジオボタンを非表示に */
 }
 
 label span {
-    display: inline-block;
-    width: 250px;
-    height: 190px;
-    line-height: 200px;
-    text-align: center;
-    color: #FFF;
-    font-size: 29px;
-    background-color: #020659;
-    border: 1px solid #333;
-    border-radius: 20px;
-    padding: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+	display: inline-block;
+	width: 250px;
+	height: 190px;
+	line-height: 200px;
+	text-align: center;
+	color: #FFF;
+	font-size: 29px;
+	background-color: #020659;
+	border: 1px solid #333;
+	border-radius: 20px;
+	padding: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
-label input[type="radio"]:checked + span {
-    color: #FFF;
-    background-color: #7275af;
-    border-color: #0460D9;
+label input[type="radio"]:checked+span {
+	color: #FFF;
+	background-color: #7275af;
+	border-color: #0460D9;
 }
 
 /* ラジオボタンとラベルを含むコンテナの余白 */
 .radio-container {
-    display: inline-block;
-    margin-right: 20px; /* ラジオボタン間の余白 */
+	display: inline-block;
+	margin-right: 20px; /* ラジオボタン間の余白 */
 }
-
 
 /*questionAnswer*/
 .questionForm {
-  margin-left:60px;
-  width:600px;
-  font-size: 30px;
-  text-align:center;
-  border: 1px solid black; /* 枠線を追加 */
-  padding: 10px; /* 内側の余白を設定 */
+	margin-left: 60px;
+	width: 600px;
+	font-size: 30px;
+	text-align: center;
+	border: 1px solid black; /* 枠線を追加 */
+	padding: 10px; /* 内側の余白を設定 */
 }
 
 /*judgement*/
-.answerForm {
-	text-align:center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px; /* 適切なマージンを設定 */
+.box {
+	margin-top: 150px;
+	text-align: center;
+	margin-top: 10px; /* 適切なマージンを設定 */
+	font-size: 30px;
 }
 
-.box {
-    margin-top: 10px; /* 適切なマージンを設定 */
+.Answer {
+	margin-left: 60px;
+	margin-top:60px;
+	width: 600px;
+	font-size: 30px;
+	text-align: center;
+	border: 1px solid black; /* 枠線を追加 */
+	padding: 10px; /* 内側の余白を設定 */
+	border-radius: 10px;
 }
