@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body{
+	font-family: "Yu Gothic";
+}
+
 /* 個別のボタンのスタイル */
 .homeButton-container {
     position: absolute;
@@ -32,12 +36,113 @@
     font-size: 20px;
 	}
 
-	.course-container p {
+.course-container p {
     margin-bottom: 5px;
 }
 
 .course-container select {
+	font-family: "Yu Gothic";
     width: 200px; /* プルダウンフォームの幅 */
     height: 30px; /* プルダウンフォームの高さ */
 	font-size: 20px;
+}
+
+/*ボタン*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    padding: 30px;
+}
+
+.btn,
+.btn,
+button.btn {
+    font-size: 4.8rem;
+    /* 3倍に拡大 */
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 3rem 12rem;
+    /* 3倍に拡大 */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 1.5rem;
+    /* 3倍に拡大 */
+    background-color: white;
+    /* 背景色を白に設定 */
+}
+
+.btn-svg {
+    font-weight: 700;
+    line-height: 162px;
+    /* 3倍に拡大 */
+
+    width: 612px;
+    /* 3倍に拡大 */
+    height: 162px;
+    /* 3倍に拡大 */
+    padding: 0;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-svg svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.btn-svg svg rect {
+    -webkit-transition: all 1200ms ease;
+    /* アニメーション時間を適宜調整 */
+    transition: all 1200ms ease;
+    /* アニメーション時間を適宜調整 */
+
+    stroke: #000;
+    stroke-width: 6;
+    /* 3倍に拡大 */
+    stroke-dasharray: 600px, 48px;
+    /* 3倍に拡大 */
+    stroke-dashoffset: 210px;
+    /* 3倍に拡大 */
+}
+
+.btn-svg:hover svg rect {
+    stroke-dashoffset: 852px;
+    /* 3倍に拡大 */
+}
+
+.btn-svg span {
+	font-family: "Yu Gothic";
+    color: #000;
+}
+
+button{
+	border:none;
 }

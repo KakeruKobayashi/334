@@ -6,6 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>学習履歴(グラフ)</title>
+<link rel="stylesheet" type="text/css"href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css"href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css"href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 </head>
 
 <body>
@@ -17,8 +20,9 @@
 	</div>
 
 
-	<img src="../img/graph.png" alt="グラフ">
+	<img class="graph" src="./IMG/graph.png" alt="グラフ">
 	<br>
+	<img class="flow" src="./IMG/flowstatus.png" alt="フロー">
 
 	<div>
 		<form action="home" method="get">

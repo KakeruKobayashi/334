@@ -7,16 +7,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/commonStyle.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/fontStyle.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/courseSelection.css">
 
 <title>コンテンツ検索結果</title>
 </head>
 <body>
+<div class="image-container">
+	<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+</div>
 	<div id="info">検索結果</div>
 	<form action="contentSelectionController" method="post">
 		<div class="course">
@@ -31,22 +32,17 @@
 			<br>
 			</c:forEach>
 		</div>
-		<div class="button-container"style="display: inline-block">
-			<div>
-				<input type="image" name="decide"> <img
-					src="./IMG/decision_1.png" alt="決定" class="form-button">
-			</div>
-			<div>
+		<div class="button-container">
+		<div>
 				<c:if test="${sourcePage == 'Home'}">
-					<input type="button" name="back"
-						onclick="window.location.href='home'">
-					<img src="./IMG/return_1.png" alt="戻る" class="form-button">
+				<button type = "button" name = "back" value = "戻る" class="button_line007" onclick="window.location.href='home'">戻る</button>
 				</c:if>
 				<c:if test="${sourcePage == 'Time'}">
-					<input type="button" name="back"
-						onclick="window.location.href='timeSelection'">
-					<img src="./IMG/return_1.png" alt="戻る" class="form-button">
+				<button type = "button" name = "back" value = "戻る" class="button_line007" onclick="window.location.href='timeSelection'">戻る</button>
 				</c:if>
+			</div>
+			<div>
+			<button type = "submit" name="decide" value="決定" class="button_line008">決定</button>
 			</div>
 		</div>
 	</form>

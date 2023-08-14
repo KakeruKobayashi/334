@@ -36,32 +36,44 @@
 		<div class="homeButton-container" >
 			<div>
 				<c:if test="${nickname == null}">
-					<input type="image" name="learingStart"
-						onclick="window.location.href='personal'"
-						src="./IMG/learningStart_1.png" alt="学習を始める">
+					<button type="button" name="learingStart" onclick="window.location.href='personal'" class="btn btn-svg">
+						<svg>
+							<rect x="6" y="6" rx="0" fill="none" width=600 height="150"></rect>
+						  </svg>
+						<span>学習を始める</span>
+					</button>
 				</c:if>
 			</div>
 			<div>
 				<c:if test="${nickname != null}">
 					<div>
 						<c:if test="${personalQuestionResult eq 2}">
-							<input type="image" name="learingStart"
-								onclick="window.location.href='contentSearchController'"
-								src="./IMG/learningStart_1.png" alt="学習を始める">
+							<button type="button" name="learingStart" onclick="window.location.href='contentSearchController'" class="btn btn-svg">
+								<svg>
+									<rect x="6" y="6" rx="0" fill="none" width=600 height="150"></rect>
+								</svg>
+								<span>学習を始める</span>
+							</button>
 						</c:if>
 						<c:if test="${personalQuestionResult eq 1}">
-							<input type="image" name="learingSrart"
-								onclick="window.location.href='timeSelection'"
-								src="./IMG/learningStart_1.png" alt="学習を始める">
+							<button type="button" name="learingStart" onclick="window.location.href='timeSelection'" class="btn btn-svg">
+								<svg>
+									<rect x="6" y="6" rx="0" fill="none" width=600 height="150"></rect>
+								  </svg>
+								<span>学習を始める</span>
+							</button>
 						</c:if>
 					</div>
 				</c:if>
 			</div>
 			<div>
 				<form action="learningHistory" method="get">
-					<input type="image" name="learningHistory"
-						onclick="window.location.href='learningHistory'"
-						src="./IMG/learningHistory_1.png" alt="学習履歴">
+					<button type="button" name="learningHistory" onclick="window.location.href='learningHistory'" class="btn btn-svg">
+						<svg>
+							<rect x="6" y="6" rx="0" fill="none" width=600 height="150"></rect>
+						  </svg>
+						<span>学習履歴を見る</span>
+					</button>
 				</form>
 			</div>
 		</div>
