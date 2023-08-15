@@ -35,11 +35,11 @@
 			</div>
 
 			<div class="form-group">
-				<select name="year" id="id_year" class="form-input">
+				<select name="year" id="id_year" class="birthday_input" title = "年">
 				</select>
-				<select name="month" id="id_month" class="form-input">
+				<select name="month" id="id_month" class="birthday_input" title = "月">
 				</select>
-				<select name="day" id="id_day" class="form-input">
+				<select name="day" id="id_day" class="birthday_input" title = "日">
 				</select>
 			</div>
 
