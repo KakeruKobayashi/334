@@ -37,7 +37,7 @@
 		<form action="personalQuestion" method="get">
 		<button type="submit" name="return" value="やり直す" class="button_line007">戻る</button>
 		</form>
-		<form action="question" method="get">
+		<form action="personalQuestionResultController" method="get">
 			<div>
 			<button type="submit" name="dicision" value="決定" class="button_line008">決定</button>
 			</div>

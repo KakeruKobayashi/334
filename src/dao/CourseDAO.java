@@ -59,4 +59,45 @@ public class CourseDAO {
 			}
 		}
 	}
+
+	public String commentCourse(String genre){
+		PreparedStatement statement = null;
+		String courseComment = null;
+
+		try {
+			String sql = "SELECT comment FROM course WHERE genre = ?";
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, genre);
+
+			ResultSet result = statement.executeQuery();
+
+
+
+			if (result.next()) { // レコードがあるかどうか確認
+	            courseComment = result.getString("comment"); // コメントを取得
+	        }
+
+
+			return courseComment;
+
+		}catch (SQLException e) {
+
+			e.printStackTrace();
+			throw new RuntimeException("SQLの実行に失敗しました", e);
+
+		} finally {
+			try {
+				if (statement != null) {
+
+					statement.close();
+					System.out.println("ステートメントの解放に成功しました");
+
+				}
+			} catch (SQLException e) {
+
+				throw new RuntimeException("SQLの実行の後処理に失敗しました", e);
+
+			}
+		}
+	}
 }
