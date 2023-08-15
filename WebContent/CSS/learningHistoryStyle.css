@@ -2,11 +2,24 @@
 
 /* learningHistoryStyle.css */
 
+#info {
+	line-height: 1.0;
+}
+
+#info span {
+ 	font-family: "Yu Gothic";
+	font-size: 70px;
+	font-weight: 600; /* 太字にする */
+	color: #177ae8;
+}
+
 /* <div> 要素を中央配置するスタイル */
 .center-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
