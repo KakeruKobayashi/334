@@ -35,14 +35,14 @@
 		<div class="button-container">
 		<div>
 				<c:if test="${sourcePage == 'Home'}">
-				<button type = "button" name = "back" value = "戻る" class="button_line007" onclick="window.location.href='home'">戻る</button>
+				<button type = "button" name = "back" value = "戻る" class="button_line007" onclick="window.location.href='home'">前に戻る</button>
 				</c:if>
 				<c:if test="${sourcePage == 'Time'}">
-				<button type = "button" name = "back" value = "戻る" class="button_line007" onclick="window.location.href='timeSelection'">戻る</button>
+				<button type = "button" name = "back" value = "戻る" class="button_line007" onclick="window.location.href='timeSelection'">前に戻る</button>
 				</c:if>
 			</div>
 			<div>
-			<button type = "submit" name="decide" value="決定" class="button_line008">決定</button>
+			<button type = "submit" name="decide" value="決定" class="button_line008">決定する</button>
 			</div>
 		</div>
 	</form>

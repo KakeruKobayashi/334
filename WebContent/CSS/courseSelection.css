@@ -1,47 +1,62 @@
 @charset "UTF-8";
 
-body {
-	font-family: "Yu Gothic";
-	font-size: 35px;
-}
 
-#info {
-	margin-top: 100px;
-	text-align: center;
-	font-size: 48px;
-}
 
-.course{
-	margin-top:50px;
-}
-
-/* ラベルのスタイル */
-label {
-  display: none;
+/* コースのスタイル */
+.course {
+ display: flex; /* Flexコンテナを使用して要素を中央に配置 */
+  justify-content: center; /* 横方向に中央寄せ */
   font-size: 50px;
-  text-align: center;
-}
-
-/* コースオプションのスタイル */
-.course label.radio-inline__label {
-  display: block;
+  display: inline-block;
+  margin-left:800px;
+  margin: 10px;
   padding: 10px;
-  margin: 5px 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #3498db; /* 好みの背景色に変更してください */
+  color: white; /* テキストの色 */
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-/* アイテムが選択された時の背景色変更 */
-.course label.radio-inline__label:hover,
-.course label.radio-inline__label input:checked {
-  background-color: #3498db; /* 好みのハイライトカラーに変更 */
-  color: white; /* 見やすいテキストカラーに変更 */
+/* ホバー時のスタイル */
+.course:hover {
+  background-color: #2980b9; /* ホバーエフェクトのための少し異なる色に変更してください */
+  transform: scale(1.05);
 }
 
-/* 選択されたアイテムの背景色とテキストカラーを保持 */
-.course label.radio-inline__label input:checked+span {
-    background-color: #3498db; /* 選択時の背景色 */
-    color: white; /* 選択時のテキストカラー */
+/* ラジオボタンを非表示にする */
+.course input[type="radio"] {
+  display: none;
+}
+
+/* 選択されたラベルの外観をカスタマイズ */
+.course label.radio-inline__label {
+  position: relative;
+  padding-left: 30px; /* 必要に応じて調整してください */
+  cursor: pointer;
+}
+
+/* 選択されたラベルに表示されるマークを設定 */
+.course label.radio-inline__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* 必要に応じて調整してください */
+  height: 20px; /* 必要に応じて調整してください */
+  border: 2px solid #3498db; /* 好みの色に変更してください */
+  border-radius: 50%;
+}
+
+/* 選択されたときにチェックマークを適用 */
+.course input[type="radio"]:checked + label.radio-inline__label::before {
+  background-color: #3498db; /* 好みの色に変更してください */
+  border-color: #3498db; /* 好みの色に変更してください */
+  content: "\2713"; /* チェックマークの文字 */
+  color: white; /* チェックマークの色 */
+  font-size: 16px; /* 必要に応じて調整してください */
+  text-align: center;
+  line-height: 20px; /* 必要に応じて調整してください */
 }
