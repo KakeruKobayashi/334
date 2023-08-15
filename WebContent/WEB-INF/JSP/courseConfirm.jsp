@@ -30,6 +30,7 @@
 	    資格名:<c:out value="${course.coursename}" /><br>
 	    試験日:<c:out value="${course.examdate}" />
 	</div>
+	<br>
     <div class="div-flow">
         <p>あなたの資格取得フロー</p>
         <img src="./IMG/courseflow.png" alt="資格取得フロー"><br>
@@ -38,12 +39,12 @@
 	<div class="button-container">
 		<div>
 			<form action = "courseSelection" method = "get">
-			<button type="submit" name="back" value="戻る" class="button_line007">戻る</button>
+			<button type="submit" name="back" value="戻る" class="button_line007">前に戻る</button>
 			</form>
 		</div>
 		<div>
 			<form action = "courseConfirmController" method = "post">
-			<button type="submit" name="start" value="学習を始める" class="button_line008">学習を<br>始める</button>
+			<button type="submit" name="start" value="学習を始める" class="button_line008">はじめる</button>
 			</form>
 		</div>
 	</div>

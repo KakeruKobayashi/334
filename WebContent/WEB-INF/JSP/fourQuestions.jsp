@@ -12,6 +12,9 @@
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/questionStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/personalQuestionStyle2.css">
+
 <title>TOEIC本番想定テスト</title>
 </head>
 <body>
@@ -22,34 +25,38 @@
 		<div class="suspension">
 			<form action="suspensionConfirmation" method="get">
 				<button type="submit" name="suspension" value="中断"
-					class="button_line007">中断</button>
+					class="button_line007">中断する</button>
 			</form>
 		</div>
+	</div>
 
 
 		<div id="info">TOEIC本番想定テスト</div>
-		<div class="questionForm">
-			<div>Choose the correct word to complete the sentence: "I love
+
+			<div class="fourQuestion">
+			Choose the correct word to complete the sentence: "I love
 				to _______ in the park on sunny days."</div>
 			<div>
-				<form action="judgment" method="post">
-					<div>
-						<div style="display: inline-flex">
-							<input type="radio" name="answer" value="walk">walk <input
-								type="radio" name="answer" value="swim">swim
-						</div>
-						<br>
-						<div style="display: inline-flex">
-							<input type="radio" name="answer" value="cook">cook <input
-								type="radio" name="answer" value="sleep">sleep
-						</div>
+
+			<div class="fourAnswer">
+			<form action="judgment" method="post">
+				<div>
+					<div style="display: inline-flex">
+						<label class="four"><input type="radio" name="answer" value="walk"><span>walk</span></label>
+						<label class="four"><input type="radio" name="answer" value="swim"><span>swim</span></label>
 					</div>
-			</div>
-		</div>
-		<div class="button-container">
-			<button type="submit" class="button_line008">送信</button>
-		</div>
-		</form>
-	</div>
+					<br>
+					<div style="display: inline-flex">
+					    <label class="four"><input type="radio" name="answer" value="cook"><span>cook</span></label>
+					    <label class="four"><input type="radio" name="answer" value="sleep"><span>sleep</span></label>
+					</div>
+                 </div>
+
+
+				<div class="button-container">
+					<button type="submit" class="button_line008">送信する</button>
+				</div>
+	       </form>
+	    </div>
 </body>
 </html>
