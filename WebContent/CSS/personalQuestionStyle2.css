@@ -28,6 +28,7 @@ label span {
 	border-radius: 20px;
 	padding: 5px 20px;
 	cursor: pointer; /* ポインターを表示してクリック可能であることを示す */
+	background-color: white;
 }
 label input:checked + span {
 	color: #FFF;

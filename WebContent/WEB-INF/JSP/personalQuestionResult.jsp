@@ -23,7 +23,7 @@
 	</div>
 	<div class="studyType">
 		<c:out value="${nickname}" />
-		さんの勉強のタイプは…
+		さんの<br>勉強のタイプは…
 	</div>
 	<c:choose>
 		<c:when test="${personalQuestionResult eq 1}">
