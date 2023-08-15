@@ -25,7 +25,7 @@
 	</div>
 	<div id="info">
 		<c:out value="${nickname}" />
-		さんのことを教えてください
+		さんの<br>ことを教えてください
 	</div>
 	<br>
 	<div>
