@@ -24,17 +24,25 @@
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<div id="info">
-		<c:out value="${nickname}" />
-		さんの<br>ことを教えてください
+		<p>
+			ここでは <c:out value="${nickname}" /> さんが学習を継続できるよう、 <c:out value="${nickname}" /> さんに合った学習方法を提案させていただきます。
+			そのために以下のアンケートのご回答をお願いします。
+		</p>
 	</div>
 	<br>
 	<div>
 		<form action="personalQuestionController" method="post">
 			<div class="Q">Q1.コツコツ学習するのが得意</div>
 			<div class="A">
-				<label><input type="radio" name="question1" value="0"
-					required><span>はい</span>
-				</lavel> <label><input type="radio" name="question1" value="1"><span>いいえ</span></label>
+				<label>
+					<input type="radio" name="question1" value="0" required><span>はい</span>
+				</lavel>
+				<label>
+					<input type="radio" name="question1" value="1">
+					<span>
+						いいえ
+					</span>
+				</label>
 			</div>
 			<br>
 			<div class="Q">Q2.まとまった時間がとりやすい</div>
@@ -88,12 +96,11 @@
 
 			<div class="button-container">
 				<div>
-				<button type="button" name="return" value="戻る" onclick="window.location.href='personal'" class="button_line007">戻る</button>
+					<button type="button" name="return" value="戻る" onclick="window.location.href='personal'" class="button_line007">戻る</button>
 				</div>
 				<div>
-				<button type="submit" name="dicision" value="送信" class="button_line008">送信</button>
+					<button type="submit" name="dicision" value="送信" class="button_line008">送信</button>
 				</div>
-
 			</div>
 		</form>
 	</div>
