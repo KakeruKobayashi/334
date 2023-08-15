@@ -275,9 +275,8 @@
 					<button type="button" name="return" value="戻る"
 						onclick="window.location.href='home'" class="button_line007">戻る</button>
 				</div>
-				<div>
-					<button type="submit" name="return" value="送信"
-						class="button_line008">送信</button>
+				<div >
+					<button type="submit" name="return" value="登録" class="button_line008">登録</button>
 				</div>
 			</div>
 		</form>
