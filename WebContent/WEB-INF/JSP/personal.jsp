@@ -8,17 +8,15 @@
 	href="${pageContext.request.contextPath}/CSS/commonStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/fontStyle.css">
-<link rel="stylesheet" type="text/css"
+	<link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/personalStyle.css">
-<script src="./JS/personal.js"></script>
-
 <title>個人情報入力</title>
 </head>
 <body>
-	<div class="image-container">
-		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+ 	<div class="image-container">
+	<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<header></header>
 	<div>
@@ -35,29 +33,15 @@
 				<label class="form-label" for="fullname">氏名</label> <input
 					class="form-input" type="text" name="fullname">
 			</div>
-			<div>
-				<label>*生年月日</label>
-				<div class="form-select-box">
-					<div class="form-select">
-						<select class="birthday-year dropdown-toggle">
-							<!-- 1930-2050まで -->
-						</select>
-					</div>
-					/
-					<div class="form-select">
-						<select class="birthday-month dropdown-toggle">
-							<!-- 1-12まで -->
-						</select>
-					</div>
-					/
-					<div class="form-select">
-						<select class="birthday-day dropdown-toggle">
-							<!-- 1-31まで -->
-						</select>
-					</div>
-				</div>
+			<div class="form-group">
+				<label class="form-label">*生年月日</label> <input class="form-input"
+					type="text" name="year" pattern="[0-9]{4}" required maxlength="4"
+					placeholder="yyyy">年 <input class="form-input" type="text"
+					name="month" pattern="[0-9]{2}" required maxlength="2"
+					placeholder="mm">月 <input class="form-input" type="text"
+					name="day" pattern="[0-9]{2}" required maxlength="2"
+					placeholder="dd">日
 			</div>
-
 			<div class="form-group">
 				<label class="form-label" for="occupation">*職種</label> <select
 					class="form-select" name="occupation" required>
@@ -75,7 +59,7 @@
 					<option value="専門学校生・短大生">専門学校生・短大生</option>
 					<option value="高校生">高校生</option>
 					<option value="医師">医師</option>
-					<option value="士業">士業（公認会計士・弁護士）</option>
+					<option value="士業（公認会計士・弁護士）">士業（公認会計士・弁護士）</option>
 					<option value="NGO・NPO法人職員">NGO・NPO法人職員</option>
 					<option value="家事手伝い">家事手伝い</option>
 					<option value="無職">無職</option>
@@ -101,13 +85,11 @@
 
 
 			<div class="button-container">
-				<div>
-					<button type="button" name="return" value="戻る"
-						onclick="window.location.href='home'" class="button_line007">戻る</button>
+				<div >
+					<button type="button" name="return" value="戻る" onclick="window.location.href='home'" class="button_line007">戻る</button>
 				</div>
-				<div>
-					<button type="submit" name="return" value="登録"
-						class="button_line008">登録</button>
+				<div >
+					<button type="submit" name="return" value="送信" class="button_line008">送信</button>
 				</div>
 			</div>
 		</form>
@@ -115,3 +97,4 @@
 </body>
 
 </html>
+
