@@ -6,6 +6,13 @@ public class Course {
 	private String courseName;
 	private Date examDate;
 	private String genre;
+	private String courseComment;
+	public String getCourseComment() {
+		return courseComment;
+	}
+	public void setCourseComment(String courseComment) {
+		this.courseComment = courseComment;
+	}
 	public String getCoursename() {
 		return courseName;
 	}

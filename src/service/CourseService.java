@@ -23,5 +23,21 @@ public class CourseService {
 			connectionManager.closeConnection();
 		}
 	}
+
+	 public String commentCourse(String genre) {
+	        ConnectionManager connectionManager = new ConnectionManager();
+	        try {
+	            Connection connection = connectionManager.getConnection();
+	            CourseDAO courseDAO = new CourseDAO(connection);
+	            String courseComment = courseDAO.commentCourse(genre);
+	            connectionManager.commit();
+	            return courseComment;
+	        } catch (RuntimeException e) {
+	            connectionManager.rollback();
+	            throw e;
+	        } finally {
+	            connectionManager.closeConnection();
+	        }
+	    }
 }
 
