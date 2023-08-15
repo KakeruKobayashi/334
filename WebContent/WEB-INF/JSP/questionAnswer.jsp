@@ -11,6 +11,11 @@
 <title>単語1問1答</title>
 </head>
 <body>
+
+<div class="content-status">
+単語1問1答 5/5
+</div>
+
  <div class="image-container">
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 </div>
@@ -29,8 +34,8 @@
 		<div>
 			<form action="judgment" method="post">
 				<div class="●×">
-					<button type="submit" name="answer" value="circle"><img src="./IMG/〇.png"></button>
-					<button type="submit" name="answer" value="cross"><img src="./IMG/×.png"></button>
+					<button type="submit" name="answer" value="circle" class="circle-btn"><img src="./IMG/〇.png" class="circleMark"></button>
+					<button type="submit" name="answer" value="cross" class="cross-btn"><img src="./IMG/×.png" class="crossMark"></button>
 				</div>
 			</form>
 		</div>
