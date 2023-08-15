@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 .form-group {
 	margin-bottom: 9px;
 }
@@ -12,7 +10,7 @@
 }
 
 .form-input {
-	width: 600px;
+	width: 100px;
 	height: 50px;
 	border: 2px solid #ccc;
 	border-radius: 5px;

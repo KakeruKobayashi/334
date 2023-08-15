@@ -33,6 +33,9 @@
 			<div class="typeResult"><p>毎日コツコツ<br>タイプ</p></div>
 		</c:when>
 	</c:choose>
+	<div>
+
+	</div>
 	<div class="button-container">
 		<form action="personalQuestion" method="get">
 		<button type="submit" name="return" value="やり直す" class="button_line007">戻る</button>
