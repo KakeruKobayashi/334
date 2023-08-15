@@ -4,12 +4,19 @@
 	margin-bottom: 9px;
 }
 
-.form-input, .form-label, .form-select {
+.form-input, .form-label, .form-select, .birthday_input {
 	margin-left: 65px;
 	padding: none;
 }
 
 .form-input {
+	width: 600px;
+	height: 50px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+
+.birthday_input {
 	width: 100px;
 	height: 50px;
 	border: 2px solid #ccc;
