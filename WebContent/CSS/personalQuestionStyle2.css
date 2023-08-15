@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-@charset "UTF-8";
-
-
-
 .Q{
 	margin-left:180px;
 }
@@ -18,9 +14,11 @@
 label {
 	margin-right: 10px; /* ボタン同士の間隔を少し広めに */
 }
+
 label input {
 	display: none;
 }
+
 label span {
 	color: #333;
 	font-size: 25px;
@@ -30,6 +28,7 @@ label span {
 	cursor: pointer; /* ポインターを表示してクリック可能であることを示す */
 	background-color: white;
 }
+
 label input:checked + span {
 	color: #FFF;
 	background: #0460D9;
@@ -54,6 +53,12 @@ label input:checked + span {
 	font-size: 50px;
 }
 
+.studyTypeSub {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 50px;
+}
+
 .typeResult {
 	margin-top: 50px;
 	font-size : 4em;
@@ -63,4 +68,10 @@ label input:checked + span {
 	color: #FFAB91;
 	text-shadow: 0.02em 0.02em 0.02em rgba(0, 0, 0, 1);
 	font-size: 4em;
+}
+
+.explaination {
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
 }
