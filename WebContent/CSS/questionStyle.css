@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
-
-
 /* ラジオボタン */
 label {
 	display: inline-flex; /* フレックスボックスを使ってラジオボタンを並べる */
 	align-items: center; /* ボタンを垂直中央に配置 */
-	margin-left: 65px; /* ボタン間の余白 */
+	margin-left: 220px; /* ボタン間の余白 */
 }
 
 label input[type="radio"] {
@@ -14,19 +12,22 @@ label input[type="radio"] {
 }
 
 label span {
-	display: inline-block;
-	width: 250px;
-	height: 190px;
-	line-height: 200px;
+	width: 300px;
+	height: 60px;
+	line-height: 60px;
 	text-align: center;
 	color: #FFF;
-	font-size: 29px;
-	background-color: #020659;
+	font-size: 32px;
+	background-color: #484ca1;
 	border: 1px solid #333;
-	border-radius: 20px;
+	border-radius: 15px;
 	padding: 5px;
 	cursor: pointer;
 	transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.genre{
+	background-color: #020659;
 }
 
 label input[type="radio"]:checked+span {
@@ -47,7 +48,6 @@ label input[type="radio"]:checked+span {
 	width: 600px;
 	font-size: 30px;
 	text-align: center;
-	border: 1px solid black; /* 枠線を追加 */
 	padding: 10px; /* 内側の余白を設定 */
 }
 
@@ -61,7 +61,7 @@ label input[type="radio"]:checked+span {
 
 .Answer {
 	margin-left: 60px;
-	margin-top:60px;
+	margin-top: 60px;
 	width: 600px;
 	font-size: 30px;
 	text-align: center;
@@ -71,30 +71,78 @@ label input[type="radio"]:checked+span {
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 #mask {
-  background: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
+	background: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
 }
 
 #modal {
-  background: #fff;
-  width: 50%;
-  padding: 24px;
-  border-radius: 4px;
-  color: red;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin: 0 auto;
-  z-index: 2;
+	background: #fff;
+	width: 50%;
+	padding: 24px;
+	border-radius: 4px;
+	color: red;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	margin: 0 auto;
+	z-index: 2;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.question-btn-container {
+	background-color: white;
+	height: 50px;
+	width: 50px;
+	border: none;
+	padding-top:10px;
+}
+
+/* modal.css */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modal-content {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	max-width: 25%;
+	max-height: 100%;
+	overflow: auto;
+}
+
+.modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.questionMark {
+	background-color: white;
 }

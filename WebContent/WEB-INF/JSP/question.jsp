@@ -16,48 +16,56 @@
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/questionStyle.css">
-
+<link rel="stylesheet" type="text/css" href="modal.css">
+<!-- Include modal CSS -->
 <script src="./JS/question.js"></script>
 <script src="./JS/comment.js"></script>
+<script src="modal.js"></script>
+<!-- Include modal JavaScript -->
 <title>アンケート画面</title>
 </head>
 <body>
+
 	<div class="image-container">
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
-	<div id="info">興味のあるカテゴリー・コンテンツを<br>選択してください</div>
-	<script>
-		var TOEICComment = '${TOEIC}'
-		var TOEFLComment = '${TOEFL}'
-		var GTECComment = '${GTEC}'
-	</script>
+	<div id="info">興味のあるカテゴリー・コンテンツを選択してください</div>
+
 	<div>
 		<form action="questionController" method="post">
 			<div class="radio-container">
-				<label for="showOptions1" class="custom-radio-container"><span>英語</span>
+				<label for="showOptions1" class="custom-radio-container"><span class= "genre">英語</span>
 					<input type="radio" name="selectedOption" id="showOptions1"
 					value="1" onclick="toggleOptions(1)"></label>
-				<div class="btn-container">
-					<button id="btn3" type="button">
-						<img src="./IMG/questionMark.png" alt="questionMark" id="btn3">
-					</button>
-				</div>
-				<div id="mask" class="hidden"></div>
-				<section id="modal" class="hidden">
-					<p>ボタン３がクリックされました！</p>
-				</section>
+
 				<div id="options1" style="display: none;">
 					<label> <input type="radio" name="genre" value="TOEIC">
 						<span> TOEIC </span>
-					</label> <br> <label> <input type="radio" name="genre"
-						value="TOEFL"> <span> TOEFL </span>
-					</label> <br> <label> <input type="radio" name="genre"
-						value="GTEC"> <span> GTEC </span>
-					</label> <br>
+					</label>
+						<button class="question-btn-container" type="button"
+							onclick="showModal('${TOEIC}')">
+							<img src="./IMG/questionMark.png" alt="questionMark" class = "questionMark">
+						</button>
+					<label> <input type="radio" name="genre" value="TOEFL">
+						<span> TOEFL </span>
+					</label> <span class="btn-container">
+						<button class="question-btn-container" type="button"
+							onclick="showModal('${TOEFL}')">
+							<img src="./IMG/questionMark.png" alt="questionMark">
+						</button>
+					</span> <label> <input type="radio" name="genre" value="GTEC">
+						<span> GTEC </span>
+					</label> <span class="btn-container">
+						<button class="question-btn-container" type="button"
+							onclick="showModal('${GTEC}')">
+							<img src="./IMG/questionMark.png" alt="questionMark">
+						</button>
+					</span>
 				</div>
 			</div>
+
 			<div class="radio-container">
-				<label for="showOptions2" class="custom-radio-container"> <span>
+				<label for="showOptions2" class="custom-radio-container"> <span class= "genre">
 						漢字 </span> <input type="radio" name="selectedOption" id="showOptions2"
 					value="2" onclick="toggleOptions(2)">
 				</label>
@@ -69,7 +77,7 @@
 			</div>
 			<br>
 			<div class="radio-container">
-				<label for="showOptions3" class="custom-radio-container"> <span>
+				<label for="showOptions3" class="custom-radio-container"> <span class= "genre">
 						会計 </span> <input type="radio" name="selectedOption" id="showOptions3"
 					value="3" onclick="toggleOptions(3)">
 				</label>
@@ -85,7 +93,7 @@
 				</div>
 			</div>
 			<div class="radio-container">
-				<label for="showOptions4" class="custom-radio-container"> <span>
+				<label for="showOptions4" class="custom-radio-container"> <span class= "genre">
 						情報 </span> <input type="radio" name="selectedOption" id="showOptions4"
 					value="4" onclick="toggleOptions(4)">
 				</label>
@@ -99,20 +107,20 @@
 			</div>
 			<br>
 			<div class="radio-container">
-				<label for="showOptions5" class="custom-radio-container"> <span>
+				<label for="showOptions5" class="custom-radio-container"> <span class= "genre">
 						マーケティング </span> <input type="radio" name="selectedOption"
 					id="showOptions5" value="5" onclick="toggleOptions(5)">
 				</label>
 				<div id="options5" style="display: none;">
 					<label> <input type="radio" name="genre" value="マーケティング入門">
-						<span> Webマーケティング入門 </span>
+						<span> Webマーケ入門 </span>
 					</label> <br> <label> <input type="radio" name="genre"
-						value="マーケティング応用"> <span> Webマーケティング応用 </span>
+						value="マーケティング応用"> <span> Webマーケ応用 </span>
 					</label> <br>
 				</div>
 			</div>
 			<div class="radio-container">
-				<label for="showOptions7" class="custom-radio-container"> <span>
+				<label for="showOptions7" class="custom-radio-container"> <span class= "genre">
 						データ分析 </span> <input type="radio" name="selectedOption" id="showOptions7"
 					value="7" onclick="toggleOptions(7)">
 				</label>
@@ -126,7 +134,7 @@
 			</div>
 			<br>
 			<div class="radio-container">
-				<label for="showOptions8" class="custom-radio-container"> <span>
+				<label for="showOptions8" class="custom-radio-container"> <span class= "genre">
 						マネジメント </span> <input type="radio" name="selectedOption"
 					id="showOptions8" value="8" onclick="toggleOptions(8)">
 				</label>
@@ -138,7 +146,7 @@
 					</label> <br>
 				</div>
 			</div>
-			<br>
+			<br> <br>
 			<div class="button-container">
 				<div>
 					<button type="button" name="return" value="戻る"
@@ -151,6 +159,13 @@
 				</div>
 			</div>
 		</form>
+	</div>
+
+	<div class="modal-overlay" id="modalOverlay">
+		<div class="modal-content">
+			<span class="modal-close" onclick="closeModal()">&times;</span>
+			<div id="modalContent"></div>
+		</div>
 	</div>
 </body>
 </html>
