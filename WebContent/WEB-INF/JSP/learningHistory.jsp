@@ -9,7 +9,13 @@
 <link rel="stylesheet" type="text/css"href="${pageContext.request.contextPath}/CSS/commonStyle.css">
 <link rel="stylesheet" type="text/css"href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css"href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
+<link rel="stylesheet" type="text/css"href="${pageContext.request.contextPath}/CSS/learningHistoryStyle.css">
+
 </head>
+
+<div class="image-container">
+	<img class="image-element" src="./IMG/Background_move.png" alt="Image">
+</div>
 
 <body>
 	<div>
@@ -20,16 +26,16 @@
 	</div>
 
 
+	<div class="center-container">
 	<img class="graph" src="./IMG/graph.png" alt="グラフ">
 	<br>
 	<img class="flow" src="./IMG/flowstatus.png" alt="フロー">
+	</div>
 
-	<div>
-		<form action="home" method="get">
-			<input type="image" name="backhome" value="ホーム"
-				src="./IMG/home_1.png" alt="ホーム">
-			<!-- ><input type="submit" name="backhome" value="ホーム"> -->
-		</form>
+	<div class="button-container">
+				<div >
+					<button type="button" name="return" value="戻る" onclick="window.location.href='home'" class="button_line007">ホームに戻る</button>
+				</div>
 	</div>
 
 </body>
