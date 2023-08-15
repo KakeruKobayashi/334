@@ -16,7 +16,22 @@
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/courseSelection.css">
+<script>
+  // ラジオボタンの変更を監視する関数
+  function handleRadioChange(radioButton) {
+    // 全てのコース要素を取得
+    var courseElements = document.querySelectorAll('.course');
 
+    // 全てのコース要素の背景色を初期化
+    courseElements.forEach(function(courseElement) {
+      courseElement.style.backgroundColor = '#3498db'; // 初期の背景色に戻す
+    });
+
+    // 選択されたコース要素の背景色を変更
+    var selectedCourseElement = radioButton.closest('.course');
+    selectedCourseElement.style.backgroundColor = '#2323FF'; // 選択後の背景色
+  }
+</script>
 <title>コース選択</title>
 </head>
 <body>
@@ -30,8 +45,8 @@
 	<form action="courseSelectionController" method="post">
 			<c:forEach var="item" items="${courseResult}">
 			<div class="course">
-				<label>
-					<input type="radio" name="learningCourse" value="${item.coursename}" class="radiobutton">
+				<label class="radio-inline__label">
+					<input type="radio" name="learningCourse" value="${item.coursename}" class="radiobutton" onchange="handleRadioChange(this);">
 					<span>
 					資格名:<c:out value="${item.coursename}" /><br>
 					試験日:<c:out value="${item.examdate}" />

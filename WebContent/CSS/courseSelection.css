@@ -1,62 +1,36 @@
 @charset "UTF-8";
 
-
-
 /* コースのスタイル */
 .course {
- display: flex; /* Flexコンテナを使用して要素を中央に配置 */
-  justify-content: center; /* 横方向に中央寄せ */
-  font-size: 50px;
-  display: inline-block;
-  margin-left:800px;
-  margin: 10px;
-  padding: 10px;
-  background-color: #3498db; /* 好みの背景色に変更してください */
-  color: white; /* テキストの色 */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+	width: 600px;
+	margin-top: 50px;
+	margin-left: 70px;
+	font-size: 50px;
+	display: inline-block;
+	padding: 10px;
+	background-color: #3498db; /* 好みの背景色に変更してください */
+	color: white; /* テキストの色 */
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
 }
 
 /* ホバー時のスタイル */
 .course:hover {
-  background-color: #2980b9; /* ホバーエフェクトのための少し異なる色に変更してください */
-  transform: scale(1.05);
+	background-color: #2980b9; /* ホバーエフェクトのための少し異なる色に変更してください */
+	transform: scale(1.05);
 }
 
 /* ラジオボタンを非表示にする */
 .course input[type="radio"] {
-  display: none;
+	display: none;
 }
 
 /* 選択されたラベルの外観をカスタマイズ */
 .course label.radio-inline__label {
-  position: relative;
-  padding-left: 30px; /* 必要に応じて調整してください */
-  cursor: pointer;
+	position: relative;
+	padding-left: 30px; /* 必要に応じて調整してください */
+	cursor: pointer;
 }
 
-/* 選択されたラベルに表示されるマークを設定 */
-.course label.radio-inline__label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px; /* 必要に応じて調整してください */
-  height: 20px; /* 必要に応じて調整してください */
-  border: 2px solid #3498db; /* 好みの色に変更してください */
-  border-radius: 50%;
-}
-
-/* 選択されたときにチェックマークを適用 */
-.course input[type="radio"]:checked + label.radio-inline__label::before {
-  background-color: #3498db; /* 好みの色に変更してください */
-  border-color: #3498db; /* 好みの色に変更してください */
-  content: "\2713"; /* チェックマークの文字 */
-  color: white; /* チェックマークの色 */
-  font-size: 16px; /* 必要に応じて調整してください */
-  text-align: center;
-  line-height: 20px; /* 必要に応じて調整してください */
-}
