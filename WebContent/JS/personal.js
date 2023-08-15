@@ -1,22 +1,13 @@
-(function() {
-	'use strict';
+window.onload = function() {
 
-	const select_year = document.getElementById("id_year");
-	console.log(select_year);
+	const select_year = document.getElementById('id_year');
 	const select_month = document.getElementById('id_month');
 	const select_day = document.getElementById('id_day');
 	let i;
 
-	function sleep(waitMsec) {
-		var startMsec = new Date();
-
-		// 指定ミリ秒間だけループさせる（CPUは常にビジー状態）
-		while (new Date() - startMsec < waitMsec);
-	}
-
 	function set_year() {
 		// 年を生成(100年分)
-		for (i = 1919; i < 2020; i++) {
+		for (i = 1900; i < 2023; i++) {
 			let op = document.createElement('option');
 			op.value = i;
 			op.text = i;
@@ -53,13 +44,9 @@
 		}
 	}
 
-	// load時、年月変更時に実行する
-	window.onload = function() {
-		sleep(500);
-		set_year();
-		set_month();
-		set_day();
-		select_year.addEventListener('change', $set_day)
-		select_month.addEventListener('change', $set_day)
-	}
-})();
+	set_year();
+	set_month();
+	set_day();
+	select_year.addEventListener('change', set_day)
+	select_month.addEventListener('change', set_day)
+}
