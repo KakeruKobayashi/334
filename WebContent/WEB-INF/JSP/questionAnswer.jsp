@@ -23,8 +23,8 @@
 
 		<div id="info">単語1問1答</div>
 		<div class="questionForm">
-			以下の問題が正しいか答えなさい。<br>
-			<div>He often go to the library to study.</div>
+			以下の単語と意味の組み合わせについて正しいかどうか答えなさい。<br>
+			<div><h4>account : 口座・勘定</h4></div>
 		</div>
 		<div>
 			<form action="judgment" method="post">

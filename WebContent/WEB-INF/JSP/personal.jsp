@@ -39,19 +39,19 @@
 				<label>*生年月日</label>
 				<div class="form-select-box">
 					<div class="form-select">
-						<select class="birthday-year dropdown-toggle">
+						<select class="birthday-year">
 							<!-- 1930-2050まで -->
 						</select>
 					</div>
 					/
 					<div class="form-select">
-						<select class="birthday-month dropdown-toggle">
+						<select class="birthday-month">
 							<!-- 1-12まで -->
 						</select>
 					</div>
 					/
 					<div class="form-select">
-						<select class="birthday-day dropdown-toggle">
+						<select class="birthday-day">
 							<!-- 1-31まで -->
 						</select>
 					</div>
