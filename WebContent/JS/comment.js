@@ -1,15 +1,43 @@
-const btn3 = document.getElementById('btn3');
-const mask = document.getElementById('mask');
-const modal = document.getElementById('modal');
-const modalContent = document.getElementById('modalContent'); // モーダルの内容を指定
+// modal.js
+function showModal(content) {
+    var modalOverlay = document.querySelector('.modal-overlay');
+    var modalContent = document.querySelector('.modal-content');
+    var modalClose = document.querySelector('.modal-close');
 
-btn3.addEventListener('click', () => {
-  modalContent.innerText = "ボタン３がクリックされました！"; // ボタンクリック時に表示する内容
-  mask.classList.remove('hidden');
-  modal.classList.remove('hidden');
-});
+    modalContent.innerHTML = content;
+    modalOverlay.style.display = 'flex';
 
-mask.addEventListener('click', () => {
-  mask.classList.add('hidden');
-  modal.classList.add('hidden');
-});
+    modalClose.addEventListener('click', function () {
+        closeModal();
+    });
+
+    modalOverlay.addEventListener('click', function (event) {
+        if (event.target === modalOverlay) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    });
+}
+
+function closeModal() {
+    var modalOverlay = document.querySelector('.modal-overlay');
+    modalOverlay.style.display = 'none';
+}
+
+// Call this function when buttons are clicked
+function showTOEICComment() {
+    showModal(TOEICComment);
+}
+
+function showTOEFLComment() {
+    showModal(TOEFLComment);
+}
+
+function showGTECComment() {
+    showModal(GTECComment);
+}
