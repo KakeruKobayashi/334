@@ -2,15 +2,7 @@
 
 @charset "UTF-8";
 
-body{
-	font-family:"Yu Gothic";
-	font-size:25px;
-}
-#info {
-	margin-top:50px;
-	text-align: center;
-	font-size:30px;
-}
+
 
 .Q{
 	margin-left:180px;

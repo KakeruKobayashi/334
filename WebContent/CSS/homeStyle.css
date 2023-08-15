@@ -21,7 +21,7 @@ body{
     display: flex;
     position: absolute;
     top: 20px;
-    margin-left: 10px;
+    margin-left: -35px;
     width: 6%;
     height: 6%;
 }
@@ -31,10 +31,10 @@ body{
     flex-direction: column;
     position: absolute;
     top: 90px;
-    margin-left: 10px;
+    margin-left: -25px;
     font-weight: bold;
-    font-size: 20px;
-	}
+    font-size: 30px;
+}
 
 .course-container p {
     margin-bottom: 5px;
@@ -43,8 +43,8 @@ body{
 .course-container select {
 	font-family: "Yu Gothic";
     width: 200px; /* プルダウンフォームの幅 */
-    height: 30px; /* プルダウンフォームの高さ */
-	font-size: 20px;
+height: 35px;
+    font-size: 25px;
 }
 
 /*ボタン*/
