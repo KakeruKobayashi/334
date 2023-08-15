@@ -2,10 +2,36 @@
 
 
 #customTime {
-	justify-content: center; /* 水平方向にセンタリング */
-	font-size: 24px;
-	padding: 20px;
-	background-color: white;
-	border-radius: 8px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 50px;
+  width: 700px; /* フォームの幅を調整 */
+  padding: 10px; /* フォームの内側の余白を調整 */
+  margin-left: 40px; /* 水平方向に中央に配置 */
+  margin-bottom: 260px;
+  margin-top: 130px;
+}
+
+#hours,
+#minutes {
+	font-family: "Yu Gothic";
+	width: 100px;
+    height: 70px;
+    margin-right: 5px;
+    border-radius: 10px; /* フォームの角を丸くする */
+	padding: 10px;
+    font-size: 60px;
+    font-weight: 400; /* 太字にする */
+    line-height: 60px;
+}
+
+input[type="number"] {
+  appearance: textfield; /* 数値入力フィールドの外観を調整 */
+  }
+
+
+br {
+  margin-bottom: 10px; /* フォームの間隔を調整 */
+}
+
+#info {
+    margin-top: 120px;
 }

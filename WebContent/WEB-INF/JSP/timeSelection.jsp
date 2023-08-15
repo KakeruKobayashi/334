@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/questionStyle.css">
+	href="${pageContext.request.contextPath}/CSS/timeSelection.css">
 
 <title>勉強時間選択</title>
 </head>
@@ -21,7 +21,7 @@
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<div id="info">
-		今日の勉強時間を<br>選択してください
+		今日の学習時間を<br>選択してください
 	</div>
 	<div id="info">
 	<form action="timeSelectionController" method="post">
