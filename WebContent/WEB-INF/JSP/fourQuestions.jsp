@@ -18,6 +18,10 @@
 <title>TOEIC本番想定テスト</title>
 </head>
 <body>
+
+<div class="content-status">
+TOEIC本番想定テスト 20/20
+</div>
 	<div class="image-container">
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
