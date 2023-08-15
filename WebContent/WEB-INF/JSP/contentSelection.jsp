@@ -11,7 +11,22 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/fontStyle.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/courseSelection.css">
+<script>
+  // ラジオボタンの変更を監視する関数
+  function handleRadioChange(radioButton) {
+    // 全てのコース要素を取得
+    var courseElements = document.querySelectorAll('.course');
 
+    // 全てのコース要素の背景色を初期化
+    courseElements.forEach(function(courseElement) {
+      courseElement.style.backgroundColor = '#3498db'; // 初期の背景色に戻す
+    });
+
+    // 選択されたコース要素の背景色を変更
+    var selectedCourseElement = radioButton.closest('.course');
+    selectedCourseElement.style.backgroundColor = '#2323FF'; // 選択後の背景色
+  }
+</script>
 <title>コンテンツ検索結果</title>
 </head>
 <body>
@@ -19,19 +34,20 @@
 	<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 </div>
 	<div id="info">検索結果</div>
+
 	<form action="contentSelectionController" method="post">
-		<div class="course">
 			<c:forEach var="contents" items="${courseContent }">
-			<label class="radio-inline__label">
-				<input type=radio name="content" value="${contents.contentName}"
-					required>
-				<span>
-				<c:out value="${contents.contentName}" />
-				</span>
-			</label>
-			<br>
+				<div class="course">
+				<label class="radio-inline__label">
+					<input type=radio name="content" value="${contents.contentName}" required  class="radiobutton" onchange="handleRadioChange(this);">
+					<span>
+					<c:out value="${contents.contentName}" />
+					</span>
+				</label>
+				</div>
+				<br>
 			</c:forEach>
-		</div>
+
 		<div class="button-container">
 		<div>
 				<c:if test="${sourcePage == 'Home'}">
