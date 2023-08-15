@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/questionStyle.css">
+	href="${pageContext.request.contextPath}/CSS/questionStyle_Test.css">
 <title>答え</title>
 </head>
 <body>
