@@ -25,20 +25,27 @@
 	<div class="image-container">
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
-	<div id="info">興味のあるカテゴリー・コンテンツを選択してください</div>
+	<div id="info">興味のあるカテゴリー・コンテンツを<br>選択してください</div>
 	<script>
-	var TOEICComment = '${TOEIC}'
-	var TOEFLComment = '${TOEFL}'
-	var GTECComment = '${GTEC}'
+		var TOEICComment = '${TOEIC}'
+		var TOEFLComment = '${TOEFL}'
+		var GTECComment = '${GTEC}'
 	</script>
 	<div>
 		<form action="questionController" method="post">
 			<div class="radio-container">
-				<label for="showOptions1" class="custom-radio-container"> <input
-					type="radio" name="selectedOption" id="showOptions1" value="1"
-					onclick="toggleOptions(1)"> <span> 英語 <p id="question-button" onclick="toggleText()">うううう</p>
-				</span>
-				</label>
+				<label for="showOptions1" class="custom-radio-container"><span>英語</span>
+					<input type="radio" name="selectedOption" id="showOptions1"
+					value="1" onclick="toggleOptions(1)"></label>
+				<div class="btn-container">
+					<button id="btn3" type="button">
+						<img src="./IMG/questionMark.png" alt="questionMark" id="btn3">
+					</button>
+				</div>
+				<div id="mask" class="hidden"></div>
+				<section id="modal" class="hidden">
+					<p>ボタン３がクリックされました！</p>
+				</section>
 				<div id="options1" style="display: none;">
 					<label> <input type="radio" name="genre" value="TOEIC">
 						<span> TOEIC </span>
