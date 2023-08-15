@@ -28,19 +28,20 @@
 	</div>
 
 	<form action="courseSelectionController" method="post">
-		<div class="course">
 			<c:forEach var="item" items="${courseResult}">
-				<label class="radio-inline__label">
-					<input type="radio" name="learningCourse" value="${item.coursename}">
+			<div class="course">
+				<label>
+					<input type="radio" name="learningCourse" value="${item.coursename}" class="radiobutton">
 					<span>
 					資格名:<c:out value="${item.coursename}" /><br>
 					試験日:<c:out value="${item.examdate}" />
-					</span>
+                    </span>
 				</label>
+			</div>
 				<br>
 			</c:forEach>
 			<br>
-		</div>
+
 		<!-- 分岐処理が必要 -->
 
 		<div class="button-container">
