@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/questionStyle_Test.css">
+	href="${pageContext.request.contextPath}/CSS/questionStyle.css">
 <title>答え</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
 			<c:out value="${contentName}" />
 		</div>
 
-		<div id="info">単語1問1答</div>
+		<div id="info">TOEIC本番想定テスト</div>
 		<div class="box">
 			<c:if test="${sourcePage == 'Time'}">
 				<c:choose>
@@ -44,8 +44,8 @@
 
 				<p>正解:walk</p>
 				<p>解説</p>
+</c:if>
 		</div>
-		</c:if>
 
 		<div class="box">
 			<c:if test="${sourcePage == 'Home'}">
@@ -62,7 +62,7 @@
 			</c:if>
 			<div class="Answer">
 				<p>正解:×</p>
-				<p>解説</p>
+				<p>解説<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 			</div>
 		</div>
 	</div>
