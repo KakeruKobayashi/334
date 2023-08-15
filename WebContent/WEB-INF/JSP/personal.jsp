@@ -18,7 +18,7 @@
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<header></header>
-	<div>
+	<div class = "center">
 		<div id="info">
 			ユーザー情報を<br>登録してください
 		</div>
@@ -35,12 +35,15 @@
 			</div>
 
 			<div class="form-group">
-				<select name="year" id="id_year" class="birthday_input" title = "年">
-				</select>
-				<select name="month" id="id_month" class="birthday_input" title = "月">
-				</select>
-				<select name="day" id="id_day" class="birthday_input" title = "日">
-				</select>
+				<label class = "form-label">生年月日</label>
+				<div class = "form-birthday">
+					<select name="year" id="id_year" class="birthday-input" title = "年">
+					</select>年
+					<select name="month" id="id_month" class="birthday-input" title = "月">
+					</select>月
+					<select name="day" id="id_day" class="birthday-input" title = "日">
+					</select>日
+				</div>
 			</div>
 
 			<div class="form-group">

@@ -24,10 +24,8 @@
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<div id="info">
-		<p>
-			ここでは <c:out value="${nickname}" /> さんが学習を継続できるよう、 <c:out value="${nickname}" /> さんに合った学習方法を提案させていただきます。
-			そのために以下のアンケートのご回答をお願いします。
-		</p>
+		ここでは <c:out value="${nickname}" /> さんが学習を継続できるよう、 <c:out value="${nickname}" /> さんに合った学習方法を提案させていただきます。
+		そのために以下のアンケートのご回答をお願いします。
 	</div>
 	<br>
 	<div>

@@ -23,7 +23,7 @@
 	</div>
 	<div class="studyType">
 		<c:out value="${nickname}" />
-		さんの<br>勉強のタイプは…
+		さんは…
 	</div>
 	<c:choose>
 		<c:when test="${personalQuestionResult eq 1}">
@@ -33,8 +33,24 @@
 			<div class="typeResult"><p>毎日コツコツ<br>タイプ</p></div>
 		</c:when>
 	</c:choose>
+	<div class = "studyTypeSub">
+		です。
+	</div>
 	<div>
-
+		<c:choose>
+		<c:when test="${personalQuestionResult eq 1}">
+			<div class = "explaination">
+				<p>「まとめて時間を取るタイプ」の集中力抜群なあなたは、まとまった時間で集中して取り組む方法が向いています。
+				このアプリでは、数時間にわたる長時間集中して取り組める学習コンテンツをお届けします。</p>
+			</div>
+		</c:when>
+		<c:when test="${personalQuestionResult eq 2}">
+			<div class = "explaination">
+				<p>「毎日コツコツタイプ」の努力家なあなたは、毎日少しずつ取り組む方法が向いています。
+				このアプリでは、毎日５分程度の隙間時間でできる学習コンテンツをお届けします。</p>
+			</div>
+		</c:when>
+	</c:choose>
 	</div>
 	<div class="button-container">
 		<form action="personalQuestion" method="get">
