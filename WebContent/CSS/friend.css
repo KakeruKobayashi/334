@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#info {
+	margin-top: 80px;
+    font-size: 60px; /* フォントサイズを適当に指定 */
+    font-weight: 600; /* 太字にする */
+    text-align: center; /* 中央揃えにする */
+    margin-bottom: 8px;
+}
+
+
+/* <div> 要素を中央配置するスタイル */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+
+
+/* フローの画像のスタイル */
+img.list {
+  width: 500px; /* 横幅を600ピクセルに固定 */
+  height: auto; /* 高さは自動調整 */
+}
