@@ -1,7 +1,24 @@
 @charset "UTF-8";
 
-body{
-	font-family: "Yu Gothic";
+/* ページ全体のスタイル */
+body {
+    /* フレックスボックスでコンテンツを配置 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ページの高さをビューポートの高さに合わせる */
+    margin: 0 auto;
+    /* 幅を指定 */
+    width: 750px; /* スマホサイズの幅 */
+    height: 1136px; /* スマホサイズの高さ */
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    aspect-ratio: 9 / 16; /* アスペクト比を設定 */
+
+    /* 背景画像の設定 */
+    background-image: url('./IMG/BackgroundTest.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* 画像を全面に表示 */
+    background-position: center center; /* 画像を中央に配置 */
 }
 
 /* 個別のボタンのスタイル */
@@ -146,3 +163,4 @@ button.btn {
 button{
 	border:none;
 }
+
