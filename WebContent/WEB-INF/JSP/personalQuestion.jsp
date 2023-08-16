@@ -24,8 +24,9 @@
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<div id="info">
-		ここでは <c:out value="${nickname}" /> さんが学習を継続できるよう、 <c:out value="${nickname}" /> さんに合った学習方法を提案させていただきます。
-		そのために以下のアンケートのご回答をお願いします。
+	ここでは性格診断を行っていただきます。
+	<br>診断結果から<c:out value="${nickname}" />さんに
+	<br>最適な学習方法を提案させていただきます。
 	</div>
 	<br>
 	<div>
