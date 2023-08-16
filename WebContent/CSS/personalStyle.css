@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
 .form-group {
-	margin-bottom: 9px;
+	margin-bottom: 15px;
 
 }
 
 .form-input, .form-label, .form-select, .birthday_input, .form-birthday {
-	margin-left: 65px;
+	margin-left: 200px;
 	padding: none;
 }
 
 .form-input {
-	width: 600px;
+	width: 350px;
 	height: 50px;
 	border: 2px solid #ccc;
 	border-radius: 5px;
@@ -26,7 +26,7 @@
 }
 
 .form-select {
-	width: 613px;
+	width: 366px;
 	height: 67px;
 	border: 2px solid #ccc;
 	border-radius: 5px;
@@ -89,3 +89,6 @@
     font-size: 14px;
 }
 
+.p-style{
+	color: red;
+}
