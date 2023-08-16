@@ -139,9 +139,17 @@
 
 /*●×ボタン*/
 .●× {
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* ボタンとフォームの間にスペースを追加 */
 }
 
+.home-btn{
+	width:250px;
+}
+  
+.answer {
+	border: none;
+	background: transparent;
+}

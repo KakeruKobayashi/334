@@ -42,13 +42,8 @@
 		<div>
 			<form action="judgment" method="post">
 				<div class="●×">
-					<button type="submit" name="answer" value="circle"
-						class="circle-btn">
-						<img src="./IMG/〇.png" class="circleMark">
-					</button>
-					<button type="submit" name="answer" value="cross" class="cross-btn">
-						<img src="./IMG/×.png" class="crossMark">
-					</button>
+					<button type="submit" name="answer" value="circle" class = "answer"><img src="./IMG/circle.png"></button>
+					<button type="submit" name="answer" value="cross" class = "answer"><img src="./IMG/cross.png"></button>
 				</div>
 			</form>
 		</div>

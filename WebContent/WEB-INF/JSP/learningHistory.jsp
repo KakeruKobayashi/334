@@ -34,7 +34,7 @@
 
 	<div class="button-container">
 				<div >
-					<button type="button" name="return" value="戻る" onclick="window.location.href='home'" class="button_line007">ホームに戻る</button>
+					<button type="button" name="return" value="戻る" onclick="window.location.href='home'" class="button_line007 home-btn">ホームに戻る</button>
 				</div>
 	</div>
 
