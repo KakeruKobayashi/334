@@ -22,7 +22,7 @@
 	<br>
 	<br>
 	<div>
-		<div id="info">以下の資格を学習しますか？</div>
+		<div id="info">以下のコースで学習を始めますか？</div>
 	</div>
 
 	<div class="div-container">
