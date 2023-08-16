@@ -13,7 +13,9 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/questionStyle.css">
+	href="${pageContext.request.contextPath}/CSS/studyQuestionStyle.css">
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/CSS/personalQuestionStyle2.css">
 <title>学習結果</title>
 </head>
 <body>
@@ -25,13 +27,14 @@
 	</div>
 	<c:if test="${sourcePage == 'Home'}">
 		<div>
-			<div id="info">単語1問1答</div>
+			<div id="info" style="font-size:40px;">単語1問1答</div>
 			<div>
-				<div id="info">
-					確認テスト結果<br>5問中4問正解
+				<div id="info"  style="font-size:40px;">
+					確認テスト結果…<br>
+					<div class="typeResult" style="font-size:80px;">5問中4問正解</div>
 				</div>
 
-				<div id="info">次は満点目指そう</div>
+				<div id="info" style="font-size:50px;">次は満点目指そう!</div>
 			</div>
 		</div>
 
@@ -39,14 +42,15 @@
 	<c:if test="${sourcePage == 'Time'}">
 		<div>
 			<div>
-				<div id="info">TOEIC本番想定テスト</div>
+				<div id="info" style="font-size:40px;">TOEIC本番想定テスト</div>
 			</div>
 			<div>
-				<div id="info">
-					確認テスト結果 <br> 20問中19問正解
+				<div id="info" style="font-size:40px;">
+					確認テスト結果 <br>
+					<div class="typeResult" style="font-size:80px;">20問中19問正解</div>
 				</div>
 			</div>
-			<div id="info">次は満点目指そう！</div>
+			<div id="info" style="font-size:50px;">次は満点目指そう！</div>
 		</div>
 	</c:if>
 	<div>
