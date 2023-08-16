@@ -29,41 +29,38 @@
 
 		<div id="info">単語1問1答</div>
 		<div class="box">
+
 			<c:if test="${sourcePage == 'Time'}">
 				<c:choose>
 					<c:when test="${answer == 'walk'}">
-
 						<img src="./IMG/〇.png" alt="〇">
 					</c:when>
 					<c:otherwise>
-
 						<img src="./IMG/×.png" alt="×">
 					</c:otherwise>
 				</c:choose>
-
-
 				<p>正解:walk</p>
 				<p>解説</p>
+			</c:if>
+
 		</div>
-		</c:if>
 
 		<div class="box">
 			<c:if test="${sourcePage == 'Home'}">
 				<c:choose>
 					<c:when test="${answer == 'cross'}">
-
-						<img src="./IMG/〇.png" alt="〇">
+						<div>正解</div>
 					</c:when>
 					<c:otherwise>
-
-						<img src="./IMG/×.png" alt="×">
+						<div>不正解</div>
 					</c:otherwise>
 				</c:choose>
 			</c:if>
+
 			<div class="Answer">
-				<p>正解:×</p>
 				<p>解説</p>
 			</div>
+
 		</div>
 	</div>
 	<div>

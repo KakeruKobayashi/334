@@ -144,3 +144,8 @@
     justify-content: center;
     margin-top: 20px; /* ボタンとフォームの間にスペースを追加 */
 }
+
+.answer {
+	border: none;
+	background: transparent;
+}

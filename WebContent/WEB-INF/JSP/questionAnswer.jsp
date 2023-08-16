@@ -29,8 +29,8 @@
 		<div>
 			<form action="judgment" method="post">
 				<div class="●×">
-					<button type="submit" name="answer" value="circle"><img src="./IMG/〇.png"></button>
-					<button type="submit" name="answer" value="cross"><img src="./IMG/×.png"></button>
+					<button type="submit" name="answer" value="circle" class = "answer"><img src="./IMG/circle.png"></button>
+					<button type="submit" name="answer" value="cross" class = "answer"><img src="./IMG/cross.png"></button>
 				</div>
 			</form>
 		</div>
