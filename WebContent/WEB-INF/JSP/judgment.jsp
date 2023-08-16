@@ -22,8 +22,7 @@
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<div class="answerForm">
-		<div id="info">単語1問1答</div>
-		<div class="box">
+		<div>
 			<c:if test="${sourcePage == 'Time'}">
 				<div class="course-container">
 					現在のコース：<c:out value="${course.coursename}" />
