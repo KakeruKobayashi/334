@@ -145,6 +145,10 @@
     margin-top: 20px; /* ボタンとフォームの間にスペースを追加 */
 }
 
+.home-btn{
+	width:250px;
+}
+  
 .answer {
 	border: none;
 	background: transparent;
