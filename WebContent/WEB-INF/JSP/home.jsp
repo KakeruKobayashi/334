@@ -24,11 +24,9 @@
         <div class="course-container">
             <p>受講中のコース</p>
             <select name="course">
-        <option value="TOEIC700コース" selected>
-            <c:out value="${course.coursename}コース" />
+        <option value="コース" selected>
+            <c:out value="${course.coursename}" />
         </option>
-        <option value="英検4級コース">英検4級コース</option>
-        <option value="＋">＋</option>
     </select>
         </div>
     </main>
