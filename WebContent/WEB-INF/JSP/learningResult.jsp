@@ -13,8 +13,6 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/studyQuestionStyle.css">
-<link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/personalQuestionStyle2.css">
 <title>学習結果</title>
 </head>
