@@ -39,7 +39,7 @@
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
 	<div id="info">
-		<c:out value="${nickname}" />さんが<br>学習したい資格。レベルを選択してください
+		<c:out value="${nickname}" />さんが<br>学習したい資格・レベルを選択してください
 	</div>
 
 	<form action="courseSelectionController" method="post">
