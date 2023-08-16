@@ -46,7 +46,7 @@
 			<c:forEach var="item" items="${courseResult}">
 			<div class="course">
 				<label class="radio-inline__label">
-					<input type="radio" name="learningCourse" value="${item.coursename}" class="radiobutton" onchange="handleRadioChange(this);">
+					<input type="radio" name="learningCourse" value="${item.coursename}" class="radiobutton" onchange="handleRadioChange(this);" required>
 					<span>
 					資格名:<c:out value="${item.coursename}" /><br>
 					試験日:<c:out value="${item.examdate}" />

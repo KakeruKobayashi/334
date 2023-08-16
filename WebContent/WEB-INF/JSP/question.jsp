@@ -32,7 +32,7 @@
 	<div id="info">興味のあるカテゴリー・コンテンツを選択してください</div>
 
 	<div>
-		<form action="questionController" method="post">
+		<form action="questionController" method="post" required>
 			<div class="radio-container">
 				<label for="showOptions1" class="custom-radio-container"><span class= "genre">英語</span>
 					<input type="radio" name="selectedOption" id="showOptions1"
@@ -46,7 +46,7 @@
 							onclick="showModal('${TOEIC}')">
 							<img src="./IMG/questionMark.png" alt="questionMark" class = "questionMark">
 						</button>
-					<label> <input type="radio" name="genre" value="TOEFL">
+					<label> <input type="radio" name="genre" value="TOEFL" required>
 						<span> TOEFL </span>
 					</label> <span class="btn-container">
 						<button class="question-btn-container" type="button"
