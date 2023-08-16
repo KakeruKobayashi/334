@@ -49,7 +49,6 @@
 					<input type="radio" name="learningCourse" value="${item.coursename}" class="radiobutton" onchange="handleRadioChange(this);">
 					<span>
 					資格名:<c:out value="${item.coursename}" /><br>
-
 					試験日:<c:out value="${item.examdate}" />
                     </span>
 				</label>
