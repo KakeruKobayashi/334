@@ -42,14 +42,6 @@ label input[type="radio"]:checked+span {
 	margin-right: 20px; /* ラジオボタン間の余白 */
 }
 
-/*questionAnswer*/
-.questionForm {
-	margin-left: 60px;
-	width: 600px;
-	font-size: 30px;
-	text-align: center;
-	padding: 10px; /* 内側の余白を設定 */
-}
 
 /*judgement*/
 .box {
@@ -143,44 +135,5 @@ img {
 	cursor: pointer;
 }
 
-.questionMark {
-	background-color: white;
-}
 
-/*questionAnswer.jsp*/
-.content-status{
-    margin-top: 50px;
-    margin-left: 20px;
-    font-size: 24px;
-}
 
-.circleMark {
-	background-color: white;
-}
-
-.crossMark {
-	background-color: white;
-}
-
-.circle-btn {
-	background-color: white;
-}
-
-.cross-btn {
-	background-color: white;
-}
-
-/*fourQuestion.jsp*/
-.fourQuestion{
-	margin-left: 60px;
-	width: 600px;
-	font-size: 30px;
-	text-align: center;
-	border: 1px solid black; /* 枠線を追加 */
-	padding: 10px; /* 内側の余白を設定 */
-}
-
-.four{
-	border-radius: 10px;
-	margin-buttom:100px;
-}
