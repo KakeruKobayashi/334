@@ -1,20 +1,21 @@
 @charset "UTF-8";
 
 .form-group {
-	margin-bottom: 9px;
-
+	margin-bottom: 15px;
 }
 
-.form-input, .form-label, .form-select, .birthday_input, .form-birthday {
-	margin-left: 65px;
+.form-input, .form-label, .form-select, .birthday_input, .form-birthday
+	{
+	margin-left: 200px;
 	padding: none;
 }
 
 .form-input {
-	width: 600px;
+	width: 350px;
 	height: 50px;
 	border: 2px solid #ccc;
 	border-radius: 5px;
+	font-size: 20px;
 }
 
 .birthday-input {
@@ -26,7 +27,7 @@
 }
 
 .form-select {
-	width: 613px;
+	width: 366px;
 	height: 67px;
 	border: 2px solid #ccc;
 	border-radius: 5px;
@@ -63,29 +64,52 @@
 }
 
 .form-select-box {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
+
 .form-select {
-    position: relative;
+	position: relative;
+	font-size:20px;
 }
 
 .form-select::before {
-    position: absolute;
-    content: "\f0d7";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    top: 10px;
-    right: 17px;
+	position: absolute;
+	content: "\f0d7";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	top: 10px;
+	right: 17px;
 }
 
 .dropdown-toggle {
-    padding: 8px 23px 8px 14px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: white;
-    border: 1px solid #a5a5a5;
-    border-radius: 4px;
-    font-size: 14px;
+	padding: 8px 23px 8px 14px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: white;
+	border: 1px solid #a5a5a5;
+	border-radius: 4px;
+	font-size: 14px;
 }
 
+.no-break-line {
+	white-space: nowrap; /* 改行を禁止 */
+}
+
+.asterisk {
+	font-weight: bold;
+	color: red;
+}
+
+/* 生年月日の文字の大きさ */
+#id_year{
+	font-size: 20px;
+}
+
+#id_month{
+	font-size: 20px;
+}
+
+#id_day{
+	font-size: 20px;
+}

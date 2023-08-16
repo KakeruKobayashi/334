@@ -20,12 +20,13 @@
 	<header></header>
 	<div class = "center">
 		<div id="info">
-			ユーザー情報を<br>登録してください
+			ユーザー情報を登録してください
 		</div>
+		<br><br>
 		<form action="personalController" method="post">
 
 			<div class="form-group">
-				<label class="form-label" for="nickname">*ニックネーム</label> <input
+				<label class="form-label no-break-line" for="nickname"><span class="asterisk">*</span>ニックネーム</label> <input
 					class="form-input" type="text" name="nickname" required>
 			</div>
 
@@ -35,7 +36,7 @@
 			</div>
 
 			<div class="form-group">
-				<label class = "form-label">生年月日</label>
+				<label class = "form-label no-break-line"><span class="asterisk">*</span>生年月日</label>
 				<div class = "form-birthday">
 					<select name="year" id="id_year" class="birthday-input" title = "年">
 					</select>年
@@ -47,8 +48,8 @@
 			</div>
 
 			<div class="form-group">
-				<label class="form-label" for="occupation">
-					*職種
+				<label class="form-label no-break-line" for="occupation">
+					<span class="asterisk">*</span>職種
 				</label>
 				<select class="form-select" name="occupation" required>
 					<option value="" disabled selected>選択してください</option>
@@ -74,8 +75,8 @@
 			</div>
 
 			<div class="form-group">
-				<label class="form-label" for="field">
-					*分野
+				<label class="form-label no-break-line" for="field">
+					<span class="asterisk">*</span>分野
 				</label>
 				<select class="form-select" name="field" required>
 					<option value="" disabled selected>選択してください</option>
