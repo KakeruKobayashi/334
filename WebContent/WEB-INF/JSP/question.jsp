@@ -51,14 +51,14 @@
 					</label> <span class="btn-container">
 						<button class="question-btn-container" type="button"
 							onclick="showModal('${TOEFL}')">
-							<img src="./IMG/questionMark.png" alt="questionMark">
+							<img src="./IMG/questionMark.png" alt="questionMark" class = "questionMark">
 						</button>
 					</span> <label> <input type="radio" name="genre" value="GTEC">
 						<span> GTEC </span>
 					</label> <span class="btn-container">
 						<button class="question-btn-container" type="button"
 							onclick="showModal('${GTEC}')">
-							<img src="./IMG/questionMark.png" alt="questionMark">
+							<img src="./IMG/questionMark.png" alt="questionMark" class = "questionMark">
 						</button>
 					</span>
 				</div>

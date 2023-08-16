@@ -18,11 +18,11 @@
 </div>
 
 <body>
-	<div>
-		<div>累計日数</div>
-		<span>17</span>日<br>
-		<div>総学習時間</div>
-		<span>15</span>h<span>20</span>m
+	<div id="info">
+		<div>累計日数
+		<span>17</span>日</div><br>
+		<div>総学習時間
+		<span>15</span>h<span>20</span>m</div>
 	</div>
 
 
