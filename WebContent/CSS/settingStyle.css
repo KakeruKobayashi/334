@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+
+.settingbutton-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: block;
+    width: 400px;
+    height: 100px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 550;
+    text-align: center;
+    border: none; /* ボーダーを消す */
+    border-radius: 20px; /* 角を丸くする */
+}

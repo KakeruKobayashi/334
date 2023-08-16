@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/CSS/buttonStyle.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/CSS/questionStyle.css">
+	href="${pageContext.request.contextPath}/CSS/studyQuestionStyle.css">
 <title>単語1問1答</title>
 </head>
 <body>
@@ -32,9 +32,9 @@
 					class="button_line007">中断</button>
 			</form>
 		</div>
-		<div id="info">単語1問1答</div>
-		<div class="questionForm">
-			以下の単語と意味の組み合わせについて正しいかどうか答えなさい。<br>
+		<div id="info" style="font-size:40px;">単語1問1答</div>
+		<div class="fourQuestion">
+			以下の単語と意味の組み合わせに<br>ついて正しいかどうか答えなさい。<br>
 			<div>
 				<h4>account : 口座・勘定</h4>
 			</div>

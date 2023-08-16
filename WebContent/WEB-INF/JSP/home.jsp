@@ -17,7 +17,7 @@
 <body style="background-image: url('./IMG/homeBackground_1.png'); background-repeat: no-repeat; background-size: contain;">
     <main>
         <div class="setting-container">
-            <input type="image" name="haguruma" onclick="window.location.href=''" src="./IMG/haguruma.png" alt="歯車">
+            <input type="image" name="haguruma" onclick="window.location.href='SettingServlet'" src="./IMG/haguruma.png" alt="歯車">
             <input type="image" name="friend" onclick="window.location.href=''" src="./IMG/friend2.png" alt="フレンド">
         </div>
 
