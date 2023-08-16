@@ -24,7 +24,8 @@
 	<div class="answerForm">
 		<!-- correct.pngは画像なし -->
 
-
+		<div id="info">単語1問1答</div>
+		<div class="box">
 		<c:if test="${sourcePage == 'Time'}">
 			<div class="course-container">
 				現在のコース：<c:out value="${course.coursename}" />
@@ -33,11 +34,9 @@
 			<div class="box">
 				<c:choose>
 					<c:when test="${answer == 'walk'}">
-
 						<img src="./IMG/〇.png" alt="〇">
 					</c:when>
 					<c:otherwise>
-
 						<img src="./IMG/×.png" alt="×">
 					</c:otherwise>
 				</c:choose>
@@ -58,21 +57,18 @@
 			<div class="box">
 				<c:choose>
 					<c:when test="${answer == 'cross'}">
-
-						<img src="./IMG/〇.png" alt="〇">
+						<div>正解</div>
 					</c:when>
 					<c:otherwise>
-
-						<img src="./IMG/×.png" alt="×">
+						<div>不正解</div>
 					</c:otherwise>
 				</c:choose>
-				<div class="Answer">
-					<p>正解:×</p>
-					<p>
-						解説<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					</p>
-				</div>
+
+			<div class="Answer">
+				<p>解説</p>
 			</div>
+
+		</div>
 		</c:if>
 
 	</div>
