@@ -28,7 +28,7 @@
 	<div class="div-container">
 	    <!-- <img src="../img/course.png" alt="選択したコース"><br>-->
 	    資格名:<c:out value="${course.coursename}" /><br>
-	    試験日:<c:out value="${course.examdate}" />
+	    試験日:<c:out value="${date[0]}" />年<c:out value="${date[1]}" />月<c:out value="${date[2]}" />日
 	</div>
 	<br>
     <div class="div-flow">

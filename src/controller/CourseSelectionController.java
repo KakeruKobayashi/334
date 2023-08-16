@@ -35,11 +35,12 @@ public class CourseSelectionController extends HttpServlet {
 		        .collect(Collectors.toList());
 
 		Course course =courseList.get(0);
-
-
+		String date = course.getExamdate().toString();
+		String[] examDate = date.split("-");
 
 		//フローイメージの画像もかな？JSPで書けばいいのかな？
 		session.setAttribute("course", course);
+		session.setAttribute("date", examDate);
 		//確認画面へリダイレクト
 		response.sendRedirect("courseConfirm");
 
