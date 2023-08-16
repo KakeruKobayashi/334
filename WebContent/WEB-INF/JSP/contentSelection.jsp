@@ -19,12 +19,12 @@
 
     // 全てのコース要素の背景色を初期化
     courseElements.forEach(function(courseElement) {
-      courseElement.style.backgroundColor = '#3498db'; // 初期の背景色に戻す
+      courseElement.style.backgroundColor = '#020659'; // 初期の背景色に戻す
     });
 
     // 選択されたコース要素の背景色を変更
     var selectedCourseElement = radioButton.closest('.course');
-    selectedCourseElement.style.backgroundColor = '#2323FF'; // 選択後の背景色
+    selectedCourseElement.style.backgroundColor = '#484ca1'; // 選択後の背景色
   }
 </script>
 <title>コンテンツ検索結果</title>
