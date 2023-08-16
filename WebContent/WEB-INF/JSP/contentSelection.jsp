@@ -33,7 +33,7 @@
 <div class="image-container">
 	<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 </div>
-	<div id="info">検索結果</div>
+	<div id="search-result">検索結果</div>
 
 	<form action="contentSelectionController" method="post">
 			<c:forEach var="contents" items="${courseContent }">
@@ -47,7 +47,7 @@
 				</div>
 				<br>
 			</c:forEach>
-
+<br><br><br>
 		<div class="button-container">
 		<div>
 				<c:if test="${sourcePage == 'Home'}">
