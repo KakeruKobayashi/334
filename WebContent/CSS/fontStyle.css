@@ -4,34 +4,49 @@ body {
 	font-family: "Yu Gothic";
 	font-size: 25px;
 	font-weight: 500; /* 太字にする */
-	 color: #222222;
+	color: #222222;
 }
 
 /* 特定の要素のスタイル */
 p {
-    margin: 10px 0;
+	margin: 10px 0;
 }
 
 h1 {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 h2 {
-    font-size: 20px;
+	font-size: 20px;
+}
+
+#search-result {
+	margin-top: 80px;
+	font-size: 40px;
+	font-weight: 550; /* 太字にする */
+	text-align: center; /* 中央揃えにする */
+	margin-bottom: 10px;
+}
+
+#select-time {
+	margin-top: 80px;
+	font-size: 40px;
+	font-weight: 550; /* 太字にする */
+	text-align: center; /* 中央揃えにする */
+	margin-bottom: 10px;
 }
 
 #info {
 	margin-top: 80px;
-    font-size: 30px; /* フォントサイズを適当に指定 */
-    font-weight: 550; /* 太字にする */
-    text-align: center; /* 中央揃えにする */
-    margin-bottom: 10px;
+	font-size: 30px; /* フォントサイズを適当に指定 */
+	font-weight: 550; /* 太字にする */
+	text-align: center; /* 中央揃えにする */
+	margin-bottom: 10px;
 }
 
-#option{
+#option {
 	font-size: 14px; /* フォントサイズを適当に指定 */
-    font-weight: bold;
-
+	font-weight: bold;
 }
 
 .answerText {

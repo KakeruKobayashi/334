@@ -30,7 +30,6 @@ public class PersonalQuestionController extends HttpServlet {
 		int question5 = Integer.parseInt(request.getParameter("question5"));
 		int question6 = Integer.parseInt(request.getParameter("question6"));
 		int question7 = Integer.parseInt(request.getParameter("question7"));
-		String question8 = (String) request.getParameter("question8");
 
 		String nickname = (String) session.getAttribute("nickname");
 		int a = (question1 + question4 + question5 + question7);
@@ -43,18 +42,5 @@ public class PersonalQuestionController extends HttpServlet {
 
 		response.sendRedirect("personalQuestionResult");
 
-
-
-
-		//分岐は1回後回し
-//		if (question8.equals("Y")) {
-//			response.sendRedirect("registration");
-//			session.removeAttribute("userhope");
-//			return;
-//		} else {
-//			response.sendRedirect("question");
-//			session.removeAttribute("userhope");
-//			return;
-//		}
 	}
 }

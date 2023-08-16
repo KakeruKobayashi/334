@@ -32,7 +32,6 @@
 /* 選択されたラベルの外観をカスタマイズ */
 .course label.radio-inline__label {
 	position: relative;
-	padding-left: 30px; /* 必要に応じて調整してください */
 	cursor: pointer;
 }
 

@@ -3,11 +3,9 @@
 
 #customTime {
   font-size: 50px;
-  width: 700px; /* フォームの幅を調整 */
   padding: 10px; /* フォームの内側の余白を調整 */
   margin-left: 40px; /* 水平方向に中央に配置 */
-  margin-bottom: 260px;
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
 #hours,

@@ -20,8 +20,8 @@
 <div class="image-container">
 		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
 	</div>
-	<div id="info">
-		今日の学習時間を<br>選択してください
+	<div id="select-time">
+		今日の学習時間を入力してください
 	</div>
 	<div id="info">
 	<form action="timeSelectionController" method="post">
@@ -31,7 +31,6 @@
 				id="minutes" min="0" max="59" value="0"> 分
 		</div>
 		<br>
-	</div>
 		<div class="button-container">
 		<div>
 		<button type="button" name="return" value="戻る" class="button_line007"
@@ -42,5 +41,6 @@
 		</div>
 		</div>
 	</form>
+	</div>
 </body>
 </html>

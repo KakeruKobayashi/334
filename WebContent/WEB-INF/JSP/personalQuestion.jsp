@@ -85,13 +85,7 @@
 					required><span>はい</span></label> <label><input type="radio"
 					name="question7" value="1"><span>いいえ</span></label>
 			</div>
-			<br>
-			<div class="Q">Q8.取得したい資格がある</div>
-			<div class="A">
-				<label><input type="radio" name="question8" id="Yes"
-					value="Y" required><span>はい</span></label> <label><input
-					type="radio" name="question8" id="No" value="N"><span>いいえ</span></label>
-			</div>
+			<br><br>
 
 			<div class="button-container">
 				<div>
