@@ -34,7 +34,6 @@
 		</c:when>
 	</c:choose>
 	<div class = "studyTypeSub">
-		です。
 	</div>
 	<div>
 		<c:choose>
