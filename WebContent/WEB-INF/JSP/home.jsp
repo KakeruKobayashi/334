@@ -27,6 +27,12 @@
         <option value="コース" selected>
             <c:out value="${course.coursename}" />
         </option>
+         <option value="コース">
+            英検3級コース
+        </option>
+        <option value="コース">
+            ＋
+        </option>
     </select>
         </div>
     </main>

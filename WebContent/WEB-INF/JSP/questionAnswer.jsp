@@ -41,10 +41,14 @@
 		</div>
 		<div>
 			<form action="judgment" method="post">
-				<div class="●×">
-					<button type="submit" name="answer" value="circle" class = "answer"><img src="./IMG/circle.png"></button>
-					<button type="submit" name="answer" value="cross" class = "answer"><img src="./IMG/cross.png"></button>
-				</div>
+			    <div class="●×">
+			        <button type="submit" name="answer" value="circle" class="answer answer-circle">
+			            <img src="./IMG/circle.png" alt="Circle">
+			        </button>
+			        <button type="submit" name="answer" value="cross" class="answer answer-cross">
+			            <img src="./IMG/cross.png" alt="Cross">
+			        </button>
+			    </div>
 			</form>
 		</div>
 	</div>
