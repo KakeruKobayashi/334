@@ -18,9 +18,6 @@
 <title>答え</title>
 </head>
 <body>
-	<div class="image-container">
-		<img class="image-element" src="./IMG/Background_move.png" alt="Image">
-	</div>
 	<div class="answerForm">
 		<div>
 			<c:if test="${sourcePage == 'Time'}">
